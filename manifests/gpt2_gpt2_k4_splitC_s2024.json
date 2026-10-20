@@ -1,0 +1,63 @@
+{
+  "run_id": "gpt2_gpt2_k4_splitC_s2024",
+  "ts": 1783120611.3689625,
+  "host": "aisurrey19.surrey.ac.uk",
+  "config_sha256": "0fb850dc738b37cdc561302d8ef6c0923892eb19a6761c008af2d9de8c7e1cca",
+  "config": {
+    "model": {
+      "name": "gpt2",
+      "context_length": 1024
+    },
+    "special_tokens": {
+      "bos": "<BOS_SIG>",
+      "act": "<ACT>",
+      "sep": "<SEP>",
+      "query": "<QUERY>",
+      "ans": "<ANS>",
+      "pad": "<PAD>"
+    },
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "target_modules": [
+        "c_attn"
+      ]
+    },
+    "prompt": {
+      "k_shot": 4,
+      "max_distractors": 6,
+      "shuffle_support": true,
+      "always_include_gold_class": true,
+      "label_randomization": true
+    },
+    "optim": {
+      "lr": 0.0002,
+      "weight_decay": 0.0,
+      "warmup_steps": 100
+    },
+    "train": {
+      "batch_size": 8,
+      "epochs": 20,
+      "grad_accum": 4,
+      "grad_clip": 1.0,
+      "eval_every_epoch": true,
+      "loss_mask": "answer_only"
+    },
+    "name": "gpt2_k4"
+  },
+  "ckpt_path": "/mnt/fast/nobackup/users/aa08742/checkpoints/gpt2/vqvae_usc_t32_splitC_k8_r16_s2024_matched/best/adapter_model.safetensors",
+  "ckpt_sha256": "040a8c5f83170c6a9ff15fe5a0d0a52f702d8d6ff07fc97662bcc301cf08c867",
+  "metrics": {
+    "test_macro_f1": 0.7307621170659475,
+    "test_seen_f1": 0.942669678529271,
+    "test_unseen_f1": 0.5500136836343733,
+    "best_val_blended_f1": 0.4886486226631164
+  },
+  "extra": {
+    "phase": "gpt2",
+    "split": "C",
+    "seed": 2024,
+    "k_shot": 8
+  }
+}
