@@ -1,4 +1,4 @@
-"""Subject-wise + held-out-by-name splits with leakage guard (PDF Part 2.4-2.5)."""
+"""Subject-wise + held-out-by-name splits with leakage guard """
 from __future__ import annotations
 
 import hashlib
