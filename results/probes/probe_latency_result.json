@@ -1,0 +1,12 @@
+{
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "episodes_timed": 200,
+  "k_shot": 4,
+  "tokens_per_episode_mean": 897,
+  "latency_ms_mean": 20.79,
+  "latency_ms_p50": 20.46,
+  "latency_ms_p95": 22.37,
+  "peak_cuda_memory_MB": 1408.2,
+  "fp32_weights_MB": 776.1,
+  "fp16_weights_MB_est": 388.1
+}

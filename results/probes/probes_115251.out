@@ -1,0 +1,93 @@
+name, power.limit [W]
+NVIDIA GeForce RTX 3090, 350.00 W
+=====================  LATENCY PROBE  =====================
+{
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "episodes_timed": 200,
+  "k_shot": 4,
+  "tokens_per_episode_mean": 897,
+  "latency_ms_mean": 20.79,
+  "latency_ms_p50": 20.46,
+  "latency_ms_p95": 22.37,
+  "peak_cuda_memory_MB": 1408.2,
+  "fp32_weights_MB": 776.1,
+  "fp16_weights_MB_est": 388.1
+}
+saved -> probe_latency_result.json
+=====================  ATTENTION PROBE =====================
+unseen labels: ['elevator_down', 'elevator_up', 'walk_downstairs', 'walk_upstairs']
+[01] gold=walk_upstairs    pred=walk_upstairs    correct=True gold-attn=0.708 (uniform 0.143)
+[02] gold=walk_upstairs    pred=walk_upstairs    correct=True gold-attn=0.823 (uniform 0.143)
+[03] gold=elevator_up      pred=stand            correct=False gold-attn=0.283 (uniform 0.143)
+[04] gold=walk_upstairs    pred=walk_upstairs    correct=True gold-attn=0.529 (uniform 0.143)
+[05] gold=elevator_up      pred=stand            correct=False gold-attn=0.168 (uniform 0.143)
+[06] gold=walk_upstairs    pred=walk             correct=False gold-attn=0.021 (uniform 0.143)
+[07] gold=walk_downstairs  pred=run              correct=False gold-attn=0.014 (uniform 0.143)
+[08] gold=elevator_down    pred=stand            correct=False gold-attn=0.063 (uniform 0.143)
+[09] gold=elevator_up      pred=stand            correct=False gold-attn=0.041 (uniform 0.143)
+[10] gold=walk_downstairs  pred=walk_downstairs  correct=True gold-attn=0.575 (uniform 0.143)
+[11] gold=walk_upstairs    pred=walk             correct=False gold-attn=0.137 (uniform 0.143)
+[12] gold=walk_upstairs    pred=walk_upstairs    correct=True gold-attn=0.648 (uniform 0.143)
+[13] gold=elevator_up      pred=stand            correct=False gold-attn=0.266 (uniform 0.143)
+[14] gold=elevator_up      pred=elevator_up      correct=True gold-attn=0.580 (uniform 0.143)
+[15] gold=walk_downstairs  pred=rope_jump        correct=False gold-attn=0.026 (uniform 0.143)
+[16] gold=walk_downstairs  pred=walk_downstairs  correct=True gold-attn=0.795 (uniform 0.143)
+[17] gold=elevator_up      pred=stand            correct=False gold-attn=0.216 (uniform 0.143)
+[18] gold=elevator_down    pred=stand            correct=False gold-attn=0.048 (uniform 0.143)
+[19] gold=elevator_down    pred=stand            correct=False gold-attn=0.400 (uniform 0.143)
+[20] gold=walk_downstairs  pred=walk_downstairs  correct=True gold-attn=0.662 (uniform 0.143)
+[21] gold=walk_downstairs  pred=walk             correct=False gold-attn=0.061 (uniform 0.143)
+[22] gold=elevator_down    pred=stand            correct=False gold-attn=0.060 (uniform 0.143)
+[23] gold=elevator_down    pred=stand            correct=False gold-attn=0.076 (uniform 0.143)
+[24] gold=elevator_down    pred=elevator_down    correct=True gold-attn=0.681 (uniform 0.143)
+{
+  "episodes": 24,
+  "mean_gold_class_attention_frac": 0.3283,
+  "sd": 0.2826,
+  "mean_uniform_share": 0.1429,
+  "accuracy_in_probe": 0.375,
+  "mean_gold_frac_when_correct": 0.6666,
+  "mean_gold_frac_when_wrong": 0.1253,
+  "per_class": {
+    "elevator_down": {
+      "n": 6,
+      "acc": 0.167,
+      "gold_attn": 0.221,
+      "preds": {
+        "elevator_down": 1,
+        "stand": 5
+      }
+    },
+    "elevator_up": {
+      "n": 6,
+      "acc": 0.167,
+      "gold_attn": 0.259,
+      "preds": {
+        "elevator_up": 1,
+        "stand": 5
+      }
+    },
+    "walk_downstairs": {
+      "n": 6,
+      "acc": 0.5,
+      "gold_attn": 0.355,
+      "preds": {
+        "rope_jump": 1,
+        "run": 1,
+        "walk": 1,
+        "walk_downstairs": 3
+      }
+    },
+    "walk_upstairs": {
+      "n": 6,
+      "acc": 0.667,
+      "gold_attn": 0.478,
+      "preds": {
+        "walk": 2,
+        "walk_upstairs": 4
+      }
+    }
+  }
+}
+saved -> probe_attention_result.json, supp_fig_s11_attention.png
+DONE. Results: probe_latency_result.json, probe_attention_result.json, supp_fig_s11_attention.png

@@ -1,0 +1,3701 @@
+{
+  "summary": {
+    "episodes": 24,
+    "mean_gold_class_attention_frac": 0.3283,
+    "sd": 0.2826,
+    "mean_uniform_share": 0.1429,
+    "accuracy_in_probe": 0.375,
+    "mean_gold_frac_when_correct": 0.6666,
+    "mean_gold_frac_when_wrong": 0.1253,
+    "per_class": {
+      "elevator_down": {
+        "n": 6,
+        "acc": 0.167,
+        "gold_attn": 0.221,
+        "preds": {
+          "elevator_down": 1,
+          "stand": 5
+        }
+      },
+      "elevator_up": {
+        "n": 6,
+        "acc": 0.167,
+        "gold_attn": 0.259,
+        "preds": {
+          "elevator_up": 1,
+          "stand": 5
+        }
+      },
+      "walk_downstairs": {
+        "n": 6,
+        "acc": 0.5,
+        "gold_attn": 0.355,
+        "preds": {
+          "rope_jump": 1,
+          "run": 1,
+          "walk": 1,
+          "walk_downstairs": 3
+        }
+      },
+      "walk_upstairs": {
+        "n": 6,
+        "acc": 0.667,
+        "gold_attn": 0.478,
+        "preds": {
+          "walk": 2,
+          "walk_upstairs": 4
+        }
+      }
+    }
+  },
+  "records": [
+    {
+      "episode": 4,
+      "gold": "walk_upstairs",
+      "pred": "walk_upstairs",
+      "correct": true,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.7079896034561839,
+      "pairs": [
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.038041990040358284
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0017478718964798168
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.08754459385442033
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.10529195474042721
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.002264859996745375
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.002748959472269343
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.22419387382096378
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.08929944232147873
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0007405064401138986
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.00192935666489816
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0016380473183115385
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0006237131998470814
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.02514342134811864
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0014501344081959812
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.001228495004847718
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0008001521966002647
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0018901951629042867
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0015082787370561727
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0014249332564499238
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0015648256605459907
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.003823984450167926
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.003517746368022067
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.3404617848544347
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.03561459496176356
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.008178834284909179
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0016110495966160589
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.005435372443651142
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.010281027499402852
+        }
+      ]
+    },
+    {
+      "episode": 5,
+      "gold": "walk_upstairs",
+      "pred": "walk_upstairs",
+      "correct": true,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.8227012324571483,
+      "pairs": [
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.009785500285251715
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.004009414533215396
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.006183861647760554
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0025148402710704534
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.008269928053619573
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.007930072467502948
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.019385378821637687
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.01084869872945828
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.008584249798827192
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.23063500918735277
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0091085654478163
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.002542388547828045
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0048576506916255474
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0025301508016084273
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.005183544086599271
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.005905126762205719
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.013228561895494205
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.002692621285341194
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0031978095893048257
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.005681731703919291
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.008104830859211527
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.2653763818904248
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.12468733141297095
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.013932242206301577
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.006535836141944781
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.004121339835483308
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.012164423079823856
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.20200250996639985
+        }
+      ]
+    },
+    {
+      "episode": 10,
+      "gold": "elevator_up",
+      "pred": "stand",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.282630766134332,
+      "pairs": [
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.05122281719399096
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.08607540988795825
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.008860795115193438
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0023400855302131594
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.1432419480790279
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.06789959001384785
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.00423129398672007
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.03086557187851055
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0017295632569246002
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.02082082527727954
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.007745145484228357
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0041018687863986734
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.08367051659259786
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.002161194183854605
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0032953549396213485
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.00594995727120756
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.00569100781711641
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.255546265761047
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0061970641078551185
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.003339862478219927
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.11017673474813192
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.001524348252008954
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0005169511467786916
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0018175435939670071
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0018119294737286523
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0035575402079108306
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0035895471603954203
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.08201926777526533
+        }
+      ]
+    },
+    {
+      "episode": 11,
+      "gold": "walk_upstairs",
+      "pred": "walk_upstairs",
+      "correct": true,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.5289529626192704,
+      "pairs": [
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.08226393736046243
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.005483841509407578
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.09683229063588346
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.020853443254003203
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.016359782829851104
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.020013236861848215
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.000917532065253161
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0008816386767452602
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.1086062522727087
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0018781634688686882
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0009607052295070951
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.05258223591850754
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0022292047147341627
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0007025512318586611
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.002345858308810456
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0017042419364608093
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.11677905292788412
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.004462549759175433
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.2832821124529713
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.009062249785546112
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.003639793202167393
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.08662820444727333
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.05480066053312796
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.003503300419677052
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.002030147094759727
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.001846877793102013
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0073889581598827825
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.011961177149522235
+        }
+      ]
+    },
+    {
+      "episode": 36,
+      "gold": "elevator_up",
+      "pred": "stand",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.16780060220993778,
+      "pairs": [
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.03747360980799724
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.1380455844321044
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.027109581678383936
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.009372853805066077
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.00942454400700468
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.003945011256985612
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.006152947721989757
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.002464186102902142
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0014693812082560676
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0006884640874531567
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.005678000462290866
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0012260991443744564
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.00392305212508722
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0015918170250634987
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.11368540894578134
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.003882188687996748
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.01775263512536205
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.2606476225405647
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.04964980560551285
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0061532170663035
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.004197996489613645
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.00308642884276835
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.06053087919231239
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.030510335733728595
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.006351911888425643
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.14677981171301271
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.02349442636179325
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.024712198941865045
+        }
+      ]
+    },
+    {
+      "episode": 37,
+      "gold": "walk_upstairs",
+      "pred": "walk",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.021461355259646937,
+      "pairs": [
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.009811367968711009
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.009034594571701809
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0027877988346865857
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.08294415149552882
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0024796371652659917
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0023015691591565858
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0009897756881445366
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0005294803956961638
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0011045992641752806
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.002690840628959169
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0013461590074306112
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.003721335166315515
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0013280820714077375
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.001854428296793192
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0017947271025145859
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.00277272175068381
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0035933477060368477
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.3353002177069708
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.006455306608983993
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.27651237673623297
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.17617038865980045
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.010351092757020024
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.005624989906023696
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.005318043211836116
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.005966670272511316
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.016412157542975467
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.009325222919468827
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.021478917404968028
+        }
+      ]
+    },
+    {
+      "episode": 38,
+      "gold": "walk_downstairs",
+      "pred": "run",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.014166395553967237,
+      "pairs": [
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.015797023681021125
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.13835774741875867
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.018006241705259916
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.22957449567541302
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.015059013535372255
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.1389823514737033
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.003856695795050304
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.0035574738061293475
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0019261256769533652
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0010090362581089685
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0011155594871986318
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.0019492534203955146
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.004046419896667764
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0037307007373527674
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.002025900214565603
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.002203818672531691
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.34106844495054994
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.006980477252828768
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0025656305876240564
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.005484230481252444
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.015321613276133477
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.005567466888940325
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0059963800350133776
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.0016791910746136052
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.002527138813658984
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.007783106039115448
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.009483806845022293
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.014344656300765044
+        }
+      ]
+    },
+    {
+      "episode": 45,
+      "gold": "elevator_down",
+      "pred": "stand",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.06274476033307572,
+      "pairs": [
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.03347089370011617
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.01003250134847641
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.009532138082048901
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.09456304297048314
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.005091980732202218
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.007810979928161181
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0025628642792237285
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.003811700141664613
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.2876092204506785
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0031708650393050277
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.28676336859953494
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.002881806460584242
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.003062683556627652
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0015662592368873636
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.00165231707001163
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0008572094396575991
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0022498157472777575
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.010029423093933077
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.005422903162576673
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0014397647309888181
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0011483645572951924
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.003991908530159153
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.001698038993235931
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.012309252382284228
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.014325149680190089
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.02608093517666833
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.008199836257421005
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.15866477665230647
+        }
+      ]
+    },
+    {
+      "episode": 48,
+      "gold": "elevator_up",
+      "pred": "stand",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.041124917324990656,
+      "pairs": [
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.007932154392051955
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.018237220638650516
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.005976856803082099
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.1187413377039119
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.12235950112408356
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.002701379573368865
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.015210307366236226
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.0034431804429236462
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.007633162359172468
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.003189460342987423
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.0027079797551983263
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.001091415644932065
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0008088943312546205
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.26036082854854564
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0027923791545086825
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0017949835426045318
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.00829846535958819
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0014627123242195242
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.006435035371542182
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.013216229791346575
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0023606418040852334
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.2909549428963566
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.004603938390450386
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0013748303337595127
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.009216782403031261
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.006852869610735426
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.02734059476769622
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.052901915223676384
+        }
+      ]
+    },
+    {
+      "episode": 55,
+      "gold": "walk_downstairs",
+      "pred": "walk_downstairs",
+      "correct": true,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.5748548076390069,
+      "pairs": [
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.07202959462406679
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.022079472982001067
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.005333219211748126
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.05004632943123472
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.038265578150224855
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.009483829029917065
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.02224685356096233
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.012649335531017887
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.012236598554967185
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.034126674394924665
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.1123215840868868
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.12154769317567264
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.010792833292473693
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.18564002293440138
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.15534550744204603
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.008342409111148053
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.004754880750075605
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.010548773745301322
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0059718960609902415
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.005145105335299854
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.004862491218927442
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.004681318478086281
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0025819862998940875
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.017667904720394027
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0031487208075164025
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0035094443211809378
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.03727397337676384
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.02736596937187666
+        }
+      ]
+    },
+    {
+      "episode": 58,
+      "gold": "walk_upstairs",
+      "pred": "walk",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.1367088862673238,
+      "pairs": [
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.014377813718960757
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.004996192063761755
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.011550217040655746
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0031005630454554616
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.012993755005912402
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.023751943853737873
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.005290088976836577
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.005185682449388873
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.12216931687966766
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.012923143718198618
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0011703602675710565
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0015021022570814236
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.007659452151945128
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.20403669910572841
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.005491465129539861
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0020443788260752016
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.02663466208979682
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.007069026567401525
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0015579749205296117
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0019125272683835975
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.28755497026394455
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.011233959844457537
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.007986642237180312
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.007639974450932366
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.002584232131263623
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.1181393721373225
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.07339913660559048
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.016044346992680265
+        }
+      ]
+    },
+    {
+      "episode": 66,
+      "gold": "walk_upstairs",
+      "pred": "walk_upstairs",
+      "correct": true,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.6479709358329908,
+      "pairs": [
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.00642211707493895
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.07483883276715053
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.01711378507821732
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.10891959539931582
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.10886920245419096
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.003993382619996916
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0032817449396425275
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.01931998890799492
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0026954921576667844
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0008846014707023016
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0021554148102943646
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0007308038613239228
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.003140177667329101
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0013193703037684985
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.001745158891640729
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0016508037477386225
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.004866487983776736
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.015120084767756302
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.021211887508879677
+        },
+        {
+          "label": "walk_upstairs",
+          "is_gold_class": true,
+          "frac": 0.3553433052123335
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0848875390525498
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0041848442293543715
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.002763809468429262
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0027307579176717744
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.05314835245226848
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.01513229709652506
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.04827099373075005
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.035259168427792725
+        }
+      ]
+    },
+    {
+      "episode": 70,
+      "gold": "elevator_up",
+      "pred": "stand",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.2658745994160803,
+      "pairs": [
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.03266352412573192
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.009987523603861938
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.018710689434501614
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.12790374742399374
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.028345552317800515
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0011398904088409448
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0025919681644585354
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.005659988933814808
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.00045322786759653645
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.008681527080907463
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.011306170174674656
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.007494566604384386
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.12712965393504663
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.04220502213907293
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.11136323816296156
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.004891624202281247
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.021755854245819918
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.003757777830738499
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.100014630780601
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.1102150191517985
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.00897765111083265
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.02199851885950476
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0021687323241909432
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.000867923300099234
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.004016442526893663
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.006444693905179299
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.11616037989202203
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0630944614923901
+        }
+      ]
+    },
+    {
+      "episode": 72,
+      "gold": "elevator_up",
+      "pred": "elevator_up",
+      "correct": true,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.5798599321823215,
+      "pairs": [
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.02978907537912746
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.03409355380674437
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.024616007715541646
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.008971371318877618
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.009727335533319349
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.007259350320062367
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.1409046887944482
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.1138403441147236
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.012243027079494368
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0024776339069986853
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.004262881578643049
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.004856945630357508
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.001188290076784627
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0031209994338957637
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0038444713865547807
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.002193034038108865
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.004680968792181022
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.001928538034917064
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.020468681201245342
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.06921269540605653
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.021654241741378758
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.014049230792256322
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.05416864885433359
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.004549153268158313
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.06947320974981805
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.19930478729570295
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.12581011197744663
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.011310722772823181
+        }
+      ]
+    },
+    {
+      "episode": 74,
+      "gold": "walk_downstairs",
+      "pred": "rope_jump",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.02638758768813339,
+      "pairs": [
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.011984812466596377
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.2552490313474872
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.026746625581407845
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0034451597718734924
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.012984424427626194
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.09337810500126154
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.004564686631363528
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0010034620221762405
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0049070855637716616
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.004402641537729261
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.019797417579928332
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0020046658808313272
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.006588681363700354
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.01400795560895383
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.22969604490199663
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.038234224627282036
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.001884795583187882
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.15962073209022443
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0037202674966107345
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0208140015798453
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.007956057159083253
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0021245590281543016
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.008510705885803294
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0015302449055851835
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.042261789993791994
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.006885558900900482
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.005130279475744177
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.010565983587083104
+        }
+      ]
+    },
+    {
+      "episode": 79,
+      "gold": "walk_downstairs",
+      "pred": "walk_downstairs",
+      "correct": true,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.7945094239645565,
+      "pairs": [
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.019337465311753472
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.006454256923948933
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.022846088478753458
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.11204857796512517
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.006014562199072789
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.003133379119539114
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0011520792035200952
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.007964478279810139
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0011602734743419959
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0035834520221923083
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.005049963529491914
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0017243037200364586
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.14408169174775445
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.18344354809098104
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0026805024446862535
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.010318669838832359
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.010613015840721274
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0023276120347501808
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.005570397971332844
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.35493560616069586
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.007311714362633091
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0056354670925341434
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0030467661547803624
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.015856821696295025
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.02278238439507422
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.005862972179885694
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.006593943431056454
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.028470006330400872
+        }
+      ]
+    },
+    {
+      "episode": 88,
+      "gold": "elevator_up",
+      "pred": "stand",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.21561521956778512,
+      "pairs": [
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.023237062456704125
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.010243451275963357
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.019992373054877208
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0034703959842797534
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.009013548033069982
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.09405689399265221
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0028898132500426357
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0036955762472390876
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.003314142641807535
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.14055195804863718
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.004352887242751241
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0017291296180933463
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0028997538851922833
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.007832979018950356
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.07417393707861594
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.011410075813956843
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.008835104043998145
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.00438920889489977
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.2499631945488426
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.13810629490401247
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.004103900741678852
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0057086914913033445
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.004097504539368258
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.030605876277225132
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.0251027215194894
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.025719774307039055
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0047710663968552084
+        },
+        {
+          "label": "elevator_up",
+          "is_gold_class": true,
+          "frac": 0.08573268469245465
+        }
+      ]
+    },
+    {
+      "episode": 103,
+      "gold": "elevator_down",
+      "pred": "stand",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.04768245337752168,
+      "pairs": [
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.024336936036851945
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0215600529686578
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.1890688986355226
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.006018893212202254
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.012429382412854326
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.00251982011087813
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0016429026857464968
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.010587181181311755
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.005133081601396587
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0020437514699143517
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.006326773742528278
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.008692010716495151
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.22302671530959
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.02180947253042095
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.019532808181959013
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.24560181584236981
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.005852824125804055
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0026336553366719632
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.009434015644291333
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0028628260798222926
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.005987751106582319
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0013966471768998652
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.002488362266204912
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.00411163776270404
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.00773783686939578
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0016752681595025457
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.1316113769784192
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.02387730185500225
+        }
+      ]
+    },
+    {
+      "episode": 106,
+      "gold": "elevator_down",
+      "pred": "stand",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.40049139359211017,
+      "pairs": [
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.028650151899507686
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.013019813155461493
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.006459291459026231
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.10085934709519685
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.003414132473274848
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0603608900391246
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.002354689125686025
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.012233900430496642
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.002530754090546905
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.011010861122389547
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.008959876646504302
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0028204443050402856
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.13853946933899933
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.16263857710365745
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.004036139741599827
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.1781289604717317
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.003916198721443565
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.01241101829706391
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0034417505953944962
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0034183627318534137
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.11799932921409327
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0052526488865055525
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.06225325180872628
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.007816029812234
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.005942085316474824
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.021569711972652828
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0034960284264784376
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.01646628571883569
+        }
+      ]
+    },
+    {
+      "episode": 108,
+      "gold": "walk_downstairs",
+      "pred": "walk_downstairs",
+      "correct": true,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.6615382172904976,
+      "pairs": [
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.09886201894335901
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.01998864373716623
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.14735907030743223
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.008330846381081336
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.015617710923706441
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.009792434586093801
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.07875538491824016
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.017305159038094018
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0018789004693958633
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.011556256631032807
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0036585808730715736
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.001975905589376193
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.03205132055125605
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.029797290780532854
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.004505748001561666
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.003238779839546309
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.008115235770439242
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.053961738998972004
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.33656174312146614
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.017414636562052596
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.008895363202578072
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.003405520052494927
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.004600317149199824
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.007994223105689684
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.03271148021530832
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0049417732516469585
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.012763490973847066
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.023960426025358635
+        }
+      ]
+    },
+    {
+      "episode": 109,
+      "gold": "walk_downstairs",
+      "pred": "walk",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.06115657719737404,
+      "pairs": [
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.034816879477044135
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.10496457520212243
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.041936114705683605
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.03161080859305589
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.03341548070850697
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.019436953448758728
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.009426358093102362
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.025546709424534512
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.01254881989676238
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.01067880184023361
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.022175951780474407
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.08291151292765943
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0453915889178277
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.07266385378082517
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.011559443003886482
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.010300336635397506
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.006618419169026555
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.006165473851307617
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0038066539996592296
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.201326052285886
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.09535867606533688
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.012345239915373082
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.003913336869177085
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.040173106612683265
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.005098550957217502
+        },
+        {
+          "label": "walk_downstairs",
+          "is_gold_class": true,
+          "frac": 0.012382246035843534
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.027004887757993427
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.01642316804462053
+        }
+      ]
+    },
+    {
+      "episode": 121,
+      "gold": "elevator_down",
+      "pred": "stand",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.059927746498154424,
+      "pairs": [
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.008292501120902024
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.02178610236514536
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.06186157786210954
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.005719533425922582
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0014000452324398104
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.005482959471047002
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0010406681269590037
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0011888497653016437
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0009746694905411879
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0060362220228439775
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.001972398398652415
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0005591154935881
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.08422570126702211
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0016206910375591603
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.000420718358913996
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.21508817802606953
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.009090683908593317
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.006166769665076445
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0013048184136919998
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.3920750868629844
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.02009682491208552
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.004626083372063386
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.010970510497746793
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.003105170370805219
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0025127205727952105
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.07418768820598118
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.02449392932642119
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.03369978242673787
+        }
+      ]
+    },
+    {
+      "episode": 136,
+      "gold": "elevator_down",
+      "pred": "stand",
+      "correct": false,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.07565345342572016,
+      "pairs": [
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.030731809009533376
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.023879050101977113
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.010512670423194021
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0023872036161774073
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.02036407830194558
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.005126046855045478
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.08495047125117981
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.012191651721383354
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0022869424505844397
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.19798415194256552
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.005805432701753782
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0031625456290581967
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.0045478669270009936
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.2901584258428827
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.007143987263235681
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.003506518254634229
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.004410802034725605
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0032587596320625832
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.00465112658900359
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.009985599787641148
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.003127285420678143
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0021974325943971418
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.004957243708216882
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.002394235653607139
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.18288901308412325
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.008833054749101297
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.04034653162791654
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.028210062826374994
+        }
+      ]
+    },
+    {
+      "episode": 194,
+      "gold": "elevator_down",
+      "pred": "elevator_down",
+      "correct": true,
+      "n_pairs": 28,
+      "n_gold_pairs": 4,
+      "uniform_share": 0.14285714285714285,
+      "gold_class_attention_frac": 0.6807405758257132,
+      "pairs": [
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.020803426018061833
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.02393736878622672
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.02060858458953386
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.004698889747715109
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.16246094762743207
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.005116633706569835
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.005465164504496327
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.0025748523013996447
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0006326873520880904
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.0005972971427714408
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.003928291379547256
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.004671066423973563
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.0024142161514416225
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.26501701630049884
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.18015009487583342
+        },
+        {
+          "label": "elevator_down",
+          "is_gold_class": true,
+          "frac": 0.07311251702194889
+        },
+        {
+          "label": "sit",
+          "is_gold_class": false,
+          "frac": 0.005587679031412392
+        },
+        {
+          "label": "run",
+          "is_gold_class": false,
+          "frac": 0.005534140298748055
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.00363679605042082
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.0013359007866781967
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.004588791925126618
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.0921792828674956
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.04033733112849715
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.020353510441235616
+        },
+        {
+          "label": "stand",
+          "is_gold_class": false,
+          "frac": 0.024331061782559255
+        },
+        {
+          "label": "lie",
+          "is_gold_class": false,
+          "frac": 0.004019642582641082
+        },
+        {
+          "label": "rope_jump",
+          "is_gold_class": false,
+          "frac": 0.005178077942565949
+        },
+        {
+          "label": "walk",
+          "is_gold_class": false,
+          "frac": 0.016728731233080732
+        }
+      ]
+    }
+  ]
+}
