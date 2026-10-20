@@ -1,0 +1,7 @@
+# Split A — Locomotion stress (PDF Part 2.4)
+name: A
+description: "High-energy periodic motion held out from training; only seen as K-shot support."
+unseen_labels:
+  - run
+  - rope_jump
+  - cycle

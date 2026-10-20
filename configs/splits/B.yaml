@@ -1,0 +1,6 @@
+# Split B — Posture / transition stress (PDF Part 2.4)
+name: B
+description: "Quasi-static and transition activities held out from training."
+unseen_labels:
+  - lie
+  - waist_bend

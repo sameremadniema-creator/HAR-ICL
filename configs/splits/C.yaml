@@ -1,0 +1,8 @@
+# Split C — Dataset-unique stress (HEADLINE) (PDF Part 2.4)
+name: C
+description: "Dataset-unique labels with zero cross-dataset signal. Headline benchmark."
+unseen_labels:
+  - iron
+  - nordic_walk
+  - elevator_up
+  - elevator_down
