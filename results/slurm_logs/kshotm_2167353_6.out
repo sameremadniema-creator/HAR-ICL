@@ -1,0 +1,451 @@
+[cuda-check] torch 2.3.1+cu121 | built for CUDA 12.1 | cuda_available=True
+[cuda-check] OK: using NVIDIA GeForce RTX 3090 (23 GB)
+############### K-SHOT (matched) seed 2025  K={1 2 8} ###############
+----- K=1 -----
+===== train_k1 =====
+[gpt2-lora] trainable 78,606,336 / 203,457,024 (38.635%)
+{"ts": 1783100000.176927, "epoch": 0, "train_loss": 3.1142187834635626, "val_loss": 2.8578691705067953, "val_macro_f1": 0.15400614490481565, "val_seen_f1": 0.15400614490481565, "val_unseen_f1": 0.0, "val_blended_f1": 0.07700307245240783, "trainable_params": 78606336}
+[ep 1/15] tr_loss=3.1142 val_loss=2.8579 seen_F1=0.154 unseen_F1=0.000 blended=0.077
+{"ts": 1783100163.7368941, "epoch": 1, "train_loss": 2.862413874874895, "val_loss": 2.8365609963734943, "val_macro_f1": 0.16308126522370128, "val_seen_f1": 0.16308126522370128, "val_unseen_f1": 0.0, "val_blended_f1": 0.08154063261185064, "trainable_params": 78606336}
+[ep 2/15] tr_loss=2.8624 val_loss=2.8366 seen_F1=0.163 unseen_F1=0.000 blended=0.082
+{"ts": 1783100327.2929914, "epoch": 2, "train_loss": 2.810768910909213, "val_loss": 2.805739247004191, "val_macro_f1": 0.1342763069133108, "val_seen_f1": 0.1342763069133108, "val_unseen_f1": 0.0, "val_blended_f1": 0.0671381534566554, "trainable_params": 78606336}
+[ep 3/15] tr_loss=2.8108 val_loss=2.8057 seen_F1=0.134 unseen_F1=0.000 blended=0.067
+{"ts": 1783100489.5916457, "epoch": 3, "train_loss": 2.779787225025772, "val_loss": 2.7387311395009357, "val_macro_f1": 0.16967234310240878, "val_seen_f1": 0.16967234310240878, "val_unseen_f1": 0.0, "val_blended_f1": 0.08483617155120439, "trainable_params": 78606336}
+[ep 4/15] tr_loss=2.7798 val_loss=2.7387 seen_F1=0.170 unseen_F1=0.000 blended=0.085
+{"ts": 1783100652.881801, "epoch": 4, "train_loss": 1.7468618997318164, "val_loss": 0.34150777574939034, "val_macro_f1": 0.8839400530738968, "val_seen_f1": 0.8839400530738968, "val_unseen_f1": 0.0, "val_blended_f1": 0.4419700265369484, "trainable_params": 78606336}
+[ep 5/15] tr_loss=1.7469 val_loss=0.3415 seen_F1=0.884 unseen_F1=0.000 blended=0.442
+{"ts": 1783100816.1116993, "epoch": 5, "train_loss": 0.051539663694392474, "val_loss": 0.5536861424400316, "val_macro_f1": 0.8905499803788617, "val_seen_f1": 0.8905499803788617, "val_unseen_f1": 0.0, "val_blended_f1": 0.44527499018943084, "trainable_params": 78606336}
+[ep 6/15] tr_loss=0.0515 val_loss=0.5537 seen_F1=0.891 unseen_F1=0.000 blended=0.445
+{"ts": 1783100979.899329, "epoch": 6, "train_loss": 0.02961585549862288, "val_loss": 0.5306274309633591, "val_macro_f1": 0.9023580165720202, "val_seen_f1": 0.9023580165720202, "val_unseen_f1": 0.0, "val_blended_f1": 0.4511790082860101, "trainable_params": 78606336}
+[ep 7/15] tr_loss=0.0296 val_loss=0.5306 seen_F1=0.902 unseen_F1=0.000 blended=0.451
+{"ts": 1783101143.449247, "epoch": 7, "train_loss": 0.023873076421121284, "val_loss": 0.6248345682059153, "val_macro_f1": 0.8990341411090116, "val_seen_f1": 0.8990341411090116, "val_unseen_f1": 0.0, "val_blended_f1": 0.4495170705545058, "trainable_params": 78606336}
+[ep 8/15] tr_loss=0.0239 val_loss=0.6248 seen_F1=0.899 unseen_F1=0.000 blended=0.450
+{"ts": 1783101305.9803245, "epoch": 8, "train_loss": 0.02751324926751815, "val_loss": 0.6184865227938765, "val_macro_f1": 0.8872859724852135, "val_seen_f1": 0.8872859724852135, "val_unseen_f1": 0.0, "val_blended_f1": 0.44364298624260673, "trainable_params": 78606336}
+[ep 9/15] tr_loss=0.0275 val_loss=0.6185 seen_F1=0.887 unseen_F1=0.000 blended=0.444
+{"ts": 1783101468.4989414, "epoch": 9, "train_loss": 0.028152022512137477, "val_loss": 0.58400079287129, "val_macro_f1": 0.8893888651878185, "val_seen_f1": 0.8893888651878185, "val_unseen_f1": 0.0, "val_blended_f1": 0.44469443259390923, "trainable_params": 78606336}
+[ep 10/15] tr_loss=0.0282 val_loss=0.5840 seen_F1=0.889 unseen_F1=0.000 blended=0.445
+{"ts": 1783101631.0587673, "epoch": 10, "train_loss": 0.02594583599132556, "val_loss": 0.5133041951669051, "val_macro_f1": 0.8912079242636746, "val_seen_f1": 0.8912079242636746, "val_unseen_f1": 0.0, "val_blended_f1": 0.4456039621318373, "trainable_params": 78606336}
+[ep 11/15] tr_loss=0.0259 val_loss=0.5133 seen_F1=0.891 unseen_F1=0.000 blended=0.446
+{"ts": 1783101793.6096492, "epoch": 11, "train_loss": 0.02148237962983718, "val_loss": 0.725053861980147, "val_macro_f1": 0.879575634096227, "val_seen_f1": 0.879575634096227, "val_unseen_f1": 0.0, "val_blended_f1": 0.4397878170481135, "trainable_params": 78606336}
+[ep 12/15] tr_loss=0.0215 val_loss=0.7251 seen_F1=0.880 unseen_F1=0.000 blended=0.440
+{"ts": 1783101956.4380379, "epoch": 12, "train_loss": 0.023567796644395504, "val_loss": 0.575628899508653, "val_macro_f1": 0.9009592518194306, "val_seen_f1": 0.9009592518194306, "val_unseen_f1": 0.0, "val_blended_f1": 0.4504796259097153, "trainable_params": 78606336}
+[ep 13/15] tr_loss=0.0236 val_loss=0.5756 seen_F1=0.901 unseen_F1=0.000 blended=0.450
+{"ts": 1783102119.0538971, "epoch": 13, "train_loss": 0.01582528262593127, "val_loss": 0.5798744949247097, "val_macro_f1": 0.8952381195434335, "val_seen_f1": 0.8952381195434335, "val_unseen_f1": 0.0, "val_blended_f1": 0.44761905977171673, "trainable_params": 78606336}
+[ep 14/15] tr_loss=0.0158 val_loss=0.5799 seen_F1=0.895 unseen_F1=0.000 blended=0.448
+{"ts": 1783102281.6856592, "epoch": 14, "train_loss": 0.013421819525762674, "val_loss": 0.6653510662566169, "val_macro_f1": 0.9063109847384041, "val_seen_f1": 0.9063109847384041, "val_unseen_f1": 0.0, "val_blended_f1": 0.45315549236920205, "trainable_params": 78606336}
+[ep 15/15] tr_loss=0.0134 val_loss=0.6654 seen_F1=0.906 unseen_F1=0.000 blended=0.453
+[overfit-check] OVERFIT | epochs=15 train_final=0.0134 val_min=0.3415 val_final=0.6654 monitor_peak=0.4532 monitor_final=0.4532 | val_loss rose +0.32 above its min; train_loss~0 with train/val gap 0.65 (memorisation)
+[1;34mwandb[0m: 
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync wandb/wandb/offline-run-20260703_183037-9uf7czo4[0m
+{
+  "best_val_blended_f1": 0.45315549236920205,
+  "test_macro_f1": 0.6439956990290647,
+  "test_seen_f1": 0.9196841194931431,
+  "test_unseen_f1": 0.42580213903743314,
+  "test_unseen_acc": 0.26666666666666666,
+  "test_per_class_f1": {
+    "elevator_down": 0.4090909090909091,
+    "elevator_up": 0.5862068965517241,
+    "lie": 1.0,
+    "rope_jump": 0.782608695652174,
+    "run": 0.7887323943661971,
+    "sit": 0.7088607594936709,
+    "stand": 0.5960264900662252,
+    "walk": 0.8605200945626478,
+    "walk_downstairs": 0.29411764705882354,
+    "walk_upstairs": 0.41379310344827586
+  },
+  "test_n": 600,
+  "cfg": {
+    "model": {
+      "name": "gpt2",
+      "context_length": 1024
+    },
+    "special_tokens": {
+      "bos": "<BOS_SIG>",
+      "act": "<ACT>",
+      "sep": "<SEP>",
+      "query": "<QUERY>",
+      "ans": "<ANS>",
+      "pad": "<PAD>"
+    },
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "target_modules": [
+        "c_attn"
+      ]
+    },
+    "prompt": {
+      "k_shot": 4,
+      "max_distractors": 6,
+      "shuffle_support": true,
+      "always_include_gold_class": true,
+      "label_randomization": true
+    },
+    "optim": {
+      "lr": 0.0002,
+      "weight_decay": 0.0,
+      "warmup_steps": 100
+    },
+    "train": {
+      "batch_size": 8,
+      "epochs": 20,
+      "grad_accum": 4,
+      "grad_clip": 1.0,
+      "eval_every_epoch": true,
+      "loss_mask": "answer_only"
+    },
+    "name": "gpt2_k4"
+  },
+  "trainable_params": 78606336,
+  "total_params": 203457024
+}
+===== eval_k1 =====
+{
+  "split": "C",
+  "k_shot": 1,
+  "n_test": 2224,
+  "test_loss": 3.322458141609032,
+  "overall_macro_f1": 0.6700325828535689,
+  "seen_macro_f1": 0.9130954749636487,
+  "unseen_macro_f1": 0.48308798956440846,
+  "seen_acc": 0.94469746258946,
+  "unseen_acc": 0.314410480349345,
+  "unseen_per_class_f1": {
+    "elevator_down": 0.4864864864864865,
+    "elevator_up": 0.592964824120603,
+    "walk_downstairs": 0.3813559322033898,
+    "walk_upstairs": 0.4715447154471545
+  },
+  "per_class_f1": {
+    "elevator_down": 0.4864864864864865,
+    "elevator_up": 0.592964824120603,
+    "lie": 0.987012987012987,
+    "rope_jump": 0.8846153846153846,
+    "run": 0.8016528925619835,
+    "sit": 0.6726190476190477,
+    "stand": 0.5673249551166966,
+    "walk": 0.8547486033519553,
+    "walk_downstairs": 0.3813559322033898,
+    "walk_upstairs": 0.4715447154471545
+  },
+  "overall_ci": {
+    "point": 0.6700325828535689,
+    "lo": 0.6483218946026753,
+    "hi": 0.6904740510577985,
+    "n_resamples": 1000
+  },
+  "chance": {
+    "unseen_macro_f1": 0.2482,
+    "unseen_acc": 0.1419,
+    "seen_macro_f1": 0.1473,
+    "seen_acc": 0.1662,
+    "reps": 50
+  }
+}
+  "seen_macro_f1": 0.9130954749636487,
+  "unseen_macro_f1": 0.48308798956440846,
+  "unseen_acc": 0.314410480349345,
+    "unseen_macro_f1": 0.2482,
+----- K=2 -----
+===== train_k2 =====
+[gpt2-lora] trainable 78,606,336 / 203,457,024 (38.635%)
+{"ts": 1783102625.7507725, "epoch": 0, "train_loss": 3.0930510950921932, "val_loss": 2.8689926274617514, "val_macro_f1": 0.14755883515438045, "val_seen_f1": 0.14755883515438045, "val_unseen_f1": 0.0, "val_blended_f1": 0.07377941757719023, "trainable_params": 78606336}
+[ep 1/15] tr_loss=3.0931 val_loss=2.8690 seen_F1=0.148 unseen_F1=0.000 blended=0.074
+{"ts": 1783102926.0866914, "epoch": 1, "train_loss": 2.865032270811176, "val_loss": 2.838721211751302, "val_macro_f1": 0.14852301435875628, "val_seen_f1": 0.14852301435875628, "val_unseen_f1": 0.0, "val_blended_f1": 0.07426150717937814, "trainable_params": 78606336}
+[ep 2/15] tr_loss=2.8650 val_loss=2.8387 seen_F1=0.149 unseen_F1=0.000 blended=0.074
+{"ts": 1783103225.6931925, "epoch": 2, "train_loss": 2.8086408570284918, "val_loss": 2.7789568169911703, "val_macro_f1": 0.1560342988120663, "val_seen_f1": 0.1560342988120663, "val_unseen_f1": 0.0, "val_blended_f1": 0.07801714940603315, "trainable_params": 78606336}
+[ep 3/15] tr_loss=2.8086 val_loss=2.7790 seen_F1=0.156 unseen_F1=0.000 blended=0.078
+{"ts": 1783103525.8794923, "epoch": 3, "train_loss": 2.5340148656978765, "val_loss": 1.8765739091237386, "val_macro_f1": 0.23107368688719734, "val_seen_f1": 0.23107368688719734, "val_unseen_f1": 0.0, "val_blended_f1": 0.11553684344359867, "trainable_params": 78606336}
+[ep 4/15] tr_loss=2.5340 val_loss=1.8766 seen_F1=0.231 unseen_F1=0.000 blended=0.116
+{"ts": 1783103827.0060172, "epoch": 4, "train_loss": 0.6672806668414983, "val_loss": 0.5142429339683925, "val_macro_f1": 0.8824069853652842, "val_seen_f1": 0.8824069853652842, "val_unseen_f1": 0.0, "val_blended_f1": 0.4412034926826421, "trainable_params": 78606336}
+[ep 5/15] tr_loss=0.6673 val_loss=0.5142 seen_F1=0.882 unseen_F1=0.000 blended=0.441
+{"ts": 1783104128.404303, "epoch": 5, "train_loss": 0.03286992230163149, "val_loss": 0.6287832951969661, "val_macro_f1": 0.8875924166934412, "val_seen_f1": 0.8875924166934412, "val_unseen_f1": 0.0, "val_blended_f1": 0.4437962083467206, "trainable_params": 78606336}
+[ep 6/15] tr_loss=0.0329 val_loss=0.6288 seen_F1=0.888 unseen_F1=0.000 blended=0.444
+{"ts": 1783104429.9033334, "epoch": 6, "train_loss": 0.024709557005609315, "val_loss": 0.5561428142146906, "val_macro_f1": 0.8912012721260179, "val_seen_f1": 0.8912012721260179, "val_unseen_f1": 0.0, "val_blended_f1": 0.4456006360630089, "trainable_params": 78606336}
+[ep 7/15] tr_loss=0.0247 val_loss=0.5561 seen_F1=0.891 unseen_F1=0.000 blended=0.446
+{"ts": 1783104731.5092144, "epoch": 7, "train_loss": 0.018739868689373433, "val_loss": 0.704743606404445, "val_macro_f1": 0.8712049962018495, "val_seen_f1": 0.8712049962018495, "val_unseen_f1": 0.0, "val_blended_f1": 0.4356024981009248, "trainable_params": 78606336}
+[ep 8/15] tr_loss=0.0187 val_loss=0.7047 seen_F1=0.871 unseen_F1=0.000 blended=0.436
+{"ts": 1783105031.477105, "epoch": 8, "train_loss": 0.022167606669488766, "val_loss": 0.49824705323655505, "val_macro_f1": 0.9112457359015815, "val_seen_f1": 0.9112457359015815, "val_unseen_f1": 0.0, "val_blended_f1": 0.45562286795079077, "trainable_params": 78606336}
+[ep 9/15] tr_loss=0.0222 val_loss=0.4982 seen_F1=0.911 unseen_F1=0.000 blended=0.456
+{"ts": 1783105333.243112, "epoch": 9, "train_loss": 0.019017442505842717, "val_loss": 0.577341251255566, "val_macro_f1": 0.9114576959288896, "val_seen_f1": 0.9114576959288896, "val_unseen_f1": 0.0, "val_blended_f1": 0.4557288479644448, "trainable_params": 78606336}
+[ep 10/15] tr_loss=0.0190 val_loss=0.5773 seen_F1=0.911 unseen_F1=0.000 blended=0.456
+{"ts": 1783105634.8208804, "epoch": 10, "train_loss": 0.017473011644566036, "val_loss": 0.6059168048945867, "val_macro_f1": 0.8963902224171902, "val_seen_f1": 0.8963902224171902, "val_unseen_f1": 0.0, "val_blended_f1": 0.4481951112085951, "trainable_params": 78606336}
+[ep 11/15] tr_loss=0.0175 val_loss=0.6059 seen_F1=0.896 unseen_F1=0.000 blended=0.448
+{"ts": 1783105935.2058392, "epoch": 11, "train_loss": 0.0171658916308539, "val_loss": 0.552718735063748, "val_macro_f1": 0.9017460978000867, "val_seen_f1": 0.9017460978000867, "val_unseen_f1": 0.0, "val_blended_f1": 0.45087304890004337, "trainable_params": 78606336}
+[ep 12/15] tr_loss=0.0172 val_loss=0.5527 seen_F1=0.902 unseen_F1=0.000 blended=0.451
+{"ts": 1783106236.1449466, "epoch": 12, "train_loss": 0.01604801660297553, "val_loss": 0.7381966348405422, "val_macro_f1": 0.8895415667911424, "val_seen_f1": 0.8895415667911424, "val_unseen_f1": 0.0, "val_blended_f1": 0.4447707833955712, "trainable_params": 78606336}
+[ep 13/15] tr_loss=0.0160 val_loss=0.7382 seen_F1=0.890 unseen_F1=0.000 blended=0.445
+{"ts": 1783106536.7388303, "epoch": 13, "train_loss": 0.015852831717547866, "val_loss": 0.5048803282320478, "val_macro_f1": 0.9123516105540527, "val_seen_f1": 0.9123516105540527, "val_unseen_f1": 0.0, "val_blended_f1": 0.45617580527702634, "trainable_params": 78606336}
+[ep 14/15] tr_loss=0.0159 val_loss=0.5049 seen_F1=0.912 unseen_F1=0.000 blended=0.456
+{"ts": 1783106838.9539752, "epoch": 14, "train_loss": 0.015703550592619814, "val_loss": 0.6746084225756825, "val_macro_f1": 0.9005133547018745, "val_seen_f1": 0.9005133547018745, "val_unseen_f1": 0.0, "val_blended_f1": 0.4502566773509373, "trainable_params": 78606336}
+[ep 15/15] tr_loss=0.0157 val_loss=0.6746 seen_F1=0.901 unseen_F1=0.000 blended=0.450
+[overfit-check] OVERFIT | epochs=15 train_final=0.0157 val_min=0.4982 val_final=0.6746 monitor_peak=0.4562 monitor_final=0.4503 | val_loss rose +0.18 above its min; train_loss~0 with train/val gap 0.66 (memorisation)
+[1;34mwandb[0m: 
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync wandb/wandb/offline-run-20260703_191204-cy50q592[0m
+{
+  "best_val_blended_f1": 0.45617580527702634,
+  "test_macro_f1": 0.7304662100671393,
+  "test_seen_f1": 0.9296780104458547,
+  "test_unseen_f1": 0.5550514162454461,
+  "test_unseen_acc": 0.38333333333333336,
+  "test_per_class_f1": {
+    "elevator_down": 0.5714285714285714,
+    "elevator_up": 0.509090909090909,
+    "lie": 1.0,
+    "rope_jump": 1.0,
+    "run": 0.9032258064516129,
+    "sit": 0.7397260273972602,
+    "stand": 0.5850340136054422,
+    "walk": 0.8564705882352941,
+    "walk_downstairs": 0.5128205128205128,
+    "walk_upstairs": 0.6268656716417911
+  },
+  "test_n": 600,
+  "cfg": {
+    "model": {
+      "name": "gpt2",
+      "context_length": 1024
+    },
+    "special_tokens": {
+      "bos": "<BOS_SIG>",
+      "act": "<ACT>",
+      "sep": "<SEP>",
+      "query": "<QUERY>",
+      "ans": "<ANS>",
+      "pad": "<PAD>"
+    },
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "target_modules": [
+        "c_attn"
+      ]
+    },
+    "prompt": {
+      "k_shot": 4,
+      "max_distractors": 6,
+      "shuffle_support": true,
+      "always_include_gold_class": true,
+      "label_randomization": true
+    },
+    "optim": {
+      "lr": 0.0002,
+      "weight_decay": 0.0,
+      "warmup_steps": 100
+    },
+    "train": {
+      "batch_size": 8,
+      "epochs": 20,
+      "grad_accum": 4,
+      "grad_clip": 1.0,
+      "eval_every_epoch": true,
+      "loss_mask": "answer_only"
+    },
+    "name": "gpt2_k4"
+  },
+  "trainable_params": 78606336,
+  "total_params": 203457024
+}
+===== eval_k2 =====
+{
+  "split": "C",
+  "k_shot": 2,
+  "n_test": 2224,
+  "test_loss": 2.300757299162113,
+  "overall_macro_f1": 0.7173148030783264,
+  "seen_macro_f1": 0.9215284977437492,
+  "unseen_macro_f1": 0.5482244586804652,
+  "seen_acc": 0.9479505530253741,
+  "unseen_acc": 0.3784570596797671,
+  "unseen_per_class_f1": {
+    "elevator_down": 0.5,
+    "elevator_up": 0.5641025641025641,
+    "walk_downstairs": 0.5639097744360902,
+    "walk_upstairs": 0.5648854961832062
+  },
+  "per_class_f1": {
+    "elevator_down": 0.5,
+    "elevator_up": 0.5641025641025641,
+    "lie": 0.9973753280839895,
+    "rope_jump": 0.9751243781094527,
+    "run": 0.8858447488584474,
+    "sit": 0.717948717948718,
+    "stand": 0.5486111111111112,
+    "walk": 0.8553459119496856,
+    "walk_downstairs": 0.5639097744360902,
+    "walk_upstairs": 0.5648854961832062
+  },
+  "overall_ci": {
+    "point": 0.7173148030783264,
+    "lo": 0.6966615528169592,
+    "hi": 0.736762306107476,
+    "n_resamples": 1000
+  },
+  "chance": {
+    "unseen_macro_f1": 0.2444,
+    "unseen_acc": 0.1399,
+    "seen_macro_f1": 0.1459,
+    "seen_acc": 0.1645,
+    "reps": 50
+  }
+}
+  "seen_macro_f1": 0.9215284977437492,
+  "unseen_macro_f1": 0.5482244586804652,
+  "unseen_acc": 0.3784570596797671,
+    "unseen_macro_f1": 0.2444,
+----- K=8 -----
+===== train_k8 =====
+[gpt2-lora] trainable 78,606,336 / 203,457,024 (38.635%)
+{"ts": 1783107608.5555396, "epoch": 0, "train_loss": 3.086521116234381, "val_loss": 2.889721949895223, "val_macro_f1": 0.12842492996803953, "val_seen_f1": 0.12842492996803953, "val_unseen_f1": 0.0, "val_blended_f1": 0.06421246498401977, "trainable_params": 78606336}
+[ep 1/15] tr_loss=3.0865 val_loss=2.8897 seen_F1=0.128 unseen_F1=0.000 blended=0.064
+{"ts": 1783108318.1302683, "epoch": 1, "train_loss": 2.8646178979046697, "val_loss": 2.837995246251424, "val_macro_f1": 0.14811400738996797, "val_seen_f1": 0.14811400738996797, "val_unseen_f1": 0.0, "val_blended_f1": 0.07405700369498398, "trainable_params": 78606336}
+[ep 2/15] tr_loss=2.8646 val_loss=2.8380 seen_F1=0.148 unseen_F1=0.000 blended=0.074
+{"ts": 1783109028.9224243, "epoch": 2, "train_loss": 2.707410675427838, "val_loss": 2.3702132574717205, "val_macro_f1": 0.12682169882453848, "val_seen_f1": 0.12682169882453848, "val_unseen_f1": 0.0, "val_blended_f1": 0.06341084941226924, "trainable_params": 78606336}
+[ep 3/15] tr_loss=2.7074 val_loss=2.3702 seen_F1=0.127 unseen_F1=0.000 blended=0.063
+{"ts": 1783109738.7616007, "epoch": 3, "train_loss": 1.6628454676027231, "val_loss": 1.1281861072778703, "val_macro_f1": 0.33149227032088274, "val_seen_f1": 0.33149227032088274, "val_unseen_f1": 0.0, "val_blended_f1": 0.16574613516044137, "trainable_params": 78606336}
+[ep 4/15] tr_loss=1.6628 val_loss=1.1282 seen_F1=0.331 unseen_F1=0.000 blended=0.166
+{"ts": 1783110450.1320276, "epoch": 4, "train_loss": 0.36423183478493715, "val_loss": 0.523193941297941, "val_macro_f1": 0.896034343606484, "val_seen_f1": 0.896034343606484, "val_unseen_f1": 0.0, "val_blended_f1": 0.448017171803242, "trainable_params": 78606336}
+[ep 5/15] tr_loss=0.3642 val_loss=0.5232 seen_F1=0.896 unseen_F1=0.000 blended=0.448
+{"ts": 1783111162.1661336, "epoch": 5, "train_loss": 0.02634454534519006, "val_loss": 0.5763111523225477, "val_macro_f1": 0.8998656465606132, "val_seen_f1": 0.8998656465606132, "val_unseen_f1": 0.0, "val_blended_f1": 0.4499328232803066, "trainable_params": 78606336}
+[ep 6/15] tr_loss=0.0263 val_loss=0.5763 seen_F1=0.900 unseen_F1=0.000 blended=0.450
+{"ts": 1783111874.6596758, "epoch": 6, "train_loss": 0.023732919911104076, "val_loss": 0.5192427638671749, "val_macro_f1": 0.8990678658998671, "val_seen_f1": 0.8990678658998671, "val_unseen_f1": 0.0, "val_blended_f1": 0.44953393294993355, "trainable_params": 78606336}
+[ep 7/15] tr_loss=0.0237 val_loss=0.5192 seen_F1=0.899 unseen_F1=0.000 blended=0.450
+{"ts": 1783112585.2804902, "epoch": 7, "train_loss": 0.016985007074949224, "val_loss": 0.608613462811627, "val_macro_f1": 0.8965882059933525, "val_seen_f1": 0.8965882059933525, "val_unseen_f1": 0.0, "val_blended_f1": 0.44829410299667627, "trainable_params": 78606336}
+[ep 8/15] tr_loss=0.0170 val_loss=0.6086 seen_F1=0.897 unseen_F1=0.000 blended=0.448
+{"ts": 1783113296.0337765, "epoch": 8, "train_loss": 0.016678815293487914, "val_loss": 0.5098154576080075, "val_macro_f1": 0.9011804407435441, "val_seen_f1": 0.9011804407435441, "val_unseen_f1": 0.0, "val_blended_f1": 0.45059022037177204, "trainable_params": 78606336}
+[ep 9/15] tr_loss=0.0167 val_loss=0.5098 seen_F1=0.901 unseen_F1=0.000 blended=0.451
+{"ts": 1783114008.4221942, "epoch": 9, "train_loss": 0.017224113316236786, "val_loss": 0.5738050361318285, "val_macro_f1": 0.901357688857689, "val_seen_f1": 0.901357688857689, "val_unseen_f1": 0.0, "val_blended_f1": 0.4506788444288445, "trainable_params": 78606336}
+[ep 10/15] tr_loss=0.0172 val_loss=0.5738 seen_F1=0.901 unseen_F1=0.000 blended=0.451
+{"ts": 1783114720.597578, "epoch": 10, "train_loss": 0.01746202808951297, "val_loss": 0.5679876030887074, "val_macro_f1": 0.8973515880773945, "val_seen_f1": 0.8973515880773945, "val_unseen_f1": 0.0, "val_blended_f1": 0.44867579403869723, "trainable_params": 78606336}
+[ep 11/15] tr_loss=0.0175 val_loss=0.5680 seen_F1=0.897 unseen_F1=0.000 blended=0.449
+{"ts": 1783115428.6210759, "epoch": 11, "train_loss": 0.016579307196535647, "val_loss": 0.6091367350238822, "val_macro_f1": 0.8969876734418457, "val_seen_f1": 0.8969876734418457, "val_unseen_f1": 0.0, "val_blended_f1": 0.44849383672092286, "trainable_params": 78606336}
+[ep 12/15] tr_loss=0.0166 val_loss=0.6091 seen_F1=0.897 unseen_F1=0.000 blended=0.448
+{"ts": 1783116138.096373, "epoch": 12, "train_loss": 0.015368234604138626, "val_loss": 0.6124209204897852, "val_macro_f1": 0.898576313397009, "val_seen_f1": 0.898576313397009, "val_unseen_f1": 0.0, "val_blended_f1": 0.4492881566985045, "trainable_params": 78606336}
+[ep 13/15] tr_loss=0.0154 val_loss=0.6124 seen_F1=0.899 unseen_F1=0.000 blended=0.449
+{"ts": 1783116851.0603695, "epoch": 13, "train_loss": 0.016024238534927272, "val_loss": 0.5371078009212943, "val_macro_f1": 0.9141292544684446, "val_seen_f1": 0.9141292544684446, "val_unseen_f1": 0.0, "val_blended_f1": 0.4570646272342223, "trainable_params": 78606336}
+[ep 14/15] tr_loss=0.0160 val_loss=0.5371 seen_F1=0.914 unseen_F1=0.000 blended=0.457
+{"ts": 1783117564.1487553, "epoch": 14, "train_loss": 0.01459145487932939, "val_loss": 0.5415978787950735, "val_macro_f1": 0.908626936438294, "val_seen_f1": 0.908626936438294, "val_unseen_f1": 0.0, "val_blended_f1": 0.454313468219147, "trainable_params": 78606336}
+[ep 15/15] tr_loss=0.0146 val_loss=0.5416 seen_F1=0.909 unseen_F1=0.000 blended=0.454
+[overfit-check] OVERFIT | epochs=15 train_final=0.0146 val_min=0.5098 val_final=0.5416 monitor_peak=0.4571 monitor_final=0.4543 | train_loss~0 with train/val gap 0.53 (memorisation)
+[1;34mwandb[0m: 
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync wandb/wandb/offline-run-20260703_202817-mfzmx4j3[0m
+{
+  "best_val_blended_f1": 0.4570646272342223,
+  "test_macro_f1": 0.6733595280777488,
+  "test_seen_f1": 0.934413940509588,
+  "test_unseen_f1": 0.4375342267543877,
+  "test_unseen_acc": 0.29444444444444445,
+  "test_per_class_f1": {
+    "elevator_down": 0.2926829268292683,
+    "elevator_up": 0.4528301886792453,
+    "lie": 1.0,
+    "rope_jump": 0.9,
+    "run": 0.875,
+    "sit": 0.7848101265822784,
+    "stand": 0.5751633986928104,
+    "walk": 0.8484848484848485,
+    "walk_downstairs": 0.5128205128205128,
+    "walk_upstairs": 0.4918032786885246
+  },
+  "test_n": 600,
+  "cfg": {
+    "model": {
+      "name": "gpt2",
+      "context_length": 1024
+    },
+    "special_tokens": {
+      "bos": "<BOS_SIG>",
+      "act": "<ACT>",
+      "sep": "<SEP>",
+      "query": "<QUERY>",
+      "ans": "<ANS>",
+      "pad": "<PAD>"
+    },
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "target_modules": [
+        "c_attn"
+      ]
+    },
+    "prompt": {
+      "k_shot": 4,
+      "max_distractors": 6,
+      "shuffle_support": true,
+      "always_include_gold_class": true,
+      "label_randomization": true
+    },
+    "optim": {
+      "lr": 0.0002,
+      "weight_decay": 0.0,
+      "warmup_steps": 100
+    },
+    "train": {
+      "batch_size": 8,
+      "epochs": 20,
+      "grad_accum": 4,
+      "grad_clip": 1.0,
+      "eval_every_epoch": true,
+      "loss_mask": "answer_only"
+    },
+    "name": "gpt2_k4"
+  },
+  "trainable_params": 78606336,
+  "total_params": 203457024
+}
+===== eval_k8 =====
+{
+  "split": "C",
+  "k_shot": 8,
+  "n_test": 2224,
+  "test_loss": 1.9554795281897592,
+  "overall_macro_f1": 0.69649647227335,
+  "seen_macro_f1": 0.9251758599703551,
+  "unseen_macro_f1": 0.5013610804969835,
+  "seen_acc": 0.9512036434612883,
+  "unseen_acc": 0.33770014556040756,
+  "unseen_per_class_f1": {
+    "elevator_down": 0.4864864864864865,
+    "elevator_up": 0.46994535519125685,
+    "walk_downstairs": 0.48412698412698413,
+    "walk_upstairs": 0.5648854961832062
+  },
+  "per_class_f1": {
+    "elevator_down": 0.4864864864864865,
+    "elevator_up": 0.46994535519125685,
+    "lie": 0.9973753280839895,
+    "rope_jump": 0.9693877551020408,
+    "run": 0.8546255506607929,
+    "sit": 0.7423312883435583,
+    "stand": 0.5499124343257443,
+    "walk": 0.8458880442294402,
+    "walk_downstairs": 0.48412698412698413,
+    "walk_upstairs": 0.5648854961832062
+  },
+  "overall_ci": {
+    "point": 0.69649647227335,
+    "lo": 0.6748414215157895,
+    "hi": 0.7172771449456076,
+    "n_resamples": 1000
+  },
+  "chance": {
+    "unseen_macro_f1": 0.247,
+    "unseen_acc": 0.142,
+    "seen_macro_f1": 0.149,
+    "seen_acc": 0.1678,
+    "reps": 50
+  }
+}
+  "seen_macro_f1": 0.9251758599703551,
+  "unseen_macro_f1": 0.5013610804969835,
+  "unseen_acc": 0.33770014556040756,
+    "unseen_macro_f1": 0.247,
+[done] kshot matched seed 2025

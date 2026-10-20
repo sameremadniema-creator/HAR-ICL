@@ -1,0 +1,51 @@
+[cuda-check] torch 2.3.1+cu121 | built for CUDA 12.1 | cuda_available=True
+[cuda-check] OK: using NVIDIA GeForce RTX 3090 (23 GB)
+===== all-unseen eval seed 2025 =====
+{
+  "split": "C",
+  "k_shot": 4,
+  "n_test": 2224,
+  "test_loss": 2.9103705433871467,
+  "overall_macro_f1": 0.6346638002944603,
+  "seen_macro_f1": 0.8300316730731808,
+  "unseen_macro_f1": 0.4628972146957759,
+  "seen_acc": 0.6584255042290176,
+  "unseen_acc": 0.4643377001455604,
+  "unseen_per_class_f1": {
+    "elevator_down": 0.5238095238095238,
+    "elevator_up": 0.4244604316546763,
+    "walk_downstairs": 0.47474747474747475,
+    "walk_upstairs": 0.42857142857142855
+  },
+  "per_class_f1": {
+    "elevator_down": 0.42206235011990406,
+    "elevator_up": 0.33714285714285713,
+    "lie": 1.0,
+    "rope_jump": 0.98989898989899,
+    "run": 0.9948186528497409,
+    "sit": 0.784452296819788,
+    "stand": 0.640926640926641,
+    "walk": 0.5700934579439252,
+    "walk_downstairs": 0.32867132867132864,
+    "walk_upstairs": 0.2785714285714286
+  },
+  "overall_ci": {
+    "point": 0.6346638002944603,
+    "lo": 0.6179183741431519,
+    "hi": 0.6499402188781154,
+    "n_resamples": 1000
+  },
+  "chance": {
+    "unseen_macro_f1": 0.2479,
+    "unseen_acc": 0.2488,
+    "seen_macro_f1": 0.3314,
+    "seen_acc": 0.1996,
+    "reps": 50
+  }
+}
+  "unseen_macro_f1": 0.4628972146957759,
+  "unseen_acc": 0.4643377001455604,
+  "chance": {
+    "unseen_macro_f1": 0.2479,
+    "unseen_acc": 0.2488,
+[done] all-unseen seed 2025

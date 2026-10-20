@@ -1,0 +1,215 @@
+[cuda-check] torch 2.3.1+cu121 | built for CUDA 12.1 | cuda_available=True
+[cuda-check] OK: using NVIDIA GeForce RTX 3090 (23 GB)
+############### BASELINES (new z-norm) seed 1337 ###############
+===== protonet =====
+{
+  "model": "ProtoNet",
+  "split": "C",
+  "seed": 1337,
+  "k_shot": 4,
+  "episodes": 2000,
+  "overall_macro_f1": 0.6466440260948956,
+  "per_class_f1": {
+    "elevator_down": 0.13432835820895522,
+    "elevator_up": 0.1411764705882353,
+    "lie": 1.0,
+    "rope_jump": 0.9933774834437086,
+    "run": 0.9822485207100592,
+    "sit": 0.9321739130434783,
+    "stand": 0.36065573770491804,
+    "walk": 0.8238583410997204,
+    "walk_downstairs": 0.6345609065155807,
+    "walk_upstairs": 0.4640605296343001
+  },
+  "loss_tail": [
+    {
+      "episode": 1995,
+      "loss": 0.006851624697446823,
+      "acc": 1.0
+    },
+    {
+      "episode": 1996,
+      "loss": 0.003432850819081068,
+      "acc": 1.0
+    },
+    {
+      "episode": 1997,
+      "loss": 0.0021183015778660774,
+      "acc": 1.0
+    },
+    {
+      "episode": 1998,
+      "loss": 0.00026910012820735574,
+      "acc": 1.0
+    },
+    {
+      "episode": 1999,
+      "loss": 0.029475942254066467,
+      "acc": 0.9750000238418579
+    }
+  ]
+}
+===== simple_finetune =====
+{
+  "model": "SimpleFinetune (DeepConvLSTM)",
+  "split": "C",
+  "seed": 1337,
+  "k_shot": 4,
+  "n_test": 3300,
+  "n_train": 40,
+  "overall_macro_f1": 0.24418318512096238,
+  "per_class_f1": {
+    "elevator_down": 0.0,
+    "elevator_up": 0.0,
+    "lie": 0.5454545454545454,
+    "rope_jump": 0.02197802197802198,
+    "run": 0.17391304347826086,
+    "sit": 0.16370106761565836,
+    "stand": 0.5118110236220472,
+    "walk": 0.6086956521739131,
+    "walk_downstairs": 0.3048327137546468,
+    "walk_upstairs": 0.11144578313253012
+  }
+}
+===== attend =====
+{
+  "model": "Attend",
+  "split": "C",
+  "seed": 1337,
+  "n_test": 3300,
+  "overall_macro_f1": 0.4931035504077318,
+  "per_class_f1": {
+    "elevator_down": 0.0,
+    "elevator_up": 0.0,
+    "lie": 1.0,
+    "rope_jump": 0.9806451612903225,
+    "run": 0.9542857142857143,
+    "sit": 0.8715447154471545,
+    "stand": 0.4427083333333333,
+    "walk": 0.6818515797207936,
+    "walk_downstairs": 0.0,
+    "walk_upstairs": 0.0
+  },
+  "history_tail": [
+    {
+      "epoch": 27,
+      "train_loss": 0.012258752993032127,
+      "val_loss": 0.32294513534752056,
+      "val_acc": 0.9352112676056338
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.013926039481870376,
+      "val_loss": 0.34476232669444534,
+      "val_acc": 0.9313380281690141
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.011210041327293347,
+      "val_loss": 0.2998774313368518,
+      "val_acc": 0.9366197183098591
+    }
+  ]
+}
+===== deepconvlstm =====
+{
+  "model": "DeepConvLSTM",
+  "split": "C",
+  "seed": 1337,
+  "n_test": 3300,
+  "overall_macro_f1": 0.4966998283847509,
+  "per_class_f1": {
+    "elevator_down": 0.0,
+    "elevator_up": 0.0,
+    "lie": 1.0,
+    "rope_jump": 0.9202453987730062,
+    "run": 0.9882352941176471,
+    "sit": 0.8974789915966387,
+    "stand": 0.4814340588988476,
+    "walk": 0.6796045404613694,
+    "walk_downstairs": 0.0,
+    "walk_upstairs": 0.0
+  },
+  "history_tail": [
+    {
+      "epoch": 27,
+      "train_loss": 0.01637718692355162,
+      "val_loss": 0.22667432800000928,
+      "val_acc": 0.9366197183098591
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.01530827611672017,
+      "val_loss": 0.2664842926195337,
+      "val_acc": 0.9345070422535211
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.012792092791303646,
+      "val_loss": 0.34208484816456763,
+      "val_acc": 0.9345070422535211
+    }
+  ]
+}
+===== deepconvlstm_attn =====
+{
+  "model": "DeepConvLSTM-Attn",
+  "split": "C",
+  "seed": 1337,
+  "n_test": 3300,
+  "overall_macro_f1": 0.5096773823350674,
+  "per_class_f1": {
+    "elevator_down": 0.0,
+    "elevator_up": 0.0,
+    "lie": 1.0,
+    "rope_jump": 0.9933774834437086,
+    "run": 0.9767441860465116,
+    "sit": 0.9236111111111112,
+    "stand": 0.5300896286811779,
+    "walk": 0.6729514140681654,
+    "walk_downstairs": 0.0,
+    "walk_upstairs": 0.0
+  },
+  "history_tail": [
+    {
+      "epoch": 27,
+      "train_loss": 0.01305887884516933,
+      "val_loss": 0.20360525125386783,
+      "val_acc": 0.9580985915492958
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.010774702742856296,
+      "val_loss": 0.3067893019373591,
+      "val_acc": 0.9404929577464789
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.009578734232603458,
+      "val_loss": 0.3017280328359896,
+      "val_acc": 0.9330985915492958
+    }
+  ]
+}
+===== chronos_mlp =====
+{
+  "model": "Chronos+MLP (fallback encoder)",
+  "split": "C",
+  "seed": 1337,
+  "n_test": 3300,
+  "overall_macro_f1": 0.48402113391311,
+  "per_class_f1": {
+    "elevator_down": 0.0,
+    "elevator_up": 0.0,
+    "lie": 1.0,
+    "rope_jump": 0.8491620111731844,
+    "run": 0.9795918367346939,
+    "sit": 0.8762214983713354,
+    "stand": 0.4523809523809524,
+    "walk": 0.6828550404709345,
+    "walk_downstairs": 0.0,
+    "walk_upstairs": 0.0
+  },
+  "used_chronos_pretrained": false
+}
+[done] baselines seed 1337

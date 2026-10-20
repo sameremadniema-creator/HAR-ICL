@@ -1,0 +1,439 @@
+[cuda-check] torch 2.3.1+cu121 | built for CUDA 12.1 | cuda_available=True
+[cuda-check] OK: using NVIDIA GeForce RTX 3090 (23 GB)
+############### MATCHED seed 2025  (epochs=20 patience=15 lr=2e-4) ###############
+[normalise] refit on 16010 train-subject windows; per-channel std after: [1.0329999923706055, 0.9789999723434448, 0.9750000238418579, 0.953000009059906, 0.9350000023841858, 0.9509999752044678]
+[done] usc_had: 20769 windows -> /mnt/fast/nobackup/users/aa08742/har_icl/data/processed/usc_only_s2025
+  seen  (6): ['lie', 'rope_jump', 'run', 'sit', 'stand', 'walk']
+  unseen(4): ['elevator_up', 'elevator_down', 'walk_upstairs', 'walk_downstairs']
+  split-C counts: {'support_pool': 4682, 'test': 2224, 'train': 11786, 'val': 2077}
+[train_vqvae] batch_size overridden to 64
+[train_vqvae] config=vqvae_aux_contrast_t32 seed=2025 device=cuda
+{"ts": 1783075324.7209415, "epoch": 0, "step": 184, "lr": 5.9673913043478256e-05, "train_loss": 1.1008271085979093, "train_perplexity": 125.87546881385471, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 185.5791110989411, "entropy_bits": 7.535890518720895}, "val_loss": 0.5398322325711016, "val_total_loss": 5.795198893512621, "val_codebook_usage": {"num_codes": 512, "used": 307, "usage_frac": 0.599609375, "perplexity": 68.24160461668396, "entropy_bits": 6.092579665126733}}
+[epoch 1/200] train_loss=1.1008 perp=125.88/512 val_recon=0.5398 val_total=5.7952
+{"ts": 1783075327.7682061, "epoch": 1, "step": 368, "lr": 0.00011967391304347824, "train_loss": 0.7152019283410324, "train_perplexity": 45.502094797466114, "train_codebook_usage": {"num_codes": 512, "used": 328, "usage_frac": 0.640625, "perplexity": 55.11553199080916, "entropy_bits": 5.784387033800926}, "val_loss": 0.5310646635791861, "val_total_loss": 4.731592134380203, "val_codebook_usage": {"num_codes": 512, "used": 229, "usage_frac": 0.447265625, "perplexity": 38.68211250460408, "entropy_bits": 5.273594680206106}}
+[epoch 2/200] train_loss=0.7152 perp=45.50/512 val_recon=0.5311 val_total=4.7316
+{"ts": 1783075330.801436, "epoch": 2, "step": 552, "lr": 0.00017967391304347824, "train_loss": 0.6172006015220414, "train_perplexity": 44.07927694527999, "train_codebook_usage": {"num_codes": 512, "used": 280, "usage_frac": 0.546875, "perplexity": 48.95980257477997, "entropy_bits": 5.613525835414656}, "val_loss": 0.4963109406051179, "val_total_loss": 4.645620423896874, "val_codebook_usage": {"num_codes": 512, "used": 247, "usage_frac": 0.482421875, "perplexity": 55.020209431775086, "entropy_bits": 5.781889726101069}}
+[epoch 3/200] train_loss=0.6172 perp=44.08/512 val_recon=0.4963 val_total=4.6456
+{"ts": 1783075333.8229687, "epoch": 3, "step": 736, "lr": 0.00023967391304347823, "train_loss": 0.5444967209806909, "train_perplexity": 60.73332546068274, "train_codebook_usage": {"num_codes": 512, "used": 292, "usage_frac": 0.5703125, "perplexity": 68.40456126773526, "entropy_bits": 6.096020623199411}, "val_loss": 0.4703651801375856, "val_total_loss": 4.561437817565742, "val_codebook_usage": {"num_codes": 512, "used": 295, "usage_frac": 0.576171875, "perplexity": 78.7952797597453, "entropy_bits": 6.300037302345967}}
+[epoch 4/200] train_loss=0.5445 perp=60.73/512 val_recon=0.4704 val_total=4.5614
+{"ts": 1783075337.0008261, "epoch": 4, "step": 920, "lr": 0.00029967391304347825, "train_loss": 0.49130346472172637, "train_perplexity": 76.96634093574856, "train_codebook_usage": {"num_codes": 512, "used": 338, "usage_frac": 0.66015625, "perplexity": 88.88568593907269, "entropy_bits": 6.4738792024978675}, "val_loss": 0.4610402039864285, "val_total_loss": 4.5371429161435435, "val_codebook_usage": {"num_codes": 512, "used": 351, "usage_frac": 0.685546875, "perplexity": 88.74686945640661, "entropy_bits": 6.471624324258243}}
+[epoch 5/200] train_loss=0.4913 perp=76.97/512 val_recon=0.4610 val_total=4.5371
+{"ts": 1783075340.154691, "epoch": 5, "step": 1104, "lr": 0.00029998080894008683, "train_loss": 0.4558470310319377, "train_perplexity": 91.21693233821703, "train_codebook_usage": {"num_codes": 512, "used": 394, "usage_frac": 0.76953125, "perplexity": 107.12379806660748, "entropy_bits": 6.743135207105986}, "val_loss": 0.44696775265307054, "val_total_loss": 4.534900604100198, "val_codebook_usage": {"num_codes": 512, "used": 414, "usage_frac": 0.80859375, "perplexity": 95.48664033187553, "entropy_bits": 6.5772269926932445}}
+[epoch 6/200] train_loss=0.4558 perp=91.22/512 val_recon=0.4470 val_total=4.5349
+{"ts": 1783075343.1629727, "epoch": 6, "step": 1288, "lr": 0.00029992282070072336, "train_loss": 0.43336736767188366, "train_perplexity": 104.10718084418255, "train_codebook_usage": {"num_codes": 512, "used": 462, "usage_frac": 0.90234375, "perplexity": 123.79405635246714, "entropy_bits": 6.951798238764161}, "val_loss": 0.43611415926157193, "val_total_loss": 4.549171289343873, "val_codebook_usage": {"num_codes": 512, "used": 468, "usage_frac": 0.9140625, "perplexity": 101.24433253635087, "entropy_bits": 6.661697340729548}}
+[epoch 7/200] train_loss=0.4334 perp=104.11/512 val_recon=0.4361 val_total=4.5492
+{"ts": 1783075346.1637793, "epoch": 7, "step": 1472, "lr": 0.0002998260497596924, "train_loss": 0.40289085933371727, "train_perplexity": 121.9365582258805, "train_codebook_usage": {"num_codes": 512, "used": 503, "usage_frac": 0.982421875, "perplexity": 149.8330538437566, "entropy_bits": 7.227212113679148}, "val_loss": 0.4509028388894861, "val_total_loss": 4.541669034016609, "val_codebook_usage": {"num_codes": 512, "used": 497, "usage_frac": 0.970703125, "perplexity": 123.01461295520696, "entropy_bits": 6.942685893841583}}
+[epoch 8/200] train_loss=0.4029 perp=121.94/512 val_recon=0.4509 val_total=4.5417
+{"ts": 1783075349.1634402, "epoch": 8, "step": 1656, "lr": 0.0002996905212338974, "train_loss": 0.38395548449910205, "train_perplexity": 134.46641022226086, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 167.55476586882358, "entropy_bits": 7.388488912411001}, "val_loss": 0.46973518066585324, "val_total_loss": 4.546388696350039, "val_codebook_usage": {"num_codes": 512, "used": 494, "usage_frac": 0.96484375, "perplexity": 128.22083334673243, "entropy_bits": 7.002486880156633}}
+[epoch 9/200] train_loss=0.3840 perp=134.47/512 val_recon=0.4697 val_total=4.5464
+{"ts": 1783075352.1883318, "epoch": 9, "step": 1840, "lr": 0.00029951627029977486, "train_loss": 0.3770301225392715, "train_perplexity": 138.3049616191698, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 173.21853384289417, "entropy_bits": 7.436449491968134}, "val_loss": 0.4685284151019933, "val_total_loss": 4.608010839600946, "val_codebook_usage": {"num_codes": 512, "used": 496, "usage_frac": 0.96875, "perplexity": 119.53285281300326, "entropy_bits": 6.901263377658427}}
+[epoch 10/200] train_loss=0.3770 perp=138.30/512 val_recon=0.4685 val_total=4.6080
+{"ts": 1783075355.3524163, "epoch": 10, "step": 2024, "lr": 0.0002993033421841647, "train_loss": 0.3636663145102237, "train_perplexity": 142.48013554448667, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 178.96374502014646, "entropy_bits": 7.4835235416367745}, "val_loss": 0.4570195820742163, "val_total_loss": 4.553637019590397, "val_codebook_usage": {"num_codes": 512, "used": 493, "usage_frac": 0.962890625, "perplexity": 126.50506773339578, "entropy_bits": 6.98305136953538}}
+[epoch 11/200] train_loss=0.3637 perp=142.48/512 val_recon=0.4570 val_total=4.5536
+{"ts": 1783075358.4803915, "epoch": 11, "step": 2208, "lr": 0.0002990517921525716, "train_loss": 0.3561312680173179, "train_perplexity": 146.828184293664, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 185.7276282690844, "entropy_bits": 7.537044631876201}, "val_loss": 0.4338824097147829, "val_total_loss": 4.5311963449146635, "val_codebook_usage": {"num_codes": 512, "used": 484, "usage_frac": 0.9453125, "perplexity": 127.98675813332231, "entropy_bits": 6.999850742471645}}
+[epoch 12/200] train_loss=0.3561 perp=146.83/512 val_recon=0.4339 val_total=4.5312
+{"ts": 1783075361.55002, "epoch": 12, "step": 2392, "lr": 0.0002987616854948206, "train_loss": 0.3491039468663866, "train_perplexity": 150.8532537377399, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 190.85342052880583, "entropy_bits": 7.576321232947131}, "val_loss": 0.4353714101034457, "val_total_loss": 4.510568329274339, "val_codebook_usage": {"num_codes": 512, "used": 484, "usage_frac": 0.9453125, "perplexity": 133.63597305319792, "entropy_bits": 7.0621646044704995}}
+[epoch 13/200] train_loss=0.3491 perp=150.85/512 val_recon=0.4354 val_total=4.5106
+{"ts": 1783075364.6294239, "epoch": 13, "step": 2576, "lr": 0.0002984330975081114, "train_loss": 0.3474322150501868, "train_perplexity": 153.44711755669636, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 195.14375465337622, "entropy_bits": 7.608393481530424}, "val_loss": 0.4325543334416159, "val_total_loss": 4.562558401417261, "val_codebook_usage": {"num_codes": 512, "used": 480, "usage_frac": 0.9375, "perplexity": 134.54291421646516, "entropy_bits": 7.07192260235133}}
+[epoch 14/200] train_loss=0.3474 perp=153.45/512 val_recon=0.4326 val_total=4.5626
+{"ts": 1783075367.6781206, "epoch": 14, "step": 2760, "lr": 0.0002980661134774747, "train_loss": 0.3439740859296011, "train_perplexity": 154.81729868183965, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 196.25664685844583, "entropy_bits": 7.616597706083845}, "val_loss": 0.44655523803327224, "val_total_loss": 4.5648679219017705, "val_codebook_usage": {"num_codes": 512, "used": 482, "usage_frac": 0.94140625, "perplexity": 135.72375356253147, "entropy_bits": 7.084529424517503}}
+[epoch 15/200] train_loss=0.3440 perp=154.82/512 val_recon=0.4466 val_total=4.5649
+{"ts": 1783075370.698656, "epoch": 15, "step": 2944, "lr": 0.00029766082865363664, "train_loss": 0.3414323874141859, "train_perplexity": 155.1637651609338, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 198.70573677645746, "entropy_bits": 7.634489714599205}, "val_loss": 0.4348492163511914, "val_total_loss": 4.585968968612274, "val_codebook_usage": {"num_codes": 512, "used": 487, "usage_frac": 0.951171875, "perplexity": 137.1615862787391, "entropy_bits": 7.099732684078063}}
+[epoch 16/200] train_loss=0.3414 perp=155.16/512 val_recon=0.4348 val_total=4.5860
+{"ts": 1783075373.683881, "epoch": 16, "step": 3128, "lr": 0.0002972173482282965, "train_loss": 0.339341235468569, "train_perplexity": 154.05172721199366, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 198.0173557032161, "entropy_bits": 7.629483074067631}, "val_loss": 0.46308474602392075, "val_total_loss": 4.578019031608226, "val_codebook_usage": {"num_codes": 512, "used": 484, "usage_frac": 0.9453125, "perplexity": 139.06815719881828, "entropy_bits": 7.1196483097958545}}
+[epoch 17/200] train_loss=0.3393 perp=154.05/512 val_recon=0.4631 val_total=4.5780
+{"ts": 1783075376.6783655, "epoch": 17, "step": 3312, "lr": 0.0002967357873068241, "train_loss": 0.33641801572040375, "train_perplexity": 156.35907546333644, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 198.71787386256082, "entropy_bits": 7.6345778327354665}, "val_loss": 0.4353773480152992, "val_total_loss": 4.566893696957158, "val_codebook_usage": {"num_codes": 512, "used": 477, "usage_frac": 0.931640625, "perplexity": 133.87031264111462, "entropy_bits": 7.064692250854399}}
+[epoch 18/200] train_loss=0.3364 perp=156.36/512 val_recon=0.4354 val_total=4.5669
+{"ts": 1783075379.6884499, "epoch": 18, "step": 3496, "lr": 0.0002962162708783841, "train_loss": 0.33415333809250075, "train_perplexity": 156.07540669648543, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 199.71962875534933, "entropy_bits": 7.641832319834386}, "val_loss": 0.43939577926938556, "val_total_loss": 4.563049888519008, "val_codebook_usage": {"num_codes": 512, "used": 479, "usage_frac": 0.935546875, "perplexity": 135.80381514330915, "entropy_bits": 7.085380199629963}}
+[epoch 19/200] train_loss=0.3342 perp=156.08/512 val_recon=0.4394 val_total=4.5630
+{"ts": 1783075382.688548, "epoch": 19, "step": 3680, "lr": 0.0002956589337834952, "train_loss": 0.33152287781400525, "train_perplexity": 157.18038894819176, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 200.21978932949727, "entropy_bits": 7.645440764131301}, "val_loss": 0.45007719311882916, "val_total_loss": 4.560706814723228, "val_codebook_usage": {"num_codes": 512, "used": 483, "usage_frac": 0.943359375, "perplexity": 133.40685556784524, "entropy_bits": 7.0596889960243585}}
+[epoch 20/200] train_loss=0.3315 perp=157.18/512 val_recon=0.4501 val_total=4.5607
+{"ts": 1783075385.7012885, "epoch": 20, "step": 3864, "lr": 0.00029506392067903245, "train_loss": 0.3282964817531731, "train_perplexity": 156.25700735009235, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 199.37717199398318, "entropy_bits": 7.639356425306177}, "val_loss": 0.44250926062945395, "val_total_loss": 4.540505289400088, "val_codebook_usage": {"num_codes": 512, "used": 481, "usage_frac": 0.939453125, "perplexity": 136.2508240123408, "entropy_bits": 7.090121144764641}}
+[epoch 21/200] train_loss=0.3283 perp=156.26/512 val_recon=0.4425 val_total=4.5405
+{"ts": 1783075388.7105014, "epoch": 21, "step": 4048, "lr": 0.00029443138600068107, "train_loss": 0.3268779632837876, "train_perplexity": 157.40810551850691, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 200.58851985174758, "entropy_bits": 7.648095229289652}, "val_loss": 0.4428161247976422, "val_total_loss": 4.5874183840285605, "val_codebook_usage": {"num_codes": 512, "used": 476, "usage_frac": 0.9296875, "perplexity": 138.56356086651653, "entropy_bits": 7.114404100431608}}
+[epoch 22/200] train_loss=0.3269 perp=157.41/512 val_recon=0.4428 val_total=4.5874
+{"ts": 1783075391.7279685, "epoch": 22, "step": 4232, "lr": 0.00029376149392285305, "train_loss": 0.3251892486587167, "train_perplexity": 158.401610084202, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 201.83449018397536, "entropy_bits": 7.657028918062693}, "val_loss": 0.418875205296024, "val_total_loss": 4.517076925411785, "val_codebook_usage": {"num_codes": 512, "used": 476, "usage_frac": 0.9296875, "perplexity": 128.6518531654291, "entropy_bits": 7.007328428294697}}
+[epoch 23/200] train_loss=0.3252 perp=158.40/512 val_recon=0.4189 val_total=4.5171
+{"ts": 1783075394.7751222, "epoch": 23, "step": 4416, "lr": 0.0002930544183160756, "train_loss": 0.32650073836355104, "train_perplexity": 158.14741225864577, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 202.47362484896803, "entropy_bits": 7.66159017788133}, "val_loss": 0.4228783755100901, "val_total_loss": 4.562506712452977, "val_codebook_usage": {"num_codes": 512, "used": 471, "usage_frac": 0.919921875, "perplexity": 127.05483172940812, "entropy_bits": 6.989307430018499}}
+[epoch 24/200] train_loss=0.3265 perp=158.15/512 val_recon=0.4229 val_total=4.5625
+{"ts": 1783075397.7943327, "epoch": 24, "step": 4600, "lr": 0.0002923103427018628, "train_loss": 0.3233147611760575, "train_perplexity": 157.6704853306646, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 202.3604147182136, "entropy_bits": 7.660783290700352}, "val_loss": 0.4375653176868427, "val_total_loss": 4.599753335512884, "val_codebook_usage": {"num_codes": 512, "used": 469, "usage_frac": 0.916015625, "perplexity": 134.2031649869971, "entropy_bits": 7.068274885584074}}
+[epoch 25/200] train_loss=0.3233 perp=157.67/512 val_recon=0.4376 val_total=4.5998
+{"ts": 1783075400.8050911, "epoch": 25, "step": 4784, "lr": 0.00029152946020508303, "train_loss": 0.32208972047690465, "train_perplexity": 157.6552916817043, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 200.80440437018993, "entropy_bits": 7.6496471029545745}, "val_loss": 0.4308744244426345, "val_total_loss": 4.5577545232593755, "val_codebook_usage": {"num_codes": 512, "used": 472, "usage_frac": 0.921875, "perplexity": 133.3517219278767, "entropy_bits": 7.059092643840687}}
+[epoch 26/200] train_loss=0.3221 perp=157.66/512 val_recon=0.4309 val_total=4.5578
+{"ts": 1783075403.8237975, "epoch": 26, "step": 4968, "lr": 0.0002907119735038331, "train_loss": 0.31929825707946136, "train_perplexity": 157.7467801467232, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 201.31090139323481, "entropy_bits": 7.653281489009219}, "val_loss": 0.42961238127526435, "val_total_loss": 4.559398555388287, "val_codebook_usage": {"num_codes": 512, "used": 472, "usage_frac": 0.921875, "perplexity": 130.07005456194125, "entropy_bits": 7.023145044930213}}
+[epoch 27/200] train_loss=0.3193 perp=157.75/512 val_recon=0.4296 val_total=4.5594
+{"ts": 1783075406.8436975, "epoch": 27, "step": 5152, "lr": 0.0002898580947768329, "train_loss": 0.3202528604913665, "train_perplexity": 157.07485671665358, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 200.82577012464893, "entropy_bits": 7.649800598732479}, "val_loss": 0.4078996725036051, "val_total_loss": 4.5684242121118395, "val_codebook_usage": {"num_codes": 512, "used": 467, "usage_frac": 0.912109375, "perplexity": 127.41576869584934, "entropy_bits": 6.993400023189471}}
+[epoch 28/200] train_loss=0.3203 perp=157.07/512 val_recon=0.4079 val_total=4.5684
+{"ts": 1783075409.8874233, "epoch": 28, "step": 5336, "lr": 0.0002889680456483551, "train_loss": 0.3204317159302857, "train_perplexity": 156.80809841985288, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 200.7955064910169, "entropy_bits": 7.649583174025247}, "val_loss": 0.4088908501057296, "val_total_loss": 4.516365950418655, "val_codebook_usage": {"num_codes": 512, "used": 467, "usage_frac": 0.912109375, "perplexity": 127.27853377956725, "entropy_bits": 6.991845311125688}}
+[epoch 29/200] train_loss=0.3204 perp=156.81/512 val_recon=0.4089 val_total=4.5164
+{"ts": 1783075412.8979337, "epoch": 29, "step": 5520, "lr": 0.0002880420571307019, "train_loss": 0.3180831250046258, "train_perplexity": 157.31340959797734, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 200.6357253637789, "entropy_bits": 7.648434706074699}, "val_loss": 0.4308294586175456, "val_total_loss": 4.563933622395125, "val_codebook_usage": {"num_codes": 512, "used": 475, "usage_frac": 0.927734375, "perplexity": 128.96215250936365, "entropy_bits": 7.010803919000357}}
+[epoch 30/200] train_loss=0.3181 perp=157.31/512 val_recon=0.4308 val_total=4.5639
+{"ts": 1783075415.9245605, "epoch": 30, "step": 5704, "lr": 0.0002870803695642461, "train_loss": 0.3184629838670725, "train_perplexity": 156.7723389501157, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 200.31478180275664, "entropy_bits": 7.646125075461907}, "val_loss": 0.4241663428130176, "val_total_loss": 4.566184133190803, "val_codebook_usage": {"num_codes": 512, "used": 470, "usage_frac": 0.91796875, "perplexity": 128.67040356604912, "entropy_bits": 7.00753643650485}}
+[epoch 31/200] train_loss=0.3185 perp=156.77/512 val_recon=0.4242 val_total=4.5662
+{"ts": 1783075418.9267187, "epoch": 31, "step": 5888, "lr": 0.00028608323255505054, "train_loss": 0.3164438794407508, "train_perplexity": 157.0409688120303, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 201.01996060832695, "entropy_bits": 7.651194953073818}, "val_loss": 0.4113825006239192, "val_total_loss": 4.565711622463147, "val_codebook_usage": {"num_codes": 512, "used": 471, "usage_frac": 0.919921875, "perplexity": 124.80576914186699, "entropy_bits": 6.963540814038917}}
+[epoch 32/200] train_loss=0.3164 perp=157.04/512 val_recon=0.4114 val_total=4.5657
+{"ts": 1783075421.9353566, "epoch": 32, "step": 6072, "lr": 0.00028505090491008314, "train_loss": 0.31570056514085637, "train_perplexity": 156.93651410807735, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 200.0510433223472, "entropy_bits": 7.644224342537475}, "val_loss": 0.4346987997245835, "val_total_loss": 4.560207619710673, "val_codebook_usage": {"num_codes": 512, "used": 469, "usage_frac": 0.916015625, "perplexity": 130.33936977458305, "entropy_bits": 7.026129114045433}}
+[epoch 33/200] train_loss=0.3157 perp=156.94/512 val_recon=0.4347 val_total=4.5602
+{"ts": 1783075424.9421067, "epoch": 33, "step": 6256, "lr": 0.00028398365457004316, "train_loss": 0.31539379655505007, "train_perplexity": 157.22501945495605, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 200.4775920269529, "entropy_bits": 7.647297181177041}, "val_loss": 0.4206440702258292, "val_total_loss": 4.555809645108667, "val_codebook_usage": {"num_codes": 512, "used": 460, "usage_frac": 0.8984375, "perplexity": 123.51387790514863, "entropy_bits": 6.948529340573263}}
+[epoch 34/200] train_loss=0.3154 perp=157.23/512 val_recon=0.4206 val_total=4.5558
+{"ts": 1783075427.9100068, "epoch": 34, "step": 6440, "lr": 0.0002828817585398175, "train_loss": 0.31559830316868814, "train_perplexity": 156.8540034086808, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 201.24667194983263, "entropy_bits": 7.6528211151079555}, "val_loss": 0.41521861041067853, "val_total_loss": 4.538915743894398, "val_codebook_usage": {"num_codes": 512, "used": 462, "usage_frac": 0.90234375, "perplexity": 128.0122980535494, "entropy_bits": 7.000138605379639}}
+[epoch 35/200] train_loss=0.3156 perp=156.85/512 val_recon=0.4152 val_total=4.5389
+{"ts": 1783075430.860946, "epoch": 35, "step": 6624, "lr": 0.00028174550281658396, "train_loss": 0.3141303497326115, "train_perplexity": 157.24055692423946, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 201.36634302945063, "entropy_bits": 7.653678756921624}, "val_loss": 0.4171965331032865, "val_total_loss": 4.539194158711109, "val_codebook_usage": {"num_codes": 512, "used": 463, "usage_frac": 0.904296875, "perplexity": 130.16042099491173, "entropy_bits": 7.024147012203037}}
+[epoch 36/200] train_loss=0.3141 perp=157.24/512 val_recon=0.4172 val_total=4.5392
+{"ts": 1783075433.8116221, "epoch": 36, "step": 6808, "lr": 0.00028057518231558047, "train_loss": 0.3130322334802021, "train_perplexity": 158.39233663807744, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 201.58468956177475, "entropy_bits": 7.655242259504977}, "val_loss": 0.4170387581656214, "val_total_loss": 4.555289312458176, "val_codebook_usage": {"num_codes": 512, "used": 457, "usage_frac": 0.892578125, "perplexity": 126.89367599229408, "entropy_bits": 6.987476361066436}}
+[epoch 37/200] train_loss=0.3130 perp=158.39/512 val_recon=0.4170 val_total=4.5553
+{"ts": 1783075436.762174, "epoch": 37, "step": 6992, "lr": 0.00027937110079356007, "train_loss": 0.3125411544966957, "train_perplexity": 158.65506877069888, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 201.85049500156526, "entropy_bits": 7.657143314544239}, "val_loss": 0.4097851872063911, "val_total_loss": 4.564871102614534, "val_codebook_usage": {"num_codes": 512, "used": 458, "usage_frac": 0.89453125, "perplexity": 128.16482638510706, "entropy_bits": 7.001856572149845}}
+[epoch 38/200] train_loss=0.3125 perp=158.66/512 val_recon=0.4098 val_total=4.5649
+{"ts": 1783075439.7344255, "epoch": 38, "step": 7176, "lr": 0.0002781335707699508, "train_loss": 0.3117747037954952, "train_perplexity": 157.77862080283788, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 201.213679899967, "entropy_bits": 7.652584582656407}, "val_loss": 0.41649095181395474, "val_total_loss": 4.5363664333213105, "val_codebook_usage": {"num_codes": 512, "used": 459, "usage_frac": 0.896484375, "perplexity": 127.72328580405961, "entropy_bits": 6.99687776298677}}
+[epoch 39/200] train_loss=0.3118 perp=157.78/512 val_recon=0.4165 val_total=4.5364
+{"ts": 1783075442.6894474, "epoch": 39, "step": 7360, "lr": 0.00027686291344574104, "train_loss": 0.3103217388219808, "train_perplexity": 157.4407082433286, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 202.2950437757997, "entropy_bits": 7.66031716410658}, "val_loss": 0.41634523832240555, "val_total_loss": 4.55284606830742, "val_codebook_usage": {"num_codes": 512, "used": 457, "usage_frac": 0.892578125, "perplexity": 130.7506777011997, "entropy_bits": 7.03067461398022}}
+[epoch 40/200] train_loss=0.3103 perp=157.44/512 val_recon=0.4163 val_total=4.5528
+{"ts": 1783075445.67687, "epoch": 40, "step": 7544, "lr": 0.00027555945862011214, "train_loss": 0.31116545564778475, "train_perplexity": 157.23984117093295, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 201.68962883409748, "entropy_bits": 7.655993090213929}, "val_loss": 0.4163526693636127, "val_total_loss": 4.5303157110540235, "val_codebook_usage": {"num_codes": 512, "used": 458, "usage_frac": 0.89453125, "perplexity": 129.24506122490865, "entropy_bits": 7.013965342404177}}
+[epoch 41/200] train_loss=0.3112 perp=157.24/512 val_recon=0.4164 val_total=4.5303
+{"ts": 1783075448.6417274, "epoch": 41, "step": 7728, "lr": 0.00027422354460483864, "train_loss": 0.30998105171096063, "train_perplexity": 157.72866866899574, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 201.53035738622106, "entropy_bits": 7.654853364268741}, "val_loss": 0.41707160494877243, "val_total_loss": 4.5409552289937976, "val_codebook_usage": {"num_codes": 512, "used": 461, "usage_frac": 0.900390625, "perplexity": 129.40735390156794, "entropy_bits": 7.015775794244739}}
+[epoch 42/200] train_loss=0.3100 perp=157.73/512 val_recon=0.4171 val_total=4.5410
+{"ts": 1783075451.6241617, "epoch": 42, "step": 7912, "lr": 0.0002728555181364797, "train_loss": 0.30988823646760505, "train_perplexity": 157.43062761555547, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 202.22569321976653, "entropy_bits": 7.659822496243593}, "val_loss": 0.4226380823261688, "val_total_loss": 4.549391856145331, "val_codebook_usage": {"num_codes": 512, "used": 460, "usage_frac": 0.8984375, "perplexity": 129.06976381240673, "entropy_bits": 7.0120072608540145}}
+[epoch 43/200] train_loss=0.3099 perp=157.43/512 val_recon=0.4226 val_total=4.5494
+{"ts": 1783075454.5975168, "epoch": 43, "step": 8096, "lr": 0.0002714557342863835, "train_loss": 0.3089226110554908, "train_perplexity": 157.52883960889733, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 202.252468584495, "entropy_bits": 7.660013501294623}, "val_loss": 0.4108129043399312, "val_total_loss": 4.530244071493943, "val_codebook_usage": {"num_codes": 512, "used": 459, "usage_frac": 0.896484375, "perplexity": 126.94124626677518, "entropy_bits": 6.988017101475835}}
+[epoch 44/200] train_loss=0.3089 perp=157.53/512 val_recon=0.4108 val_total=4.5302
+{"ts": 1783075457.5946078, "epoch": 44, "step": 8280, "lr": 0.0002700245563685285, "train_loss": 0.3084889843897975, "train_perplexity": 157.75287876958433, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 202.1384395712309, "entropy_bits": 7.659199887076322}, "val_loss": 0.4166157444249381, "val_total_loss": 4.57299429347553, "val_codebook_usage": {"num_codes": 512, "used": 460, "usage_frac": 0.8984375, "perplexity": 131.20380571158017, "entropy_bits": 7.035665757303846}}
+[epoch 45/200] train_loss=0.3085 perp=157.75/512 val_recon=0.4166 val_total=4.5730
+{"ts": 1783075460.5618508, "epoch": 45, "step": 8464, "lr": 0.0002685623558452252, "train_loss": 0.3074462066768952, "train_perplexity": 158.71045079438582, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 204.23384610501265, "entropy_bits": 7.674078162560244}, "val_loss": 0.4155262212323264, "val_total_loss": 4.573519846080988, "val_codebook_usage": {"num_codes": 512, "used": 460, "usage_frac": 0.8984375, "perplexity": 130.65642985374492, "entropy_bits": 7.029634313972306}}
+[epoch 46/200] train_loss=0.3074 perp=158.71/512 val_recon=0.4155 val_total=4.5735
+{"ts": 1783075463.5140293, "epoch": 46, "step": 8648, "lr": 0.0002670695122307031, "train_loss": 0.3074220410831596, "train_perplexity": 159.81747905067775, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 206.16681848479877, "entropy_bits": 7.6876683466344495}, "val_loss": 0.4221662724418427, "val_total_loss": 4.548480674172458, "val_codebook_usage": {"num_codes": 512, "used": 457, "usage_frac": 0.892578125, "perplexity": 128.25932297664752, "entropy_bits": 7.0029198867441}}
+[epoch 47/200] train_loss=0.3074 perp=159.82/512 val_recon=0.4222 val_total=4.5485
+{"ts": 1783075466.5005345, "epoch": 47, "step": 8832, "lr": 0.0002655464129926079, "train_loss": 0.3075860490131637, "train_perplexity": 160.5328078062638, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 205.8050164147366, "entropy_bits": 7.685134337548208}, "val_loss": 0.413960645074849, "val_total_loss": 4.548040332504919, "val_codebook_usage": {"num_codes": 512, "used": 454, "usage_frac": 0.88671875, "perplexity": 131.1052430205952, "entropy_bits": 7.034581571204435}}
+[epoch 48/200] train_loss=0.3076 perp=160.53/512 val_recon=0.4140 val_total=4.5480
+{"ts": 1783075469.4720466, "epoch": 48, "step": 9016, "lr": 0.00026399345345143397, "train_loss": 0.30857657284840295, "train_perplexity": 160.63902888090715, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 206.82599181257552, "entropy_bits": 7.692273690238043}, "val_loss": 0.4052219592755841, "val_total_loss": 4.532220923217604, "val_codebook_usage": {"num_codes": 512, "used": 457, "usage_frac": 0.892578125, "perplexity": 128.89423266999282, "entropy_bits": 7.010043902003795}}
+[epoch 49/200] train_loss=0.3086 perp=160.64/512 val_recon=0.4052 val_total=4.5322
+{"ts": 1783075472.4714265, "epoch": 49, "step": 9200, "lr": 0.0002624110366779192, "train_loss": 0.3068195161531153, "train_perplexity": 160.94425781913426, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 206.78729103591175, "entropy_bits": 7.692003711390412}, "val_loss": 0.4113284932708634, "val_total_loss": 4.542333724123386, "val_codebook_usage": {"num_codes": 512, "used": 460, "usage_frac": 0.8984375, "perplexity": 129.4702777169609, "entropy_bits": 7.016477128521025}}
+[epoch 50/200] train_loss=0.3068 perp=160.94/512 val_recon=0.4113 val_total=4.5423
+{"ts": 1783075475.455338, "epoch": 50, "step": 9384, "lr": 0.00026079957338842765, "train_loss": 0.30711907614022493, "train_perplexity": 160.26955757970396, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 205.44144978086, "entropy_bits": 7.682583478345812}, "val_loss": 0.41772008947687306, "val_total_loss": 4.548515555143471, "val_codebook_usage": {"num_codes": 512, "used": 453, "usage_frac": 0.884765625, "perplexity": 126.61479953538236, "entropy_bits": 6.984302235681757}}
+[epoch 51/200] train_loss=0.3071 perp=160.27/512 val_recon=0.4177 val_total=4.5485
+{"ts": 1783075478.4410157, "epoch": 51, "step": 9568, "lr": 0.0002591594818383484, "train_loss": 0.30847071422992844, "train_perplexity": 159.09775207353675, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 205.31135968681266, "entropy_bits": 7.681669642406045}, "val_loss": 0.4169374434622682, "val_total_loss": 4.532946087158122, "val_codebook_usage": {"num_codes": 512, "used": 456, "usage_frac": 0.890625, "perplexity": 129.2759054394829, "entropy_bits": 7.0143095991675}}
+[epoch 52/200] train_loss=0.3085 perp=159.10/512 val_recon=0.4169 val_total=4.5329
+{"ts": 1783075481.4160151, "epoch": 52, "step": 9752, "lr": 0.00025749118771353725, "train_loss": 0.3053663589222276, "train_perplexity": 159.71052559562352, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 204.73978810146957, "entropy_bits": 7.677647685485817}, "val_loss": 0.4082470483939824, "val_total_loss": 4.536142392863318, "val_codebook_usage": {"num_codes": 512, "used": 448, "usage_frac": 0.875, "perplexity": 128.8627649800973, "entropy_bits": 7.009691645570021}}
+[epoch 53/200] train_loss=0.3054 perp=159.71/512 val_recon=0.4082 val_total=4.5361
+{"ts": 1783075484.4170976, "epoch": 53, "step": 9936, "lr": 0.00025579512401982974, "train_loss": 0.30523627583423385, "train_perplexity": 160.37554790662682, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 205.48689530336972, "entropy_bits": 7.682902580354748}, "val_loss": 0.4175697603282242, "val_total_loss": 4.555511951216953, "val_codebook_usage": {"num_codes": 512, "used": 456, "usage_frac": 0.890625, "perplexity": 129.6984435771772, "entropy_bits": 7.019017356666104}}
+[epoch 54/200] train_loss=0.3052 perp=160.38/512 val_recon=0.4176 val_total=4.5555
+{"ts": 1783075487.3881238, "epoch": 54, "step": 10120, "lr": 0.00025407173097065464, "train_loss": 0.30557891187946434, "train_perplexity": 160.5596741386082, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 206.2472404723348, "entropy_bits": 7.688231006425246}, "val_loss": 0.4027092661340907, "val_total_loss": 4.53366128286032, "val_codebook_usage": {"num_codes": 512, "used": 456, "usage_frac": 0.890625, "perplexity": 129.89158734836872, "entropy_bits": 7.021164184965339}}
+[epoch 55/200] train_loss=0.3056 perp=160.56/512 val_recon=0.4027 val_total=4.5337
+{"ts": 1783075490.398208, "epoch": 55, "step": 10304, "lr": 0.00025232145587277655, "train_loss": 0.3050347486024965, "train_perplexity": 159.7496281499448, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 205.77783175016478, "entropy_bits": 7.684943760214882}, "val_loss": 0.42059247663310073, "val_total_loss": 4.541828615939783, "val_codebook_usage": {"num_codes": 512, "used": 453, "usage_frac": 0.884765625, "perplexity": 131.65956066176884, "entropy_bits": 7.040668478484983}}
+[epoch 56/200] train_loss=0.3050 perp=159.75/512 val_recon=0.4206 val_total=4.5418
+{"ts": 1783075493.3651662, "epoch": 56, "step": 10488, "lr": 0.0002505447530101974, "train_loss": 0.3045296752622918, "train_perplexity": 161.29188102224597, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 207.1758904344349, "entropy_bits": 7.694712312613489}, "val_loss": 0.40823860830669084, "val_total_loss": 4.542957771266374, "val_codebook_usage": {"num_codes": 512, "used": 458, "usage_frac": 0.89453125, "perplexity": 131.2063319866571, "entropy_bits": 7.035693535533435}}
+[epoch 57/200] train_loss=0.3045 perp=161.29/512 val_recon=0.4082 val_total=4.5430
+{"ts": 1783075496.327535, "epoch": 57, "step": 10672, "lr": 0.0002487420835262468, "train_loss": 0.3044800544157624, "train_perplexity": 161.22543703991434, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.44340968536844, "entropy_bits": 7.703511949234347}, "val_loss": 0.42213420579940814, "val_total_loss": 4.542537041334906, "val_codebook_usage": {"num_codes": 512, "used": 447, "usage_frac": 0.873046875, "perplexity": 129.2731490083607, "entropy_bits": 7.014278837581315}}
+[epoch 58/200] train_loss=0.3045 perp=161.23/512 val_recon=0.4221 val_total=4.5425
+{"ts": 1783075499.2895997, "epoch": 58, "step": 10856, "lr": 0.00024691391530389255, "train_loss": 0.30341694937290054, "train_perplexity": 162.51216797206712, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.65877588930968, "entropy_bits": 7.705001789339525}, "val_loss": 0.41656157780630576, "val_total_loss": 4.555498547891498, "val_codebook_usage": {"num_codes": 512, "used": 450, "usage_frac": 0.87890625, "perplexity": 128.3787960182391, "entropy_bits": 7.004263125836956}}
+[epoch 59/200] train_loss=0.3034 perp=162.51/512 val_recon=0.4166 val_total=4.5555
+{"ts": 1783075502.2497876, "epoch": 59, "step": 11040, "lr": 0.0002450607228443014, "train_loss": 0.3028621523357604, "train_perplexity": 162.2842561473017, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.35167131048132, "entropy_bits": 7.702876862561395}, "val_loss": 0.4008136656033086, "val_total_loss": 4.545231242218899, "val_codebook_usage": {"num_codes": 512, "used": 444, "usage_frac": 0.8671875, "perplexity": 129.07812598836205, "entropy_bits": 7.012100727198407}}
+[epoch 60/200] train_loss=0.3029 perp=162.28/512 val_recon=0.4008 val_total=4.5452
+{"ts": 1783075505.250542, "epoch": 60, "step": 11224, "lr": 0.00024318298714368235, "train_loss": 0.3025529748233764, "train_perplexity": 162.07255371757176, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.1715128080272, "entropy_bits": 7.701628846584454}, "val_loss": 0.40713126396201643, "val_total_loss": 4.552281121766849, "val_codebook_usage": {"num_codes": 512, "used": 447, "usage_frac": 0.873046875, "perplexity": 127.52581894030905, "entropy_bits": 6.994645555181833}}
+[epoch 61/200] train_loss=0.3026 perp=162.07/512 val_recon=0.4071 val_total=4.5523
+{"ts": 1783075508.2376192, "epoch": 61, "step": 11408, "lr": 0.00024128119556844407, "train_loss": 0.30263872270512837, "train_perplexity": 161.88326719532841, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.05850319603454, "entropy_bits": 7.700845441233894}, "val_loss": 0.40526544412111054, "val_total_loss": 4.545398456980302, "val_codebook_usage": {"num_codes": 512, "used": 444, "usage_frac": 0.8671875, "perplexity": 132.7033438182307, "entropy_bits": 7.0520609135288}}
+[epoch 62/200] train_loss=0.3026 perp=161.88/512 val_recon=0.4053 val_total=4.5454
+{"ts": 1783075511.250884, "epoch": 62, "step": 11592, "lr": 0.00023935584172869867, "train_loss": 0.303107685935886, "train_perplexity": 161.5054292678833, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.40909956097977, "entropy_bits": 7.703274459737118}, "val_loss": 0.41377172516959326, "val_total_loss": 4.5652826056207205, "val_codebook_usage": {"num_codes": 512, "used": 449, "usage_frac": 0.876953125, "perplexity": 120.95272854118048, "entropy_bits": 6.918299504842284}}
+[epoch 63/200] train_loss=0.3031 perp=161.51/512 val_recon=0.4138 val_total=4.5653
+{"ts": 1783075514.2631109, "epoch": 63, "step": 11776, "lr": 0.00023740742535014557, "train_loss": 0.30306835533322196, "train_perplexity": 161.7394206834876, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.511607525376, "entropy_bits": 7.703983888327987}, "val_loss": 0.4145009593152991, "val_total_loss": 4.564500922013431, "val_codebook_usage": {"num_codes": 512, "used": 448, "usage_frac": 0.875, "perplexity": 125.63437544895916, "entropy_bits": 6.973087451013731}}
+[epoch 64/200] train_loss=0.3031 perp=161.74/512 val_recon=0.4145 val_total=4.5645
+{"ts": 1783075517.2723138, "epoch": 64, "step": 11960, "lr": 0.0002354364521443673, "train_loss": 0.3020126978745279, "train_perplexity": 162.99568429200545, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.29925618967434, "entropy_bits": 7.7094233743097}, "val_loss": 0.4048124835420656, "val_total_loss": 4.559427157008539, "val_codebook_usage": {"num_codes": 512, "used": 452, "usage_frac": 0.8828125, "perplexity": 127.07744010914493, "entropy_bits": 6.989564123095523}}
+[epoch 65/200] train_loss=0.3020 perp=163.00/512 val_recon=0.4048 val_total=4.5594
+{"ts": 1783075520.2759526, "epoch": 65, "step": 12144, "lr": 0.00023344343367757232, "train_loss": 0.30166715063640603, "train_perplexity": 161.08505045849344, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.53365949027557, "entropy_bits": 7.704136458146892}, "val_loss": 0.4108165694408739, "val_total_loss": 4.52175196811564, "val_codebook_usage": {"num_codes": 512, "used": 450, "usage_frac": 0.87890625, "perplexity": 130.36439040553802, "entropy_bits": 7.02640603479475}}
+[epoch 66/200] train_loss=0.3017 perp=161.09/512 val_recon=0.4108 val_total=4.5218
+{"ts": 1783075523.2660239, "epoch": 66, "step": 12328, "lr": 0.00023142888723781777, "train_loss": 0.30260445100619743, "train_perplexity": 161.92168389195982, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 207.830983104488, "entropy_bits": 7.6992669346770555}, "val_loss": 0.4052568282905139, "val_total_loss": 4.553797523046722, "val_codebook_usage": {"num_codes": 512, "used": 445, "usage_frac": 0.869140625, "perplexity": 129.40293608322042, "entropy_bits": 7.0157265414532635}}
+[epoch 67/200] train_loss=0.3026 perp=161.92/512 val_recon=0.4053 val_total=4.5538
+{"ts": 1783075526.2552583, "epoch": 67, "step": 12512, "lr": 0.00022939333570074744, "train_loss": 0.30174603544013656, "train_perplexity": 160.97831995590874, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.65175659060208, "entropy_bits": 7.704953256141109}, "val_loss": 0.4026381829542771, "val_total_loss": 4.523738763856957, "val_codebook_usage": {"num_codes": 512, "used": 438, "usage_frac": 0.85546875, "perplexity": 123.9045751091573, "entropy_bits": 6.953085648967781}}
+[epoch 68/200] train_loss=0.3017 perp=160.98/512 val_recon=0.4026 val_total=4.5237
+{"ts": 1783075529.2520351, "epoch": 68, "step": 12696, "lr": 0.00022733730739387924, "train_loss": 0.3006461749825141, "train_perplexity": 161.652738156526, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.74776618650333, "entropy_bits": 7.705616949139155}, "val_loss": 0.41811792406024384, "val_total_loss": 4.559456829618363, "val_codebook_usage": {"num_codes": 512, "used": 445, "usage_frac": 0.869140625, "perplexity": 129.2610788505328, "entropy_bits": 7.014144127705583}}
+[epoch 69/200] train_loss=0.3006 perp=161.65/512 val_recon=0.4181 val_total=4.5595
+{"ts": 1783075532.2455206, "epoch": 69, "step": 12880, "lr": 0.000225261335959478, "train_loss": 0.30145287914606544, "train_perplexity": 161.23279028353483, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.09305875138986, "entropy_bits": 7.701085032445457}, "val_loss": 0.4224802510643384, "val_total_loss": 4.541662051692627, "val_codebook_usage": {"num_codes": 512, "used": 460, "usage_frac": 0.8984375, "perplexity": 134.05847600009344, "entropy_bits": 7.06671862801888}}
+[epoch 70/200] train_loss=0.3015 perp=161.23/512 val_recon=0.4225 val_total=4.5417
+{"ts": 1783075535.242356, "epoch": 70, "step": 13064, "lr": 0.00022316596021604835, "train_loss": 0.30064837747941847, "train_perplexity": 162.53906560980755, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.72160572534654, "entropy_bits": 7.705436137945963}, "val_loss": 0.41023274388865577, "val_total_loss": 4.549748580388054, "val_codebook_usage": {"num_codes": 512, "used": 445, "usage_frac": 0.869140625, "perplexity": 126.19342434162037, "entropy_bits": 6.979492926427236}}
+[epoch 71/200] train_loss=0.3006 perp=162.54/512 val_recon=0.4102 val_total=4.5497
+{"ts": 1783075538.2330766, "epoch": 71, "step": 13248, "lr": 0.00022105172401848448, "train_loss": 0.3000286204497451, "train_perplexity": 162.53200759058413, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.48463397661953, "entropy_bits": 7.703797245853991}, "val_loss": 0.393089354106395, "val_total_loss": 4.546761243688871, "val_codebook_usage": {"num_codes": 512, "used": 444, "usage_frac": 0.8671875, "perplexity": 125.97029318733524, "entropy_bits": 6.976939741560462}}
+[epoch 72/200] train_loss=0.3000 perp=162.53/512 val_recon=0.3931 val_total=4.5468
+{"ts": 1783075541.2383618, "epoch": 72, "step": 13432, "lr": 0.0002189191761169124, "train_loss": 0.29919195936425874, "train_perplexity": 162.79193890613058, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.1591059867495, "entropy_bits": 7.708456998542953}, "val_loss": 0.39999451229441146, "val_total_loss": 4.552569127507547, "val_codebook_usage": {"num_codes": 512, "used": 444, "usage_frac": 0.8671875, "perplexity": 129.40114742844142, "entropy_bits": 7.015706599856172}}
+[epoch 73/200] train_loss=0.2992 perp=162.79/512 val_recon=0.4000 val_total=4.5526
+{"ts": 1783075544.1992252, "epoch": 73, "step": 13616, "lr": 0.00021676887001426226, "train_loss": 0.2992236811019804, "train_perplexity": 163.36535383307415, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.27295474342606, "entropy_bits": 7.709242067643229}, "val_loss": 0.40494256390668504, "val_total_loss": 4.540961856502263, "val_codebook_usage": {"num_codes": 512, "used": 435, "usage_frac": 0.849609375, "perplexity": 126.91980021183164, "entropy_bits": 6.987773345156255}}
+[epoch 74/200] train_loss=0.2992 perp=163.37/512 val_recon=0.4049 val_total=4.5410
+{"ts": 1783075547.17974, "epoch": 74, "step": 13800, "lr": 0.0002146013638226059, "train_loss": 0.3002818413078785, "train_perplexity": 162.15580637558648, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.1191760450707, "entropy_bits": 7.708181551638381}, "val_loss": 0.4002895308277342, "val_total_loss": 4.545471014285466, "val_codebook_usage": {"num_codes": 512, "used": 436, "usage_frac": 0.8515625, "perplexity": 124.81329294519429, "entropy_bits": 6.963627782988013}}
+[epoch 75/200] train_loss=0.3003 perp=162.16/512 val_recon=0.4003 val_total=4.5455
+{"ts": 1783075550.1321635, "epoch": 75, "step": 13984, "lr": 0.00021241722011829957, "train_loss": 0.29919739322655875, "train_perplexity": 162.12565973530644, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.49459517918018, "entropy_bits": 7.710769213609719}, "val_loss": 0.419956099764804, "val_total_loss": 4.550774907170434, "val_codebook_usage": {"num_codes": 512, "used": 445, "usage_frac": 0.869140625, "perplexity": 128.67351163829, "entropy_bits": 7.007571284815954}}
+[epoch 76/200] train_loss=0.2992 perp=162.13/512 val_recon=0.4200 val_total=4.5508
+{"ts": 1783075553.094696, "epoch": 76, "step": 14168, "lr": 0.00021021700579596674, "train_loss": 0.29969071528024, "train_perplexity": 163.18079517198646, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.52119467993822, "entropy_bits": 7.710952380778183}, "val_loss": 0.4274038102757589, "val_total_loss": 4.550236402019378, "val_codebook_usage": {"num_codes": 512, "used": 444, "usage_frac": 0.8671875, "perplexity": 124.30013485390671, "entropy_bits": 6.957684051353834}}
+[epoch 77/200] train_loss=0.2997 perp=163.18/512 val_recon=0.4274 val_total=4.5502
+{"ts": 1783075556.0588806, "epoch": 77, "step": 14352, "lr": 0.00020800129192136073, "train_loss": 0.2996678543884469, "train_perplexity": 162.22822802999744, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.1588940434686, "entropy_bits": 7.708455536643059}, "val_loss": 0.3983498103055721, "val_total_loss": 4.580979837381788, "val_codebook_usage": {"num_codes": 512, "used": 442, "usage_frac": 0.86328125, "perplexity": 123.77292458339011, "entropy_bits": 6.951551948257962}}
+[epoch 78/200] train_loss=0.2997 perp=162.23/512 val_recon=0.3983 val_total=4.5810
+{"ts": 1783075559.0030105, "epoch": 78, "step": 14536, "lr": 0.00020577065358314456, "train_loss": 0.29955074174896534, "train_perplexity": 161.63035513007122, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.10092001230706, "entropy_bits": 7.708055599355364}, "val_loss": 0.39996648003465146, "val_total_loss": 4.540614616543729, "val_codebook_usage": {"num_codes": 512, "used": 438, "usage_frac": 0.85546875, "perplexity": 120.5714164272382, "entropy_bits": 6.913744121338505}}
+[epoch 79/200] train_loss=0.2996 perp=161.63/512 val_recon=0.4000 val_total=4.5406
+{"ts": 1783075561.9698281, "epoch": 79, "step": 14720, "lr": 0.0002035256697436266, "train_loss": 0.2990638829929673, "train_perplexity": 163.00778140192446, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.4834784068544, "entropy_bits": 7.710692655368035}, "val_loss": 0.4100709380380196, "val_total_loss": 4.539599901675948, "val_codebook_usage": {"num_codes": 512, "used": 444, "usage_frac": 0.8671875, "perplexity": 127.3326446318471, "entropy_bits": 6.992458524260358}}
+[epoch 80/200] train_loss=0.2991 perp=163.01/512 val_recon=0.4101 val_total=4.5396
+{"ts": 1783075564.9460175, "epoch": 80, "step": 14904, "lr": 0.00020126692308849095, "train_loss": 0.2982493866558956, "train_perplexity": 162.56965089880902, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 208.60862919569414, "entropy_bits": 7.704655026636938}, "val_loss": 0.4034984048839782, "val_total_loss": 4.567349421501619, "val_codebook_usage": {"num_codes": 512, "used": 442, "usage_frac": 0.86328125, "perplexity": 124.03911708470815, "entropy_bits": 6.954651351714659}}
+[epoch 81/200] train_loss=0.2982 perp=162.57/512 val_recon=0.4035 val_total=4.5673
+{"ts": 1783075567.9031198, "epoch": 81, "step": 15088, "lr": 0.0001989949998755612, "train_loss": 0.2992257430096683, "train_perplexity": 162.61723186658776, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.37435393171617, "entropy_bits": 7.7099409285026}, "val_loss": 0.4147605547079701, "val_total_loss": 4.552334730017914, "val_codebook_usage": {"num_codes": 512, "used": 444, "usage_frac": 0.8671875, "perplexity": 124.38059200071271, "entropy_bits": 6.958617578710129}}
+[epoch 82/200] train_loss=0.2992 perp=162.62/512 val_recon=0.4148 val_total=4.5523
+{"ts": 1783075570.8593423, "epoch": 82, "step": 15272, "lr": 0.0001967104897826374, "train_loss": 0.29794271804554306, "train_perplexity": 162.2829995777296, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.31771158150178, "entropy_bits": 7.7095505813000225}, "val_loss": 0.4027254836876833, "val_total_loss": 4.573937262487802, "val_codebook_usage": {"num_codes": 512, "used": 443, "usage_frac": 0.865234375, "perplexity": 126.18683016549925, "entropy_bits": 6.979417537128581}}
+[epoch 83/200] train_loss=0.2979 perp=162.28/512 val_recon=0.4027 val_total=4.5739
+{"ts": 1783075573.8159466, "epoch": 83, "step": 15456, "lr": 0.00019441398575444495, "train_loss": 0.2970666514871561, "train_perplexity": 163.66051877063254, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.6734094923617, "entropy_bits": 7.7120001021109434}, "val_loss": 0.4204443384761858, "val_total_loss": 4.557135555224173, "val_codebook_usage": {"num_codes": 512, "used": 442, "usage_frac": 0.86328125, "perplexity": 122.36437605075912, "entropy_bits": 6.935039797025694}}
+[epoch 84/200] train_loss=0.2971 perp=163.66/512 val_recon=0.4204 val_total=4.5571
+{"ts": 1783075576.7502935, "epoch": 84, "step": 15640, "lr": 0.00019210608384873584, "train_loss": 0.29774682260239904, "train_perplexity": 162.1253711866296, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.461211908205, "entropy_bits": 7.710539299720129}, "val_loss": 0.399090500174518, "val_total_loss": 4.564733210468614, "val_codebook_usage": {"num_codes": 512, "used": 438, "usage_frac": 0.85546875, "perplexity": 128.3159103334571, "entropy_bits": 7.003556256040671}}
+[epoch 85/200] train_loss=0.2977 perp=162.13/512 val_recon=0.3991 val_total=4.5647
+{"ts": 1783075579.7326434, "epoch": 85, "step": 15824, "lr": 0.00018978738308158183, "train_loss": 0.2980366167814835, "train_perplexity": 163.27424965734068, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.6225472550304, "entropy_bits": 7.7116500930219205}, "val_loss": 0.41122909300621163, "val_total_loss": 4.56831374384201, "val_codebook_usage": {"num_codes": 512, "used": 442, "usage_frac": 0.86328125, "perplexity": 129.36246505360373, "entropy_bits": 7.015275265092922}}
+[epoch 86/200] train_loss=0.2980 perp=163.27/512 val_recon=0.4112 val_total=4.5683
+{"ts": 1783075582.6970038, "epoch": 86, "step": 16008, "lr": 0.0001874584852718997, "train_loss": 0.2976840487478868, "train_perplexity": 163.38892812314242, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.10692986441074, "entropy_bits": 7.708097063827299}, "val_loss": 0.40601051000265703, "val_total_loss": 4.530640012206627, "val_codebook_usage": {"num_codes": 512, "used": 443, "usage_frac": 0.865234375, "perplexity": 128.33988788331789, "entropy_bits": 7.003825817785373}}
+[epoch 87/200] train_loss=0.2977 perp=163.39/512 val_recon=0.4060 val_total=4.5306
+{"ts": 1783075585.647983, "epoch": 87, "step": 16192, "lr": 0.0001851199948852494, "train_loss": 0.29801743526173674, "train_perplexity": 162.9857356444649, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.52718811780514, "entropy_bits": 7.71099364905862}, "val_loss": 0.40445909700968485, "val_total_loss": 4.553025167724176, "val_codebook_usage": {"num_codes": 512, "used": 442, "usage_frac": 0.86328125, "perplexity": 124.91707052292465, "entropy_bits": 6.964826831460021}}
+[epoch 88/200] train_loss=0.2980 perp=162.99/512 val_recon=0.4045 val_total=4.5530
+{"ts": 1783075588.6486914, "epoch": 88, "step": 16376, "lr": 0.00018277251887694466, "train_loss": 0.2980529687812795, "train_perplexity": 162.99485753930134, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.11003049671305, "entropy_bits": 7.7081184559145175}, "val_loss": 0.3988427895555774, "val_total_loss": 4.539117034720181, "val_codebook_usage": {"num_codes": 512, "used": 441, "usage_frac": 0.861328125, "perplexity": 118.03035572756619, "entropy_bits": 6.883014137713835}}
+[epoch 89/200] train_loss=0.2981 perp=162.99/512 val_recon=0.3988 val_total=4.5391
+{"ts": 1783075591.6334136, "epoch": 89, "step": 16560, "lr": 0.00018041666653451774, "train_loss": 0.2968472613669608, "train_perplexity": 163.07004194674283, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.63431850313444, "entropy_bits": 7.711731104557597}, "val_loss": 0.4143889046287129, "val_total_loss": 4.547943886737153, "val_codebook_usage": {"num_codes": 512, "used": 442, "usage_frac": 0.86328125, "perplexity": 123.83946902718498, "entropy_bits": 6.952327380698746}}
+[epoch 90/200] train_loss=0.2968 perp=163.07/512 val_recon=0.4144 val_total=4.5479
+{"ts": 1783075594.5879161, "epoch": 90, "step": 16744, "lr": 0.00017805304931957903, "train_loss": 0.2974313537225775, "train_perplexity": 162.95669837619948, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.9129366435353, "entropy_bits": 7.713647270441739}, "val_loss": 0.3974295003867861, "val_total_loss": 4.542237403591378, "val_codebook_usage": {"num_codes": 512, "used": 435, "usage_frac": 0.849609375, "perplexity": 124.13969569839936, "entropy_bits": 6.955820704356076}}
+[epoch 91/200] train_loss=0.2974 perp=162.96/512 val_recon=0.3974 val_total=4.5422
+{"ts": 1783075597.5645072, "epoch": 91, "step": 16928, "lr": 0.00017568228070911202, "train_loss": 0.29684723310334526, "train_perplexity": 162.7323810743249, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.15958602344656, "entropy_bits": 7.708460309638421}, "val_loss": 0.40309442752020747, "val_total_loss": 4.528666148578312, "val_codebook_usage": {"num_codes": 512, "used": 439, "usage_frac": 0.857421875, "perplexity": 121.28752529087737, "entropy_bits": 6.922287363262964}}
+[epoch 92/200] train_loss=0.2968 perp=162.73/512 val_recon=0.4031 val_total=4.5287
+{"ts": 1783075600.532171, "epoch": 92, "step": 17112, "lr": 0.00017330497603624525, "train_loss": 0.2974294255204175, "train_perplexity": 163.0345277371614, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.086175574416, "entropy_bits": 7.70795386629062}, "val_loss": 0.4281279640761014, "val_total_loss": 4.5349821139828315, "val_codebook_usage": {"num_codes": 512, "used": 438, "usage_frac": 0.85546875, "perplexity": 123.83073485037906, "entropy_bits": 6.952225626403137}}
+[epoch 93/200] train_loss=0.2974 perp=163.03/512 val_recon=0.4281 val_total=4.5350
+{"ts": 1783075603.4919074, "epoch": 93, "step": 17296, "lr": 0.00017092175233054268, "train_loss": 0.2970929181041277, "train_perplexity": 162.69908822101095, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.47405076077627, "entropy_bits": 7.710627726503892}, "val_loss": 0.41018996055905615, "val_total_loss": 4.548929795543907, "val_codebook_usage": {"num_codes": 512, "used": 448, "usage_frac": 0.875, "perplexity": 123.50651119009696, "entropy_bits": 6.948443291617428}}
+[epoch 94/200] train_loss=0.2971 perp=162.70/512 val_recon=0.4102 val_total=4.5489
+{"ts": 1783075606.4558969, "epoch": 94, "step": 17480, "lr": 0.00016853322815785357, "train_loss": 0.2966999948105734, "train_perplexity": 162.27407799596372, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.22457860227337, "entropy_bits": 7.708908531535186}, "val_loss": 0.40282773826635393, "val_total_loss": 4.50461731957999, "val_codebook_usage": {"num_codes": 512, "used": 435, "usage_frac": 0.849609375, "perplexity": 121.92698220553459, "entropy_bits": 6.929873616688993}}
+[epoch 95/200] train_loss=0.2967 perp=162.27/512 val_recon=0.4028 val_total=4.5046
+{"ts": 1783075609.4202614, "epoch": 95, "step": 17664, "lr": 0.00016614002345976365, "train_loss": 0.2958214644990538, "train_perplexity": 162.4567399646925, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.55971459582648, "entropy_bits": 7.711217592056265}, "val_loss": 0.41498484417390785, "val_total_loss": 4.551571316826958, "val_codebook_usage": {"num_codes": 512, "used": 439, "usage_frac": 0.857421875, "perplexity": 119.87731478618791, "entropy_bits": 6.905414863189653}}
+[epoch 96/200] train_loss=0.2958 perp=162.46/512 val_recon=0.4150 val_total=4.5516
+{"ts": 1783075612.3881302, "epoch": 96, "step": 17848, "lr": 0.00016374275939268933, "train_loss": 0.2967503910641307, "train_perplexity": 163.4692083027052, "train_codebook_usage": {"num_codes": 512, "used": 512, "usage_frac": 1.0, "perplexity": 209.65122440287806, "entropy_bits": 7.71184744559605}, "val_loss": 0.41737178566098415, "val_total_loss": 4.566850005977706, "val_codebook_usage": {"num_codes": 512, "used": 442, "usage_frac": 0.86328125, "perplexity": 125.13644867576303, "entropy_bits": 6.967358256375741}}
+[epoch 97/200] train_loss=0.2968 perp=163.47/512 val_recon=0.4174 val_total=4.5669
+[early-stop] no val improvement for 25 epochs (best_val=0.3931 @ ep72); stopping at ep97.
+[overfit-check] ok | epochs=97 train_final=0.2968 val_min=0.3931 val_final=0.4174 monitor_peak=None monitor_final=None
+[1;34mwandb[0m: 
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync wandb/wandb/offline-run-20260703_114159-d0jf3ogr[0m
+{
+  "best_val_loss": 0.393089354106395,
+  "ckpt": "/mnt/fast/nobackup/users/aa08742/checkpoints/vqvae/vqvae_usc_t32_s2025/best.pt"
+}
+[tokenize] split=C counts={'train': 11786, 'val': 2077, 'test': 2224, 'support_pool': 4682}
+{
+  "vqvae_ckpt": "/mnt/fast/nobackup/users/aa08742/checkpoints/vqvae/vqvae_usc_t32_s2025/best.pt",
+  "splits": {
+    "C": {
+      "train": 11786,
+      "val": 2077,
+      "test": 2224,
+      "support_pool": 4682
+    }
+  }
+}
+===== discrete_train =====
+[gpt2-lora] trainable 78,606,336 / 203,457,024 (38.635%)
+{"ts": 1783076282.4406838, "epoch": 0, "train_loss": 3.091997217529196, "val_loss": 2.8671292654673257, "val_macro_f1": 0.16943362042363638, "val_seen_f1": 0.16943362042363638, "val_unseen_f1": 0.0, "val_blended_f1": 0.08471681021181819, "trainable_params": 78606336}
+[ep 1/20] tr_loss=3.0920 val_loss=2.8671 seen_F1=0.169 unseen_F1=0.000 blended=0.085
+{"ts": 1783076944.9716413, "epoch": 1, "train_loss": 2.84965015173808, "val_loss": 2.7585059293111165, "val_macro_f1": 0.16034508620214993, "val_seen_f1": 0.16034508620214993, "val_unseen_f1": 0.0, "val_blended_f1": 0.08017254310107497, "trainable_params": 78606336}
+[ep 2/20] tr_loss=2.8497 val_loss=2.7585 seen_F1=0.160 unseen_F1=0.000 blended=0.080
+{"ts": 1783077592.540639, "epoch": 2, "train_loss": 2.6021340024829334, "val_loss": 2.181034253438314, "val_macro_f1": 0.16015774663692098, "val_seen_f1": 0.16015774663692098, "val_unseen_f1": 0.0, "val_blended_f1": 0.08007887331846049, "trainable_params": 78606336}
+[ep 3/20] tr_loss=2.6021 val_loss=2.1810 seen_F1=0.160 unseen_F1=0.000 blended=0.080
+{"ts": 1783078253.208577, "epoch": 3, "train_loss": 1.0235819261476533, "val_loss": 0.4791898801984886, "val_macro_f1": 0.886512708696667, "val_seen_f1": 0.886512708696667, "val_unseen_f1": 0.0, "val_blended_f1": 0.4432563543483335, "trainable_params": 78606336}
+[ep 4/20] tr_loss=1.0236 val_loss=0.4792 seen_F1=0.887 unseen_F1=0.000 blended=0.443
+{"ts": 1783078925.4977438, "epoch": 4, "train_loss": 0.025167578422982322, "val_loss": 0.47399175824422857, "val_macro_f1": 0.9044729505963236, "val_seen_f1": 0.9044729505963236, "val_unseen_f1": 0.0, "val_blended_f1": 0.4522364752981618, "trainable_params": 78606336}
+[ep 5/20] tr_loss=0.0252 val_loss=0.4740 seen_F1=0.904 unseen_F1=0.000 blended=0.452
+{"ts": 1783079583.7691617, "epoch": 5, "train_loss": 0.016461348721042643, "val_loss": 0.4513583634383879, "val_macro_f1": 0.9095737700327596, "val_seen_f1": 0.9095737700327596, "val_unseen_f1": 0.0, "val_blended_f1": 0.4547868850163798, "trainable_params": 78606336}
+[ep 6/20] tr_loss=0.0165 val_loss=0.4514 seen_F1=0.910 unseen_F1=0.000 blended=0.455
+{"ts": 1783080240.7515187, "epoch": 6, "train_loss": 0.017710269880306433, "val_loss": 0.6453559010873141, "val_macro_f1": 0.8817794186781169, "val_seen_f1": 0.8817794186781169, "val_unseen_f1": 0.0, "val_blended_f1": 0.44088970933905847, "trainable_params": 78606336}
+[ep 7/20] tr_loss=0.0177 val_loss=0.6454 seen_F1=0.882 unseen_F1=0.000 blended=0.441
+{"ts": 1783080915.641362, "epoch": 7, "train_loss": 0.014644966503932455, "val_loss": 0.6871419034766101, "val_macro_f1": 0.8839590336224363, "val_seen_f1": 0.8839590336224363, "val_unseen_f1": 0.0, "val_blended_f1": 0.44197951681121816, "trainable_params": 78606336}
+[ep 8/20] tr_loss=0.0146 val_loss=0.6871 seen_F1=0.884 unseen_F1=0.000 blended=0.442
+{"ts": 1783081576.729707, "epoch": 8, "train_loss": 0.015161780793713853, "val_loss": 0.525445264184309, "val_macro_f1": 0.8929618303257095, "val_seen_f1": 0.8929618303257095, "val_unseen_f1": 0.0, "val_blended_f1": 0.44648091516285476, "trainable_params": 78606336}
+[ep 9/20] tr_loss=0.0152 val_loss=0.5254 seen_F1=0.893 unseen_F1=0.000 blended=0.446
+{"ts": 1783082233.6703174, "epoch": 9, "train_loss": 0.013284115708630858, "val_loss": 0.5052522800480316, "val_macro_f1": 0.9103134791343696, "val_seen_f1": 0.9103134791343696, "val_unseen_f1": 0.0, "val_blended_f1": 0.4551567395671848, "trainable_params": 78606336}
+[ep 10/20] tr_loss=0.0133 val_loss=0.5053 seen_F1=0.910 unseen_F1=0.000 blended=0.455
+{"ts": 1783082890.4980643, "epoch": 10, "train_loss": 0.012789876366826675, "val_loss": 0.46519141522283464, "val_macro_f1": 0.9228495445492569, "val_seen_f1": 0.9228495445492569, "val_unseen_f1": 0.0, "val_blended_f1": 0.46142477227462847, "trainable_params": 78606336}
+[ep 11/20] tr_loss=0.0128 val_loss=0.4652 seen_F1=0.923 unseen_F1=0.000 blended=0.461
+{"ts": 1783083546.1747258, "epoch": 11, "train_loss": 0.012139811590548178, "val_loss": 0.5446990862577513, "val_macro_f1": 0.9005133547018745, "val_seen_f1": 0.9005133547018745, "val_unseen_f1": 0.0, "val_blended_f1": 0.4502566773509373, "trainable_params": 78606336}
+[ep 12/20] tr_loss=0.0121 val_loss=0.5447 seen_F1=0.901 unseen_F1=0.000 blended=0.450
+{"ts": 1783084218.1416972, "epoch": 12, "train_loss": 0.012718811854231233, "val_loss": 0.5040266079897386, "val_macro_f1": 0.9124447184327072, "val_seen_f1": 0.9124447184327072, "val_unseen_f1": 0.0, "val_blended_f1": 0.4562223592163536, "trainable_params": 78606336}
+[ep 13/20] tr_loss=0.0127 val_loss=0.5040 seen_F1=0.912 unseen_F1=0.000 blended=0.456
+{"ts": 1783084881.993283, "epoch": 13, "train_loss": 0.013733841786277038, "val_loss": 0.641928999114128, "val_macro_f1": 0.8891722165865509, "val_seen_f1": 0.8891722165865509, "val_unseen_f1": 0.0, "val_blended_f1": 0.44458610829327544, "trainable_params": 78606336}
+[ep 14/20] tr_loss=0.0137 val_loss=0.6419 seen_F1=0.889 unseen_F1=0.000 blended=0.445
+{"ts": 1783085540.4603395, "epoch": 14, "train_loss": 0.010956399661731658, "val_loss": 0.6632481442481336, "val_macro_f1": 0.8995545555221541, "val_seen_f1": 0.8995545555221541, "val_unseen_f1": 0.0, "val_blended_f1": 0.44977727776107707, "trainable_params": 78606336}
+[ep 15/20] tr_loss=0.0110 val_loss=0.6632 seen_F1=0.900 unseen_F1=0.000 blended=0.450
+{"ts": 1783086195.3326848, "epoch": 15, "train_loss": 0.010616809004138642, "val_loss": 0.41237347350062614, "val_macro_f1": 0.9197876586094251, "val_seen_f1": 0.9197876586094251, "val_unseen_f1": 0.0, "val_blended_f1": 0.45989382930471256, "trainable_params": 78606336}
+[ep 16/20] tr_loss=0.0106 val_loss=0.4124 seen_F1=0.920 unseen_F1=0.000 blended=0.460
+{"ts": 1783086847.7110999, "epoch": 16, "train_loss": 0.011893439855739027, "val_loss": 0.41386932265012244, "val_macro_f1": 0.9227600165570943, "val_seen_f1": 0.9227600165570943, "val_unseen_f1": 0.0, "val_blended_f1": 0.46138000827854714, "trainable_params": 78606336}
+[ep 17/20] tr_loss=0.0119 val_loss=0.4139 seen_F1=0.923 unseen_F1=0.000 blended=0.461
+{"ts": 1783087500.4693124, "epoch": 17, "train_loss": 0.010978269229604886, "val_loss": 0.5280148796527555, "val_macro_f1": 0.900445097295008, "val_seen_f1": 0.900445097295008, "val_unseen_f1": 0.0, "val_blended_f1": 0.450222548647504, "trainable_params": 78606336}
+[ep 18/20] tr_loss=0.0110 val_loss=0.5280 seen_F1=0.900 unseen_F1=0.000 blended=0.450
+{"ts": 1783088153.701735, "epoch": 18, "train_loss": 0.009650826441743589, "val_loss": 0.5322411202130206, "val_macro_f1": 0.9021046163938381, "val_seen_f1": 0.9021046163938381, "val_unseen_f1": 0.0, "val_blended_f1": 0.45105230819691905, "trainable_params": 78606336}
+[ep 19/20] tr_loss=0.0097 val_loss=0.5322 seen_F1=0.902 unseen_F1=0.000 blended=0.451
+{"ts": 1783088813.068111, "epoch": 19, "train_loss": 0.01068625748153038, "val_loss": 0.4268451471847978, "val_macro_f1": 0.9286331651911456, "val_seen_f1": 0.9286331651911456, "val_unseen_f1": 0.0, "val_blended_f1": 0.4643165825955728, "trainable_params": 78606336}
+[ep 20/20] tr_loss=0.0107 val_loss=0.4268 seen_F1=0.929 unseen_F1=0.000 blended=0.464
+[overfit-check] OVERFIT | epochs=20 train_final=0.0107 val_min=0.4124 val_final=0.4268 monitor_peak=0.4643 monitor_final=0.4643 | train_loss~0 with train/val gap 0.42 (memorisation)
+[1;34mwandb[0m: 
+[1;34mwandb[0m: You can sync this run to the cloud by running:
+[1;34mwandb[0m: [1mwandb sync wandb/wandb/offline-run-20260703_114706-ox5u9l4b[0m
+{
+  "best_val_blended_f1": 0.4643165825955728,
+  "test_macro_f1": 0.6791558883630237,
+  "test_seen_f1": 0.9492840359976946,
+  "test_unseen_f1": 0.4576499901935598,
+  "test_unseen_acc": 0.29444444444444445,
+  "test_per_class_f1": {
+    "elevator_down": 0.4444444444444444,
+    "elevator_up": 0.5614035087719298,
+    "lie": 1.0,
+    "rope_jump": 0.8076923076923077,
+    "run": 0.9032258064516129,
+    "sit": 0.7894736842105263,
+    "stand": 0.6081081081081081,
+    "walk": 0.8524590163934426,
+    "walk_downstairs": 0.410958904109589,
+    "walk_upstairs": 0.41379310344827586
+  },
+  "test_n": 600,
+  "cfg": {
+    "model": {
+      "name": "gpt2",
+      "context_length": 1024
+    },
+    "special_tokens": {
+      "bos": "<BOS_SIG>",
+      "act": "<ACT>",
+      "sep": "<SEP>",
+      "query": "<QUERY>",
+      "ans": "<ANS>",
+      "pad": "<PAD>"
+    },
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "target_modules": [
+        "c_attn"
+      ]
+    },
+    "prompt": {
+      "k_shot": 4,
+      "max_distractors": 6,
+      "shuffle_support": true,
+      "always_include_gold_class": true,
+      "label_randomization": true
+    },
+    "optim": {
+      "lr": 0.0002,
+      "weight_decay": 0.0,
+      "warmup_steps": 100
+    },
+    "train": {
+      "batch_size": 8,
+      "epochs": 20,
+      "grad_accum": 4,
+      "grad_clip": 1.0,
+      "eval_every_epoch": true,
+      "loss_mask": "answer_only"
+    },
+    "name": "gpt2_k4"
+  },
+  "trainable_params": 78606336,
+  "total_params": 203457024
+}
+===== discrete_eval =====
+{
+  "split": "C",
+  "k_shot": 4,
+  "n_test": 2224,
+  "test_loss": 2.0643646823477098,
+  "overall_macro_f1": 0.699294582278474,
+  "seen_macro_f1": 0.9298591845313157,
+  "unseen_macro_f1": 0.5224625346329637,
+  "seen_acc": 0.9538061158100195,
+  "unseen_acc": 0.3537117903930131,
+  "unseen_per_class_f1": {
+    "elevator_down": 0.5,
+    "elevator_up": 0.5340314136125655,
+    "walk_downstairs": 0.5419847328244275,
+    "walk_upstairs": 0.5138339920948617
+  },
+  "per_class_f1": {
+    "elevator_down": 0.5,
+    "elevator_up": 0.5340314136125655,
+    "lie": 1.0,
+    "rope_jump": 0.8461538461538461,
+    "run": 0.8940092165898618,
+    "sit": 0.7398119122257053,
+    "stand": 0.5574912891986062,
+    "walk": 0.8656294200848657,
+    "walk_downstairs": 0.5419847328244275,
+    "walk_upstairs": 0.5138339920948617
+  },
+  "overall_ci": {
+    "point": 0.699294582278474,
+    "lo": 0.6787952861713934,
+    "hi": 0.7198100293245061,
+    "n_resamples": 1000
+  },
+  "chance": {
+    "unseen_macro_f1": 0.2525,
+    "unseen_acc": 0.1452,
+    "seen_macro_f1": 0.1466,
+    "seen_acc": 0.1654,
+    "reps": 50
+  }
+}
+===== continuous =====
+[continuous_projection] trainable 77,821,440 / 202,279,680
+[continuous_projection] MATCHED frozen VQ-VAE encoder from /mnt/fast/nobackup/users/aa08742/checkpoints/vqvae/vqvae_usc_t32_s2025/best.pt (latent=64); Time-LLM reprogramming bridge
+{'epoch': 0, 'train_loss': 3.438727253884077, 'val_loss': 2.9160356815656026, 'val_seen_f1': 0.23601534697508897, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11800767348754448}
+{'epoch': 1, 'train_loss': 2.925858495593071, 'val_loss': 3.0966922730207442, 'val_seen_f1': 0.2552400474266996, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.1276200237133498}
+{'epoch': 2, 'train_loss': 2.8814553753733634, 'val_loss': 2.8586754528681437, 'val_seen_f1': 0.27457457457457457, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.13728728728728729}
+{'epoch': 3, 'train_loss': 2.9022821488380433, 'val_loss': 2.87865990281105, 'val_seen_f1': 0.24841797183989875, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12420898591994937}
+{'epoch': 4, 'train_loss': 2.8787760014534, 'val_loss': 2.863079160451889, 'val_seen_f1': 0.2444490472245236, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.1222245236122618}
+{'epoch': 5, 'train_loss': 2.86159245043993, 'val_loss': 2.8626094285647072, 'val_seen_f1': 0.18948412698412698, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.09474206349206349}
+{'epoch': 6, 'train_loss': 2.8608501609563826, 'val_loss': 2.9258954791227976, 'val_seen_f1': 0.29091617933723196, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.14545808966861598}
+{'epoch': 7, 'train_loss': 2.8579542393684387, 'val_loss': 2.8498840713500977, 'val_seen_f1': 0.2338071354741143, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11690356773705715}
+{'epoch': 8, 'train_loss': 2.8564951848983764, 'val_loss': 2.856462664206823, 'val_seen_f1': 0.25160463783790743, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12580231891895371}
+{'epoch': 9, 'train_loss': 2.8663141700029375, 'val_loss': 2.854213949839274, 'val_seen_f1': 0.23539651837524178, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11769825918762089}
+{'epoch': 10, 'train_loss': 2.8571532431840896, 'val_loss': 2.8438806704680126, 'val_seen_f1': 0.2573005453773554, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.1286502726886777}
+{'epoch': 11, 'train_loss': 2.8532708458900453, 'val_loss': 2.847534854412079, 'val_seen_f1': 0.22201837402989413, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11100918701494707}
+{'epoch': 12, 'train_loss': 2.8475675107240677, 'val_loss': 2.8441299835840863, 'val_seen_f1': 0.23212390838688418, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11606195419344209}
+{'epoch': 13, 'train_loss': 2.8516941717863085, 'val_loss': 2.8355143785476686, 'val_seen_f1': 0.23098691192076407, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11549345596038203}
+{'epoch': 14, 'train_loss': 2.8429906846284867, 'val_loss': 2.850858934322993, 'val_seen_f1': 0.24840632502690618, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12420316251345309}
+{'epoch': 15, 'train_loss': 2.8467209998369216, 'val_loss': 2.8363856307665505, 'val_seen_f1': 0.23722162872873698, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11861081436436849}
+{'epoch': 16, 'train_loss': 2.844897208452225, 'val_loss': 2.854457068443298, 'val_seen_f1': 0.19284391753716906, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.09642195876858453}
+{'epoch': 17, 'train_loss': 2.844852681517601, 'val_loss': 2.833941927353541, 'val_seen_f1': 0.2525323684912487, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12626618424562436}
+{'epoch': 18, 'train_loss': 2.837699320077896, 'val_loss': 2.8228207166989643, 'val_seen_f1': 0.25698849586066014, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12849424793033007}
+{'epoch': 19, 'train_loss': 2.8326053125858306, 'val_loss': 2.83363455414772, 'val_seen_f1': 0.22619047619047616, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11309523809523808}
+[overfit-check] ok | epochs=20 train_final=2.8326 val_min=2.8228 val_final=2.8336 monitor_peak=0.1455 monitor_final=0.1131
+{
+  "model": "ContinuousProjection",
+  "split": "C",
+  "seed": 2025,
+  "k_shot": 4,
+  "best_val_blended_f1": 0.14545808966861598,
+  "overall_macro_f1": 0.1687750345963331,
+  "seen_macro_f1": 0.14377615697484405,
+  "unseen_macro_f1": 0.240475003751581,
+  "per_class_f1": {
+    "elevator_down": 0.2222222222222222,
+    "elevator_up": 0.25,
+    "lie": 0.15616438356164383,
+    "rope_jump": 0.05803571428571429,
+    "run": 0.06496519721577726,
+    "sit": 0.10964083175803403,
+    "stand": 0.1219047619047619,
+    "walk": 0.2151394422310757,
+    "walk_downstairs": 0.20657276995305165,
+    "walk_upstairs": 0.2831050228310502
+  },
+  "trainable_params": 77821440
+}
+===== SUMMARY (matched) seed 2025 =====
+  "overall_macro_f1": 0.699294582278474,
+  "seen_macro_f1": 0.9298591845313157,
+  "unseen_macro_f1": 0.5224625346329637,
+  "unseen_acc": 0.3537117903930131,
+  "chance": {
+    "unseen_macro_f1": 0.2525,
+    "unseen_acc": 0.1452,
+    "seen_macro_f1": 0.1466,
+-- continuous --
+  "seen_macro_f1": 0.14377615697484405,
+  "unseen_macro_f1": 0.240475003751581,
+[done] matched seed 2025

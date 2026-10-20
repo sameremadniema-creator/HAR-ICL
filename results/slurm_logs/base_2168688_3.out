@@ -1,0 +1,215 @@
+[cuda-check] torch 2.3.1+cu121 | built for CUDA 12.1 | cuda_available=True
+[cuda-check] OK: using NVIDIA GeForce RTX 3090 (23 GB)
+############### BASELINES (new z-norm) seed 7 ###############
+===== protonet =====
+{
+  "model": "ProtoNet",
+  "split": "C",
+  "seed": 7,
+  "k_shot": 4,
+  "episodes": 2000,
+  "overall_macro_f1": 0.6477247095899463,
+  "per_class_f1": {
+    "elevator_down": 0.17358490566037735,
+    "elevator_up": 0.5091575091575091,
+    "lie": 1.0,
+    "rope_jump": 0.8153846153846154,
+    "run": 0.9705882352941176,
+    "sit": 1.0,
+    "stand": 0.06862745098039216,
+    "walk": 0.8967297762478486,
+    "walk_downstairs": 0.7142857142857143,
+    "walk_upstairs": 0.3288888888888889
+  },
+  "loss_tail": [
+    {
+      "episode": 1995,
+      "loss": 0.07254865020513535,
+      "acc": 0.9750000238418579
+    },
+    {
+      "episode": 1996,
+      "loss": 0.00022337239352054894,
+      "acc": 1.0
+    },
+    {
+      "episode": 1997,
+      "loss": 0.03914659470319748,
+      "acc": 0.9750000238418579
+    },
+    {
+      "episode": 1998,
+      "loss": 7.41980693419464e-05,
+      "acc": 1.0
+    },
+    {
+      "episode": 1999,
+      "loss": 0.0073500401340425014,
+      "acc": 1.0
+    }
+  ]
+}
+===== simple_finetune =====
+{
+  "model": "SimpleFinetune (DeepConvLSTM)",
+  "split": "C",
+  "seed": 7,
+  "k_shot": 4,
+  "n_test": 1976,
+  "n_train": 40,
+  "overall_macro_f1": 0.2283128251818995,
+  "per_class_f1": {
+    "elevator_down": 0.0,
+    "elevator_up": 0.39002932551319647,
+    "lie": 0.6473594548551959,
+    "rope_jump": 0.22942643391521197,
+    "run": 0.056074766355140186,
+    "sit": 0.631578947368421,
+    "stand": 0.0,
+    "walk": 0.09117647058823529,
+    "walk_downstairs": 0.125,
+    "walk_upstairs": 0.11248285322359397
+  }
+}
+===== attend =====
+{
+  "model": "Attend",
+  "split": "C",
+  "seed": 7,
+  "n_test": 1976,
+  "overall_macro_f1": 0.5186586751028283,
+  "per_class_f1": {
+    "elevator_down": 0.0,
+    "elevator_up": 0.0,
+    "lie": 1.0,
+    "rope_jump": 0.9565217391304348,
+    "run": 0.9519230769230769,
+    "sit": 0.900523560209424,
+    "stand": 0.43730886850152906,
+    "walk": 0.9403095062638173,
+    "walk_downstairs": 0.0,
+    "walk_upstairs": 0.0
+  },
+  "history_tail": [
+    {
+      "epoch": 27,
+      "train_loss": 0.046596378633285244,
+      "val_loss": 0.09234416703612282,
+      "val_acc": 0.9764873530459566
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.04480526128884483,
+      "val_loss": 0.05556367418427176,
+      "val_acc": 0.985393658710367
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.06074224760858918,
+      "val_loss": 0.08190320173177588,
+      "val_acc": 0.978624866405415
+    }
+  ]
+}
+===== deepconvlstm =====
+{
+  "model": "DeepConvLSTM",
+  "split": "C",
+  "seed": 7,
+  "n_test": 1976,
+  "overall_macro_f1": 0.5311923474359668,
+  "per_class_f1": {
+    "elevator_down": 0.0,
+    "elevator_up": 0.0,
+    "lie": 1.0,
+    "rope_jump": 0.8982035928143712,
+    "run": 0.9565217391304348,
+    "sit": 1.0,
+    "stand": 0.5263157894736842,
+    "walk": 0.9308823529411765,
+    "walk_downstairs": 0.0,
+    "walk_upstairs": 0.0
+  },
+  "history_tail": [
+    {
+      "epoch": 27,
+      "train_loss": 0.046885779044353405,
+      "val_loss": 0.19687381688416491,
+      "val_acc": 0.9451371571072319
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.04689078667765358,
+      "val_loss": 0.16231013672830458,
+      "val_acc": 0.9565372283576772
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.03655187691148528,
+      "val_loss": 0.09870441283103003,
+      "val_acc": 0.968293551834699
+    }
+  ]
+}
+===== deepconvlstm_attn =====
+{
+  "model": "DeepConvLSTM-Attn",
+  "split": "C",
+  "seed": 7,
+  "n_test": 1976,
+  "overall_macro_f1": 0.5409976172602693,
+  "per_class_f1": {
+    "elevator_down": 0.0,
+    "elevator_up": 0.0,
+    "lie": 1.0,
+    "rope_jump": 0.9871794871794872,
+    "run": 0.9797979797979798,
+    "sit": 0.9971014492753624,
+    "stand": 0.5241581259150805,
+    "walk": 0.9217391304347826,
+    "walk_downstairs": 0.0,
+    "walk_upstairs": 0.0
+  },
+  "history_tail": [
+    {
+      "epoch": 27,
+      "train_loss": 0.012261599788199644,
+      "val_loss": 0.26091611753934535,
+      "val_acc": 0.9454934093338083
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.013346650134761946,
+      "val_loss": 0.179466577345367,
+      "val_acc": 0.9604560028500179
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.018366485605485258,
+      "val_loss": 0.5797648667045984,
+      "val_acc": 0.8756679729248308
+    }
+  ]
+}
+===== chronos_mlp =====
+{
+  "model": "Chronos+MLP (fallback encoder)",
+  "split": "C",
+  "seed": 7,
+  "n_test": 1976,
+  "overall_macro_f1": 0.5252403902751744,
+  "per_class_f1": {
+    "elevator_down": 0.0,
+    "elevator_up": 0.0,
+    "lie": 1.0,
+    "rope_jump": 0.9154929577464789,
+    "run": 0.88,
+    "sit": 1.0,
+    "stand": 0.527086383601757,
+    "walk": 0.9298245614035088,
+    "walk_downstairs": 0.0,
+    "walk_upstairs": 0.0
+  },
+  "used_chronos_pretrained": false
+}
+[done] baselines seed 7

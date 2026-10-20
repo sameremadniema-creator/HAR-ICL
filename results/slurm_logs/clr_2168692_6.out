@@ -1,0 +1,104 @@
+[cuda-check] torch 2.3.1+cu121 | built for CUDA 12.1 | cuda_available=True
+[cuda-check] OK: using NVIDIA GeForce RTX 3090 (23 GB)
+############### CONTINUOUS LR SWEEP seed 2025  LRs={5e-5 1e-4} ###############
+===== continuous lr=5e-5 =====
+[continuous_projection] trainable 77,821,440 / 202,279,680
+[continuous_projection] MATCHED frozen VQ-VAE encoder from /mnt/fast/nobackup/users/aa08742/checkpoints/vqvae/vqvae_usc_t32_s2025/best.pt (latent=64); Time-LLM reprogramming bridge
+{'epoch': 0, 'train_loss': 3.71062653067708, 'val_loss': 3.228217084010442, 'val_seen_f1': 0.2458941373875019, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12294706869375095}
+{'epoch': 1, 'train_loss': 3.027173739850521, 'val_loss': 2.9221606330076852, 'val_seen_f1': 0.25731981981981983, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12865990990990991}
+{'epoch': 2, 'train_loss': 2.9321581200361253, 'val_loss': 2.9305208826065066, 'val_seen_f1': 0.278870515160596, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.139435257580298}
+{'epoch': 3, 'train_loss': 2.888467669188976, 'val_loss': 2.9364986395835877, 'val_seen_f1': 0.2176836377769141, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.10884181888845705}
+{'epoch': 4, 'train_loss': 2.886979752779007, 'val_loss': 2.8857586042086285, 'val_seen_f1': 0.2181828509756028, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.1090914254878014}
+{'epoch': 5, 'train_loss': 2.900303780078888, 'val_loss': 2.860536071062088, 'val_seen_f1': 0.19746004910840076, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.09873002455420038}
+{'epoch': 6, 'train_loss': 2.8892328534126284, 'val_loss': 2.8806481909751893, 'val_seen_f1': 0.2817925463908903, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.14089627319544515}
+{'epoch': 7, 'train_loss': 2.8778384386897087, 'val_loss': 2.8736796299616496, 'val_seen_f1': 0.24625530963559134, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12312765481779567}
+{'epoch': 8, 'train_loss': 2.8666369280815123, 'val_loss': 2.8698427100976307, 'val_seen_f1': 0.20063035840791127, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.10031517920395563}
+{'epoch': 9, 'train_loss': 2.865200535655022, 'val_loss': 2.853773338397344, 'val_seen_f1': 0.25661346132380847, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12830673066190423}
+{'epoch': 10, 'train_loss': 2.8672403584718706, 'val_loss': 2.865725028117498, 'val_seen_f1': 0.22359018510546708, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11179509255273354}
+{'epoch': 11, 'train_loss': 2.870196583390236, 'val_loss': 2.839522807995478, 'val_seen_f1': 0.24770541054546458, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12385270527273229}
+{'epoch': 12, 'train_loss': 2.864786184668541, 'val_loss': 2.8708396498362223, 'val_seen_f1': 0.2274993057484032, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.1137496528742016}
+{'epoch': 13, 'train_loss': 2.869783526301384, 'val_loss': 2.865606095790863, 'val_seen_f1': 0.22632975010470474, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11316487505235237}
+{'epoch': 14, 'train_loss': 2.8553687690496443, 'val_loss': 2.855693675279617, 'val_seen_f1': 0.22977190709080522, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11488595354540261}
+{'epoch': 15, 'train_loss': 2.8575803084373472, 'val_loss': 2.8509481195608775, 'val_seen_f1': 0.25723536539340125, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12861768269670062}
+{'epoch': 16, 'train_loss': 2.8529029653072357, 'val_loss': 2.8518155348300933, 'val_seen_f1': 0.21255178621063917, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.10627589310531958}
+{'epoch': 17, 'train_loss': 2.8949902344346046, 'val_loss': 2.840551159779231, 'val_seen_f1': 0.26396517704778155, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.13198258852389078}
+{'epoch': 18, 'train_loss': 2.8563240308761597, 'val_loss': 2.837295616467794, 'val_seen_f1': 0.2139964056758134, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.1069982028379067}
+{'epoch': 19, 'train_loss': 2.8578463428020475, 'val_loss': 2.848556009133657, 'val_seen_f1': 0.24114538250962342, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12057269125481171}
+[overfit-check] ok | epochs=20 train_final=2.8578 val_min=2.8373 val_final=2.8486 monitor_peak=0.1409 monitor_final=0.1206
+{
+  "model": "ContinuousProjection",
+  "split": "C",
+  "seed": 2025,
+  "k_shot": 4,
+  "best_val_blended_f1": 0.14089627319544515,
+  "overall_macro_f1": 0.17503517832031504,
+  "seen_macro_f1": 0.141533748525285,
+  "unseen_macro_f1": 0.2581707344942639,
+  "per_class_f1": {
+    "elevator_down": 0.25,
+    "elevator_up": 0.18181818181818182,
+    "lie": 0.1983695652173913,
+    "rope_jump": 0.07172995780590717,
+    "run": 0.06666666666666667,
+    "sit": 0.11235955056179775,
+    "stand": 0.07806691449814127,
+    "walk": 0.19047619047619047,
+    "walk_downstairs": 0.3022222222222222,
+    "walk_upstairs": 0.2986425339366516
+  },
+  "trainable_params": 77821440
+}
+  "best_val_blended_f1": 0.14089627319544515,
+  "seen_macro_f1": 0.141533748525285,
+  "unseen_macro_f1": 0.2581707344942639,
+===== continuous lr=1e-4 =====
+[continuous_projection] trainable 77,821,440 / 202,279,680
+[continuous_projection] MATCHED frozen VQ-VAE encoder from /mnt/fast/nobackup/users/aa08742/checkpoints/vqvae/vqvae_usc_t32_s2025/best.pt (latent=64); Time-LLM reprogramming bridge
+{'epoch': 0, 'train_loss': 3.452427616298199, 'val_loss': 8.650045632570983, 'val_seen_f1': 0.2507139441142311, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12535697205711555}
+{'epoch': 1, 'train_loss': 3.0409268476366997, 'val_loss': 2.877674004236857, 'val_seen_f1': 0.26732673267326734, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.13366336633663367}
+{'epoch': 2, 'train_loss': 2.919989506959915, 'val_loss': 2.863593871196111, 'val_seen_f1': 0.26377502649043555, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.13188751324521777}
+{'epoch': 3, 'train_loss': 2.8830363399386405, 'val_loss': 2.8669298966725667, 'val_seen_f1': 0.2728630158237667, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.13643150791188335}
+{'epoch': 4, 'train_loss': 2.88401849681139, 'val_loss': 2.8517709418137867, 'val_seen_f1': 0.22670411205880314, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11335205602940157}
+{'epoch': 5, 'train_loss': 2.873524020433426, 'val_loss': 2.8644536368052163, 'val_seen_f1': 0.23505145020260185, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11752572510130092}
+{'epoch': 6, 'train_loss': 2.870113576412201, 'val_loss': 2.8459105412165324, 'val_seen_f1': 0.2877716596513092, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.1438858298256546}
+{'epoch': 7, 'train_loss': 2.854951870083809, 'val_loss': 2.900810803572337, 'val_seen_f1': 0.19512244814799723, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.09756122407399861}
+{'epoch': 8, 'train_loss': 2.8542314630746843, 'val_loss': 2.8717991042137148, 'val_seen_f1': 0.2454906798245614, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.1227453399122807}
+{'epoch': 9, 'train_loss': 2.8510867540836333, 'val_loss': 2.8644210104147594, 'val_seen_f1': 0.22519995771819173, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11259997885909587}
+{'epoch': 10, 'train_loss': 2.8497174859046934, 'val_loss': 2.8358075849215187, 'val_seen_f1': 0.27662008609434185, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.13831004304717093}
+{'epoch': 11, 'train_loss': 2.838066545844078, 'val_loss': 2.8246976880232495, 'val_seen_f1': 0.263525225502188, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.131762612751094}
+{'epoch': 12, 'train_loss': 2.8429515543580055, 'val_loss': 2.8286516400178274, 'val_seen_f1': 0.2696007696007696, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.1348003848003848}
+{'epoch': 13, 'train_loss': 2.8448030022382738, 'val_loss': 2.837936050494512, 'val_seen_f1': 0.23477856097885358, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11738928048942679}
+{'epoch': 14, 'train_loss': 2.833394845366478, 'val_loss': 2.8174296732743582, 'val_seen_f1': 0.253865064190112, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.126932532095056}
+{'epoch': 15, 'train_loss': 2.8270874371528625, 'val_loss': 2.7952896134058633, 'val_seen_f1': 0.24385870539716692, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.12192935269858346}
+{'epoch': 16, 'train_loss': 2.817152556538582, 'val_loss': 2.7637803425391514, 'val_seen_f1': 0.23965287049399198, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11982643524699599}
+{'epoch': 17, 'train_loss': 2.800915941953659, 'val_loss': 2.8225958561897277, 'val_seen_f1': 0.22299333203135896, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.11149666601567948}
+{'epoch': 18, 'train_loss': 2.820832850217819, 'val_loss': 2.7199792130788167, 'val_seen_f1': 0.29093426476604045, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.14546713238302023}
+{'epoch': 19, 'train_loss': 2.7509859223365782, 'val_loss': 2.5396546491980554, 'val_seen_f1': 0.35269778219132736, 'val_unseen_f1': 0.0, 'val_blended_f1': 0.17634889109566368}
+[overfit-check] STILL-IMPROVING (underfit?) | epochs=20 train_final=2.751 val_min=2.5397 val_final=2.5397 monitor_peak=0.1763 monitor_final=0.1763
+{
+  "model": "ContinuousProjection",
+  "split": "C",
+  "seed": 2025,
+  "k_shot": 4,
+  "best_val_blended_f1": 0.17634889109566368,
+  "overall_macro_f1": 0.1962965034269411,
+  "seen_macro_f1": 0.18868928808348984,
+  "unseen_macro_f1": 0.25152530037253595,
+  "per_class_f1": {
+    "elevator_down": 0.13333333333333333,
+    "elevator_up": 0.13333333333333333,
+    "lie": 0.1931216931216931,
+    "rope_jump": 0.06134969325153374,
+    "run": 0.08898305084745763,
+    "sit": 0.13432835820895522,
+    "stand": 0.11859838274932614,
+    "walk": 0.36048265460030166,
+    "walk_downstairs": 0.3813559322033898,
+    "walk_upstairs": 0.35807860262008734
+  },
+  "trainable_params": 77821440
+}
+  "best_val_blended_f1": 0.17634889109566368,
+  "seen_macro_f1": 0.18868928808348984,
+  "unseen_macro_f1": 0.25152530037253595,
+[done] continuous LR sweep seed 2025
