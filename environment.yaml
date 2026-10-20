@@ -1,0 +1,23 @@
+name: har_icl
+# NOTE: PyTorch and ALL torch-dependent packages (transformers, peft, accelerate,
+# sentence-transformers, chronos, ...) are intentionally NOT listed here. They are
+# installed by scripts/setup_cluster.sh from the CUDA 12.1 wheel index.
+#
+# Why: AISurrey compute nodes run NVIDIA driver 560.35.03, which supports CUDA <= 12.6.
+# The default PyPI torch wheel may be a CUDA 13.0 build (needs driver >= 570); on these
+# nodes it fails to initialise CUDA and SILENTLY falls back to CPU. Pinning a cu121 build
+# avoids that. The 'pytorch'/'nvidia' conda channels are also removed because they can pull
+# a CUDA 13 toolkit. Do NOT add torch or any torch-dependent package to this file.
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - scipy
+  - scikit-learn
+  - pandas
+  - pyyaml
+  - tqdm
+  - matplotlib
+  - seaborn

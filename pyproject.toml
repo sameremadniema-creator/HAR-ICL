@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "har_icl"
+version = "0.1.0"
+description = "Activity-Aware Discrete Tokenisation for Few-Shot ICL on Unseen HAR Classes"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "HAR-ICL" }]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "scikit-learn>=1.3",
+    "pandas>=2.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.66",
+    "einops>=0.7",
+]
+
+[project.optional-dependencies]
+torch = [
+    "torch>=2.1",
+    "transformers>=4.40",
+    "peft>=0.10",
+    "accelerate>=0.30",
+    "sentence-transformers>=2.7",
+]
+data = [
+    "ucimlrepo>=0.0.7",
+]
+viz = [
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+]
+chronos = [
+    "chronos-forecasting>=1.5.0",
+]
+logging = [
+    "wandb>=0.16",
+]
+dev = [
+    "pytest>=7.4",
+    "pytest-xdist>=3.5",
+]
+
+[tool.setuptools]
+packages = [
+    "har_icl",
+    "har_icl.phase0_data",
+    "har_icl.phase1_vqvae",
+    "har_icl.phase2_tokenize",
+    "har_icl.phase3_gpt2",
+    "har_icl.phase4_eval",
+    "har_icl.baselines",
+    "har_icl.utils",
+]
+package-dir = { "har_icl" = "." }
+
+[tool.setuptools.package-data]
+"har_icl" = ["configs/*.yaml", "configs/**/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q --tb=short"

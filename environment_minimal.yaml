@@ -1,0 +1,14 @@
+name: /mnt/fast/nobackup/users/aa08742/envs/har_icl
+channels:
+  - defaults
+dependencies:
+  - scipy
+  - tqdm
+  - pandas
+  - pip
+  - matplotlib
+  - python=3.11
+  - scikit-learn
+  - pyyaml
+  - seaborn
+prefix: /mnt/fast/nobackup/users/aa08742/envs/har_icl
