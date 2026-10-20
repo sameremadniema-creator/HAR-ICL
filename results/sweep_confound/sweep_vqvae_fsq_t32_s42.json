@@ -1,0 +1,152 @@
+{
+  "split": "C",
+  "restrict_dataset": null,
+  "name_that_dataset_control": {
+    "name_that_dataset_acc": 0.4847,
+    "chance": 0.25,
+    "n_datasets": 4,
+    "interpretation": "acc >> chance => exploitable device fingerprint"
+  },
+  "num_codes": 512,
+  "seen_labels": [
+    "arm_elevation",
+    "cycle",
+    "knees_bend",
+    "lie",
+    "rope_jump",
+    "run",
+    "sit",
+    "stand",
+    "vacuum",
+    "waist_bend",
+    "walk",
+    "walk_downstairs",
+    "walk_upstairs"
+  ],
+  "unseen_labels": [
+    "elevator_down",
+    "elevator_up",
+    "iron",
+    "nordic_walk"
+  ],
+  "episode_protocol": {
+    "k_shot": 4,
+    "max_distractors": 6,
+    "episode_reps": 5,
+    "base_seed": 42
+  },
+  "reconstruction": {
+    "normalised_mse": 0.2062,
+    "mae": 0.2784,
+    "per_channel_r2": [
+      0.83,
+      0.789,
+      0.789,
+      0.788,
+      0.801,
+      0.766
+    ]
+  },
+  "seen_linear_probe_macro_f1": {
+    "dataset_only": 0.0628,
+    "hist": 0.5381,
+    "random": 0.0279,
+    "z_mean": 0.7507,
+    "z_mean_w": 0.7436,
+    "zq_mean": 0.6701,
+    "zq_mean_w": 0.5493
+  },
+  "unseen_prototype_fewshot_macro_f1": {
+    "dataset_only": 0.26,
+    "dataset_only_std": 0.0085,
+    "dataset_only_n": 1140,
+    "dataset_only_acc": 0.7472,
+    "dataset_only_acc_std": 0.0105,
+    "dataset_only_per_class": {
+      "elevator_down": 0.937,
+      "elevator_up": 0.9471,
+      "iron": 0.8319,
+      "nordic_walk": 0.8163
+    },
+    "dataset_only_unseen_macro": 0.8831,
+    "dataset_only_unseen_macro_std": 0.01,
+    "hist": 0.1768,
+    "hist_std": 0.0084,
+    "hist_n": 1140,
+    "hist_acc": 0.5321,
+    "hist_acc_std": 0.0176,
+    "hist_per_class": {
+      "elevator_down": 0.4139,
+      "elevator_up": 0.3871,
+      "iron": 0.6995,
+      "nordic_walk": 0.8307
+    },
+    "hist_unseen_macro": 0.5828,
+    "hist_unseen_macro_std": 0.0133,
+    "random": 0.0602,
+    "random_std": 0.0032,
+    "random_n": 1140,
+    "random_acc": 0.1474,
+    "random_acc_std": 0.0077,
+    "random_per_class": {
+      "elevator_down": 0.2624,
+      "elevator_up": 0.2489,
+      "iron": 0.2763,
+      "nordic_walk": 0.2353
+    },
+    "random_unseen_macro": 0.2557,
+    "random_unseen_macro_std": 0.0137,
+    "z_mean": 0.2019,
+    "z_mean_std": 0.008,
+    "z_mean_n": 1140,
+    "z_mean_acc": 0.7086,
+    "z_mean_acc_std": 0.0115,
+    "z_mean_per_class": {
+      "elevator_down": 0.5469,
+      "elevator_up": 0.5755,
+      "iron": 0.8069,
+      "nordic_walk": 0.9751
+    },
+    "z_mean_unseen_macro": 0.7261,
+    "z_mean_unseen_macro_std": 0.0093,
+    "z_mean_w": 0.1607,
+    "z_mean_w_std": 0.0014,
+    "z_mean_w_n": 1140,
+    "z_mean_w_acc": 0.65,
+    "z_mean_w_acc_std": 0.0091,
+    "z_mean_w_per_class": {
+      "elevator_down": 0.4991,
+      "elevator_up": 0.5252,
+      "iron": 0.7873,
+      "nordic_walk": 0.9194
+    },
+    "z_mean_w_unseen_macro": 0.6828,
+    "z_mean_w_unseen_macro_std": 0.0061,
+    "zq_mean": 0.2287,
+    "zq_mean_std": 0.0066,
+    "zq_mean_n": 1140,
+    "zq_mean_acc": 0.7574,
+    "zq_mean_acc_std": 0.008,
+    "zq_mean_per_class": {
+      "elevator_down": 0.7484,
+      "elevator_up": 0.7034,
+      "iron": 0.8189,
+      "nordic_walk": 0.9741
+    },
+    "zq_mean_unseen_macro": 0.8112,
+    "zq_mean_unseen_macro_std": 0.0066,
+    "zq_mean_w": 0.1396,
+    "zq_mean_w_std": 0.0048,
+    "zq_mean_w_n": 1140,
+    "zq_mean_w_acc": 0.3775,
+    "zq_mean_w_acc_std": 0.0094,
+    "zq_mean_w_per_class": {
+      "elevator_down": 0.6986,
+      "elevator_up": 0.66,
+      "iron": 0.5781,
+      "nordic_walk": 0.4074
+    },
+    "zq_mean_w_unseen_macro": 0.586,
+    "zq_mean_w_unseen_macro_std": 0.0123
+  }
+}

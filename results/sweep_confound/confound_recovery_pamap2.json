@@ -1,0 +1,128 @@
+{
+  "split": "C",
+  "restrict_dataset": "pamap2",
+  "name_that_dataset_control": null,
+  "num_codes": 512,
+  "seen_labels": [
+    "cycle",
+    "lie",
+    "rope_jump",
+    "run",
+    "sit",
+    "stand",
+    "vacuum",
+    "walk",
+    "walk_downstairs",
+    "walk_upstairs"
+  ],
+  "unseen_labels": [
+    "iron",
+    "nordic_walk"
+  ],
+  "episode_protocol": {
+    "k_shot": 4,
+    "max_distractors": 6,
+    "episode_reps": 5,
+    "base_seed": 42
+  },
+  "reconstruction": {
+    "normalised_mse": 0.2905,
+    "mae": 0.3385,
+    "per_channel_r2": [
+      0.774,
+      0.7,
+      0.727,
+      0.669,
+      0.703,
+      0.687
+    ]
+  },
+  "seen_linear_probe_macro_f1": {
+    "dataset_only": 0.0282,
+    "hist": 0.7053,
+    "random": 0.059,
+    "z_mean": 0.7446,
+    "z_mean_w": 0.7331,
+    "zq_mean": 0.7289,
+    "zq_mean_w": 0.724
+  },
+  "unseen_prototype_fewshot_macro_f1": {
+    "dataset_only": 0.0415,
+    "dataset_only_std": 0.0014,
+    "dataset_only_n": 866,
+    "dataset_only_acc": 0.1418,
+    "dataset_only_acc_std": 0.0054,
+    "dataset_only_per_class": {
+      "iron": 0.2302,
+      "nordic_walk": 0.2675
+    },
+    "dataset_only_unseen_macro": 0.2488,
+    "dataset_only_unseen_macro_std": 0.0083,
+    "hist": 0.1496,
+    "hist_std": 0.0091,
+    "hist_n": 866,
+    "hist_acc": 0.6843,
+    "hist_acc_std": 0.0284,
+    "hist_per_class": {
+      "iron": 0.6948,
+      "nordic_walk": 0.917
+    },
+    "hist_unseen_macro": 0.8059,
+    "hist_unseen_macro_std": 0.0212,
+    "random": 0.0443,
+    "random_std": 0.0024,
+    "random_n": 866,
+    "random_acc": 0.1533,
+    "random_acc_std": 0.0095,
+    "random_per_class": {
+      "iron": 0.2687,
+      "nordic_walk": 0.2623
+    },
+    "random_unseen_macro": 0.2655,
+    "random_unseen_macro_std": 0.014,
+    "z_mean": 0.1673,
+    "z_mean_std": 0.0066,
+    "z_mean_n": 866,
+    "z_mean_acc": 0.8259,
+    "z_mean_acc_std": 0.0017,
+    "z_mean_per_class": {
+      "iron": 0.8271,
+      "nordic_walk": 0.9774
+    },
+    "z_mean_unseen_macro": 0.9022,
+    "z_mean_unseen_macro_std": 0.0009,
+    "z_mean_w": 0.1381,
+    "z_mean_w_std": 0.0019,
+    "z_mean_w_n": 866,
+    "z_mean_w_acc": 0.7088,
+    "z_mean_w_acc_std": 0.0157,
+    "z_mean_w_per_class": {
+      "iron": 0.7663,
+      "nordic_walk": 0.8906
+    },
+    "z_mean_w_unseen_macro": 0.8284,
+    "z_mean_w_unseen_macro_std": 0.011,
+    "zq_mean": 0.1673,
+    "zq_mean_std": 0.0114,
+    "zq_mean_n": 866,
+    "zq_mean_acc": 0.767,
+    "zq_mean_acc_std": 0.0068,
+    "zq_mean_per_class": {
+      "iron": 0.7868,
+      "nordic_walk": 0.9443
+    },
+    "zq_mean_unseen_macro": 0.8655,
+    "zq_mean_unseen_macro_std": 0.0044,
+    "zq_mean_w": 0.1334,
+    "zq_mean_w_std": 0.0018,
+    "zq_mean_w_n": 866,
+    "zq_mean_w_acc": 0.6679,
+    "zq_mean_w_acc_std": 0.0149,
+    "zq_mean_w_per_class": {
+      "iron": 0.7432,
+      "nordic_walk": 0.8572
+    },
+    "zq_mean_w_unseen_macro": 0.8001,
+    "zq_mean_w_unseen_macro_std": 0.0109
+  }
+}
