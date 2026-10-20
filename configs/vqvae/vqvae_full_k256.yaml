@@ -1,0 +1,4 @@
+inherit: _base.yaml
+name: vqvae_full_k256
+codebook:
+  num_codes: 256

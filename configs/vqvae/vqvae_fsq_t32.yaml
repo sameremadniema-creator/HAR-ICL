@@ -1,0 +1,16 @@
+# Best-bet: FSQ quantizer + LESS temporal compression (strides [2,2,1] => 32.
+inherit: _base.yaml
+name: vqvae_fsq_t32
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+encoder:
+  strides: [2, 2, 1]     # 128 / 4 = 32 tokens/window (vs 16)
+codebook:
+  type: fsq
+  levels: [8, 8, 8]      # prod = 512 codes
+loss:
+  aux_ce_weight: 0.5
+train:
+  augment: true

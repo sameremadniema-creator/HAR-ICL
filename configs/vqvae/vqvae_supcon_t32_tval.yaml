@@ -1,0 +1,17 @@
+# METRIC-SPACE OVERFITTING FIX (user-flagged): the winner recipe (aux + SupCon +.
+inherit: _base.yaml
+name: vqvae_supcon_t32_tval
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+encoder:
+  strides: [2, 2, 1]
+loss:
+  aux_ce_weight: 0.5
+  contrastive_weight: 1.0
+  contrastive_temperature: 0.1
+train:
+  augment: true
+  transfer_val_classes: [waist_bend, walk_upstairs]
+  selection: transfer

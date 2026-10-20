@@ -1,0 +1,9 @@
+# Ablation #3: VQ-VAE + sentence-BERT conditioning only (no aux CE).
+inherit: _base.yaml
+name: vqvae_cond_only
+conditioning:
+  enabled: true
+aux_classifier:
+  enabled: false
+loss:
+  aux_ce_weight: 0.0

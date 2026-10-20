@@ -1,0 +1,13 @@
+# aux_only + LESS temporal compression: strides [2,2,1] => 128/4 = 32.
+inherit: _base.yaml
+name: vqvae_aux_t32
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+encoder:
+  strides: [2, 2, 1]
+loss:
+  aux_ce_weight: 0.5
+train:
+  augment: true

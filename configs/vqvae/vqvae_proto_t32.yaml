@@ -1,0 +1,18 @@
+# Episodic ProtoNet metric shaping (Snell'17), replacing SupCon.
+inherit: _base.yaml
+name: vqvae_proto_t32
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+encoder:
+  strides: [2, 2, 1]
+loss:
+  aux_ce_weight: 0.5
+  contrastive_weight: 0.0
+  proto_weight: 1.0
+  proto_k_shot: 4             # matched to the K=4 eval episodes
+  proto_temperature: 64.0
+                              # (numpy-verified loss ~14.8 at init, would crush recon ~1.0)
+train:
+  augment: true

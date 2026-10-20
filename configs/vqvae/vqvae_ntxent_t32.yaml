@@ -1,0 +1,20 @@
+# PRIMARY codebook-boost attempt (research-agent top pick).
+inherit: _base.yaml
+name: vqvae_ntxent_t32
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+encoder:
+  strides: [2, 2, 1]          # 32 tokens/window
+loss:
+  aux_ce_weight: 0.25
+  contrastive_weight: 0.0
+  ssl_contrastive_weight: 0.7 # label-free NT-Xent
+  ssl_temperature: 0.1
+train:
+  augment: true               # mild aug on the recon view
+  aug_rot_deg: 25.0
+                              # vertical-motion unseen classes: elevator_up/down, stairs)
+  aug_timewarp: 0.2           # speed invariance (cadence)
+  aug_sensor_drop: 0.15

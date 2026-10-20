@@ -1,0 +1,15 @@
+# Both structural levers together: aux + supervised-contrastive + 32 tokens.
+inherit: _base.yaml
+name: vqvae_aux_contrast_t32
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+encoder:
+  strides: [2, 2, 1]
+loss:
+  aux_ce_weight: 0.5
+  contrastive_weight: 1.0
+  contrastive_temperature: 0.1
+train:
+  augment: true

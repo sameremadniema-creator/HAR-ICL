@@ -1,0 +1,18 @@
+# Episodic ProtoNet STACKED on the current winner (aux + SupCon + t32, unseen.
+inherit: _base.yaml
+name: vqvae_proto_supcon_t32
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+encoder:
+  strides: [2, 2, 1]
+loss:
+  aux_ce_weight: 0.5
+  contrastive_weight: 1.0     # keep the proven SupCon term
+  contrastive_temperature: 0.1
+  proto_weight: 1.0
+  proto_k_shot: 4
+  proto_temperature: 64.0     # = latent_dim (see vqvae_proto_t32.yaml)
+train:
+  augment: true

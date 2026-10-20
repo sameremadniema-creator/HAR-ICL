@@ -1,0 +1,18 @@
+# ENCODER-ARCHITECTURE ablation: Mamba-style bidirectional selective SSM (S6).
+inherit: _base.yaml
+name: vqvae_proto_mamba_t32
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+encoder:
+  type: mamba
+  strides: [2, 2, 1]
+loss:
+  aux_ce_weight: 0.5
+  contrastive_weight: 0.0
+  proto_weight: 1.0
+  proto_k_shot: 4
+  proto_temperature: 64.0     # = latent_dim (see vqvae_proto_t32.yaml)
+train:
+  augment: true

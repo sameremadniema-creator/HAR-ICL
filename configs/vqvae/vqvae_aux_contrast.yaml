@@ -1,0 +1,13 @@
+# Winner (aux_only: conditioning OFF, aux ON) + supervised-contrastive on the.
+inherit: _base.yaml
+name: vqvae_aux_contrast
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+loss:
+  aux_ce_weight: 0.5
+  contrastive_weight: 1.0
+  contrastive_temperature: 0.1
+train:
+  augment: true

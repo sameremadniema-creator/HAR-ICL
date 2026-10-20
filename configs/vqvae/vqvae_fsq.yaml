@@ -1,0 +1,14 @@
+# FSQ quantizer (Mentzer et al., ICLR 2024) instead of learned VQ-EMA codebook.
+inherit: _base.yaml
+name: vqvae_fsq
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+codebook:
+  type: fsq
+  levels: [8, 8, 8]      # prod = 512 codes (matches VQ size)
+loss:
+  aux_ce_weight: 0.5
+train:
+  augment: true

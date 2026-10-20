@@ -1,0 +1,20 @@
+# HEDGE arm: keep a DOWN-WEIGHTED SupCon (0.3) alongside label-free NT-Xent (0.7).
+inherit: _base.yaml
+name: vqvae_ntxent_supcon_t32
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+encoder:
+  strides: [2, 2, 1]
+loss:
+  aux_ce_weight: 0.25
+  contrastive_weight: 0.3
+  contrastive_temperature: 0.1
+  ssl_contrastive_weight: 0.7 # label-free NT-Xent
+  ssl_temperature: 0.1
+train:
+  augment: true
+  aug_rot_deg: 25.0
+  aug_timewarp: 0.2
+  aug_sensor_drop: 0.15

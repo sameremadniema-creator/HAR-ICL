@@ -1,0 +1,5 @@
+# Full method, codebook size 128.
+inherit: _base.yaml
+name: vqvae_full_k128
+codebook:
+  num_codes: 128

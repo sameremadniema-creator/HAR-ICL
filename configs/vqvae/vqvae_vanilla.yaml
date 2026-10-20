@@ -1,0 +1,9 @@
+# Ablation #1: vanilla VQ-VAE — no conditioning, no aux loss.
+inherit: _base.yaml
+name: vqvae_vanilla
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: false
+loss:
+  aux_ce_weight: 0.0

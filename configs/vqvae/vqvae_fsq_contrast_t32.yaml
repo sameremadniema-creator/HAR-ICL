@@ -1,0 +1,18 @@
+# Stack the two sweep winners: FSQ fixed-grid (best reconstruction, no collapse) +
+inherit: _base.yaml
+name: vqvae_fsq_contrast_t32
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+encoder:
+  strides: [2, 2, 1]     # 32 tokens/window
+codebook:
+  type: fsq
+  levels: [8, 8, 8]      # prod = 512 codes (size-matched)
+loss:
+  aux_ce_weight: 0.5
+  contrastive_weight: 1.0
+  contrastive_temperature: 0.1
+train:
+  augment: true

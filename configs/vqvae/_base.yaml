@@ -1,0 +1,42 @@
+# Base VQ-VAE config — other configs inherit and override.
+encoder:
+  in_channels: 6
+  hidden_channels: [64, 128, 256]
+  kernel_size: 5
+  stride: 2
+  latent_dim: 64
+codebook:
+  num_codes: 512
+  dim: 64
+  decay: 0.99
+  eps: 1.0e-5
+  kmeans_warmup_epoch: 1
+loss:
+  commit_beta: 0.25
+  recon_mse_weight: 1.0
+  recon_l1_weight: 0.1
+  aux_ce_weight: 0.5
+conditioning:
+  enabled: true
+  text_model: sentence-transformers/all-MiniLM-L6-v2
+  text_dim: 384
+  use_descriptions: true
+aux_classifier:
+  enabled: true
+optim:
+  lr: 3.0e-4
+  weight_decay: 1.0e-2
+  warmup_epochs: 5
+  cosine_min_lr: 1.0e-6
+train:
+  batch_size: 256
+  epochs: 200
+  grad_clip: 1.0
+  log_every: 50
+  ckpt_every_epochs: 10
+  early_stop_perplexity_frac: 0.30   # alert if perplexity < this * num_codes
+  early_stop_patience: 25
+  augment: false
+  aug_jitter: 0.05
+  aug_scale: 0.1
+  aug_shift: 8

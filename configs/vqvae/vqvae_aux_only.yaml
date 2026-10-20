@@ -1,0 +1,9 @@
+# Ablation #2: VQ-VAE + auxiliary CE only (no text conditioning).
+inherit: _base.yaml
+name: vqvae_aux_only
+conditioning:
+  enabled: false
+aux_classifier:
+  enabled: true
+loss:
+  aux_ce_weight: 0.5
