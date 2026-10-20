@@ -1,0 +1,7 @@
+id: 8
+name: continuous_projection
+baseline: continuous_projection
+gpt2_config: gpt2_k4
+splits: [A, B, C]
+seeds: [42, 1337, 2024, 7, 31337]
+note: "Headline ablation — discrete (Ours) vs continuous projection. We must win unseen."

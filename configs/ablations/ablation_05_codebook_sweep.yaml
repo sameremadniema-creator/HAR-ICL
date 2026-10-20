@@ -1,0 +1,6 @@
+id: 5
+name: codebook_sweep
+vqvae_configs: [vqvae_full_k128, vqvae_full_k256, vqvae_full_k512, vqvae_full_k1024]
+gpt2_config: gpt2_k4
+splits: [C]
+seeds: [42, 1337, 2024, 7, 31337]

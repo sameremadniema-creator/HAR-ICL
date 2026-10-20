@@ -1,0 +1,6 @@
+id: 3
+name: cond_only
+vqvae_config: vqvae_cond_only
+gpt2_config: gpt2_k4
+splits: [A, B, C]
+seeds: [42, 1337, 2024, 7, 31337]

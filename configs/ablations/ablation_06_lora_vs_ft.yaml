@@ -1,0 +1,7 @@
+id: 6
+name: lora_vs_ft
+vqvae_config: vqvae_full_k512
+gpt2_configs: [gpt2_lora_r4, gpt2_lora_r8, gpt2_lora_r16, gpt2_lora_r32]
+full_finetune_also: true
+splits: [C]
+seeds: [42, 1337, 2024, 7, 31337]

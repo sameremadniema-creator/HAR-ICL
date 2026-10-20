@@ -1,0 +1,6 @@
+id: 7
+name: k_sweep
+vqvae_config: vqvae_full_k512
+gpt2_configs: [gpt2_k0, gpt2_k1, gpt2_k2, gpt2_k4, gpt2_k8]
+splits: [C]
+seeds: [42, 1337, 2024, 7, 31337]
