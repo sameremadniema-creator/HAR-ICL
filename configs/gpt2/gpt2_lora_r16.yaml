@@ -1,0 +1,4 @@
+inherit: _base.yaml
+name: gpt2_lora_r16
+lora:
+  rank: 16

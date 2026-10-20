@@ -1,0 +1,35 @@
+# Base GPT-2 + LoRA config (PDF Part 2.7).
+model:
+  name: gpt2          # GPT-2 small, 124M params
+  context_length: 1024
+special_tokens:
+  bos: "<BOS_SIG>"
+  act: "<ACT>"
+  sep: "<SEP>"
+  query: "<QUERY>"
+  ans: "<ANS>"
+  pad: "<PAD>"
+lora:
+  rank: 16
+  alpha: 32                    # keep alpha = 2*rank (scale unchanged)
+  dropout: 0.05
+  target_modules: ["c_attn"]   # combined q/k/v projection in all 12 GPT-2 layers
+prompt:
+  k_shot: 4
+  max_distractors: 6
+  shuffle_support: true
+  always_include_gold_class: true
+  label_randomization: true
+                              # the model copies from support (generalises to unseen).
+optim:
+  lr: 2.0e-4
+  weight_decay: 0.0
+  warmup_steps: 100
+train:
+  batch_size: 8
+                          # prompts are 1016/1024, and the CE step materializes
+  epochs: 20
+  grad_accum: 4
+  grad_clip: 1.0
+  eval_every_epoch: true
+  loss_mask: answer_only       # only the answer token contributes to CE

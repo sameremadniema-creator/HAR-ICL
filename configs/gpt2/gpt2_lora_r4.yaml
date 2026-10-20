@@ -1,0 +1,4 @@
+inherit: _base.yaml
+name: gpt2_lora_r4
+lora:
+  rank: 4

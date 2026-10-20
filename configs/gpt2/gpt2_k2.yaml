@@ -1,0 +1,4 @@
+inherit: _base.yaml
+name: gpt2_k2
+prompt:
+  k_shot: 2
