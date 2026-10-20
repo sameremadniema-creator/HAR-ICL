@@ -1,0 +1,29 @@
+# Phase 0 data harmonisation config.
+window:
+  length_samples: 128       # 2.56 s @ 50 Hz
+  stride_samples: 64        # 50% overlap
+  target_rate_hz: 50
+
+channels:
+  mode: accel_gyro_6        # 3-axis accel + 3-axis gyro
+  per_dataset_location:
+    uci_har: smartphone     # body+total accel + gyro
+    pamap2: wrist
+    mhealth: chest_accel_wrist_gyro   # see datasets.py load_mhealth
+    usc_had: right_hip      # MotionNode
+
+datasets:
+  train_pool: [uci_har, pamap2, mhealth]
+  held_out_dataset: usc_had
+
+label_map: configs/label_map_strict.yaml
+
+splits:
+  subject_fraction_train: 0.70
+  subject_fraction_val: 0.15
+  subject_fraction_test: 0.15
+  seed: 42
+
+normalisation:
+  per_channel_zscore: true
+  fit_on: train_only

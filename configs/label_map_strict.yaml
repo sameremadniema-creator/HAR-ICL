@@ -1,0 +1,144 @@
+# Unified taxonomy + rich physiological descriptions for sentence-BERT.
+
+walk:
+  description: "level walking at a steady pace of about 1.4 metres per second with rhythmic arm swing"
+  aliases:
+    uci_har: ["WALKING"]
+    pamap2: ["walking"]
+    mhealth: ["walking", "Walking"]
+    usc_had: ["walking forward", "walking left", "walking right"]
+
+walk_upstairs:
+  description: "walking up a staircase one step at a time with a vertical lift of about 0.18 metres per step"
+  aliases:
+    uci_har: ["WALKING_UPSTAIRS"]
+    pamap2: ["ascending stairs"]
+    mhealth: ["climbing stairs", "Climbing stairs"]
+    usc_had: ["walking upstairs"]
+
+walk_downstairs:
+  description: "walking down a staircase with controlled descent and impact loading on the lower limbs"
+  aliases:
+    uci_har: ["WALKING_DOWNSTAIRS"]
+    pamap2: ["descending stairs"]
+    mhealth: []
+    usc_had: ["walking downstairs"]
+
+sit:
+  description: "seated on a chair with minimal trunk motion and quasi-static accelerometer signal near gravity"
+  aliases:
+    uci_har: ["SITTING"]
+    pamap2: ["sitting"]
+    mhealth: ["sitting and relaxing", "Sitting and relaxing"]
+    usc_had: ["sitting"]
+
+stand:
+  description: "standing still upright with feet shoulder-width apart and quasi-static accelerometer signal"
+  aliases:
+    uci_har: ["STANDING"]
+    pamap2: ["standing"]
+    mhealth: ["standing still", "Standing still"]
+    usc_had: ["standing"]
+
+lie:
+  description: "lying down flat with the trunk horizontal and accelerometer gravity vector aligned to a body axis"
+  aliases:
+    uci_har: ["LAYING"]
+    pamap2: ["lying"]
+    mhealth: ["lying down", "Lying down"]
+    usc_had: ["sleeping"]
+
+run:
+  description: "running at moderate pace around 3 metres per second with both feet briefly airborne in each stride"
+  aliases:
+    uci_har: []
+    pamap2: ["running"]
+    mhealth: ["running", "Running", "jogging"]
+    usc_had: ["running forward"]
+
+cycle:
+  description: "cycling on a bicycle at moderate cadence with rotary leg motion and trunk lean"
+  aliases:
+    uci_har: []
+    pamap2: ["cycling"]
+    mhealth: ["cycling", "Cycling"]
+    usc_had: []
+
+nordic_walk:
+  description: "Nordic walking with poles at higher upper-body engagement than normal walking"
+  aliases:
+    uci_har: []
+    pamap2: ["nordic walking"]
+    mhealth: []
+    usc_had: []
+
+iron:
+  description: "ironing clothes while standing with rhythmic forward-back arm motion at low frequency"
+  aliases:
+    uci_har: []
+    pamap2: ["ironing"]
+    mhealth: []
+    usc_had: []
+
+vacuum:
+  description: "vacuum cleaning a floor with forward-back arm motion and walking-like trunk motion"
+  aliases:
+    uci_har: []
+    pamap2: ["vacuum cleaning"]
+    mhealth: []
+    usc_had: []
+
+rope_jump:
+  description: "jumping rope or jumping in place with vertical accelerations exceeding two g at landing"
+  aliases:
+    uci_har: []
+    pamap2: ["rope jumping"]
+    mhealth: ["jump front & back", "Jump front and back", "Jumping front and back"]
+    usc_had: ["jumping up", "jumping"]
+
+elevator_up:
+  description: "standing inside an elevator that is ascending with a brief vertical acceleration spike"
+  aliases:
+    uci_har: []
+    pamap2: []
+    mhealth: []
+    usc_had: ["elevator up"]
+
+elevator_down:
+  description: "standing inside an elevator that is descending with a brief downward acceleration spike"
+  aliases:
+    uci_har: []
+    pamap2: []
+    mhealth: []
+    usc_had: ["elevator down"]
+
+arm_elevation:
+  description: "frontal elevation of arms repeated multiple times while standing"
+  aliases:
+    uci_har: []
+    pamap2: []
+    mhealth: ["frontal elevation of arms"]
+    usc_had: []
+
+knees_bend:
+  description: "repeated knee bending while standing in place as in a squat exercise"
+  aliases:
+    uci_har: []
+    pamap2: []
+    mhealth: ["knees bending (crouching)", "knees bending"]
+    usc_had: []
+
+waist_bend:
+  description: "bending the waist forward repeatedly while standing in place"
+  aliases:
+    uci_har: []
+    pamap2: []
+    mhealth: ["waist bends forward"]
+    usc_had: []
+
+# Activities mapped to null are excluded (PAMAP2 "transient activity", etc.)
+_null_aliases:
+  pamap2: ["transient activity", "other"]
+  mhealth: []
+  uci_har: []
+  usc_had: []

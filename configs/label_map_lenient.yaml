@@ -1,0 +1,102 @@
+# Lenient taxonomy — collapses USC-HAD "walking forward/left/right" into a single
+
+walk:
+  description: "level walking at any direction (forward/left/right) at a steady pace"
+  aliases:
+    uci_har: ["WALKING"]
+    pamap2: ["walking", "nordic walking"]
+    mhealth: ["walking", "Walking"]
+    usc_had: ["walking forward", "walking left", "walking right"]
+
+walk_upstairs:
+  description: "ascending a staircase"
+  aliases:
+    uci_har: ["WALKING_UPSTAIRS"]
+    pamap2: ["ascending stairs"]
+    mhealth: ["climbing stairs", "Climbing stairs"]
+    usc_had: ["walking upstairs"]
+
+walk_downstairs:
+  description: "descending a staircase"
+  aliases:
+    uci_har: ["WALKING_DOWNSTAIRS"]
+    pamap2: ["descending stairs"]
+    mhealth: []
+    usc_had: ["walking downstairs"]
+
+sit:
+  description: "seated"
+  aliases:
+    uci_har: ["SITTING"]
+    pamap2: ["sitting"]
+    mhealth: ["sitting and relaxing", "Sitting and relaxing"]
+    usc_had: ["sitting"]
+
+stand:
+  description: "standing"
+  aliases:
+    uci_har: ["STANDING"]
+    pamap2: ["standing"]
+    mhealth: ["standing still", "Standing still"]
+    usc_had: ["standing"]
+
+lie:
+  description: "lying down"
+  aliases:
+    uci_har: ["LAYING"]
+    pamap2: ["lying"]
+    mhealth: ["lying down", "Lying down"]
+    usc_had: ["sleeping"]
+
+run:
+  description: "running at any direction"
+  aliases:
+    pamap2: ["running"]
+    mhealth: ["running", "Running", "jogging"]
+    usc_had: ["running forward"]
+
+cycle:
+  description: "cycling on a bicycle"
+  aliases:
+    pamap2: ["cycling"]
+    mhealth: ["cycling", "Cycling"]
+
+iron:
+  description: "ironing clothes"
+  aliases:
+    pamap2: ["ironing"]
+
+vacuum:
+  description: "vacuum cleaning"
+  aliases:
+    pamap2: ["vacuum cleaning"]
+
+rope_jump:
+  description: "jumping (rope or in place)"
+  aliases:
+    pamap2: ["rope jumping"]
+    mhealth: ["jump front & back", "Jump front and back", "Jumping front and back"]
+    usc_had: ["jumping up", "jumping"]
+
+elevator:
+  description: "elevator ride in either direction"
+  aliases:
+    usc_had: ["elevator up", "elevator down"]
+
+arm_elevation:
+  description: "frontal elevation of arms"
+  aliases:
+    mhealth: ["frontal elevation of arms"]
+
+knees_bend:
+  description: "knee bending in place"
+  aliases:
+    mhealth: ["knees bending (crouching)", "knees bending"]
+
+waist_bend:
+  description: "waist bending forward"
+  aliases:
+    mhealth: ["waist bends forward"]
+
+_null_aliases:
+  pamap2: ["transient activity", "other"]
